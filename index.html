@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="Access-Control-Allow-Methods" content="GET">
+    <title>Child EnSign</title>
+    
+<!-- ------------------------------------------- css -------------------------------------- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+<!-- ---------------------------------------- css ends ------------------------------------ -->
+
+<!-- ------------------------------------------ js --------------------------------------- -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script type="text/javascript" src="scripts/allcsa.js"></script>
+    <script language="javascript">
+        // Initial configuration
+        var initCfg = {
+            "description"     : "========  CWASA installation configuration data  ========",
+            "jasBase"         : "http://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/",
+            "jasVersionTag"   : "vhg2017",
+            "sigmlBase"       : "sigml",
+            "avJARBase"       : "avatars",
+            "avJSONBase"      : "avjson",
+            "useAvatarJARs"   : true,
+            "animgenFPS"      : 50,
+            "animgenServer"   : "http://vhg.cmp.uea.ac.uk/cgi-bin/animgen/animgenserver.pl",
+            "avs" : [
+              "anna", "marc", "francoise", "luna"
+            ],
+            "avsfull" : [
+              "anna",
+              "beatrice", "candy", "darshan", "francoise", "genie", "luna",
+              "marc", "max", "monkey", "otis", "robotboy", "siggi"
+            ],
+            "avSettings" : [
+              {
+                "description":      "Default if client configuration is missing or restricted",
+                "width":            384,
+                "height":           320,
+                "avList":           "avs",
+                "initAv":           "luna",
+                "initCamera":       [ 0, 0.23, 3.24, 5, 18, 30, -1, -1 ],
+                "allowFrameSteps":  true,
+                "initSiGMLURL":     "iTakeMug.sigml",
+                "allowSiGMLText":   true
+              }
+            ]
+          };
+    </script>
+
+<!-- ---------------------------------------- js ends ------------------------------------- -->   
+</head>
+
+<body onload="CWASA.init(initCfg)">
+    
+    <div class="container">
+
+        <div class="title">
+            <!-- <h1>Child EnSign : A preschooler assistive technology for divyangjan</h1> -->
+            <h1>ਚਾਈਲਡ ਐਨਸਾਈਨ: ਦੀਵਿਆਂਝਾਂ ਲਈ ਇਕ ਪ੍ਰੀਸਕੂਲ ਸਹਾਇਕ ਤਕਨੀਕ</h1>
+            <div style="float: right;">
+                <button id="button-team">ਸਾਡੀ ਟੀਮ</button>
+                <button id="button-about">ਸਾਡੇ ਬਾਰੇ</button>
+            </div>
+            
+        </div>
+
+        <div class="sidebar">        
+            <nav class="main-menu">
+                <ul>
+                    
+                </ul>
+            </nav>            
+        </div>
+
+        <div class="container app">
+            <div class="CWASAAvatar av0 avtarwindow" align="center" id="avat">
+                
+            </div>
+            <div class="displayWindow">
+
+            </div>
+            <!-- <div id="container-about">
+                <div id="inner">
+                    <h1 style="margin-left: 10px;">ABOUT US</h1>
+                    <hr>
+                    <div class="image">
+                        <img src="/res/backgrounds/bg4.jpg" id="img">
+                    </div>
+                    <div id="text">
+                        <p>This website will help in education for deaf and dumb children less than the age of 5 years . 
+                        This website is for research purpose only through support from University Of Hamburg .</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="container-about">
+                <div id="inner">
+                    <h1 style="margin-left: 10px;">ABOUT US
+                        <div style="float: right;width: 23px;height: 23px;margin-bottom: 5px;margin-right: 15px;cursor: pointer;">
+                        <img id="close-about" src="/res/backgrounds/multiply.svg">
+                    </div>
+                    </h1>
+                    
+                    <hr>
+                    <div class="image img-responsive">
+                        <img src="/res/backgrounds/about.jpg" id="img">
+                    </div>
+                    <div id="text">
+
+                        <p>Sign Language is the most common way of communication used by the deaf communities all over the world. It is a gestural language which provides information using hands and other body parts. Sign Language contains symbolic encoded messages for communication among deaf people without any speech channel. It is the first language of many hearing impaired people. These people learn the local language of the region in which they are born as a second language. Sign languages are unique in many ways from other languages. They cannot be written like other spoken language, a special mechanism is required for transcribing the signs. Most of the deaf people prefer to communicate by using sign language only as they don’t have much knowledge about other spoken languages.  It is a matter of grieve concern that there are very few sources (schools, e-books, websites, mobile applications, online tutors etc) available for the education and communication of deaf people.  This lack of sources has resulted into poor communication, language and literacy skills among the deaf. There is a need to build automated systems that can overcome the problem of poor communication among the deaf.
+
+The proposed project "Child Ensign: An Assistive Pre-School Resource for Divyagjan" aims on building such an automated system that could be used for automatic generation of sign language. The system being build can be used by the deaf people along with their friends and family members for the sake of easy and better communication among them. Project mainly focuses at building of an application that converts images into its respective sign. The sign language application developed here aims in easing the life of deaf children (and their parents or society) upto age of 5 years. 
+
+<br><b style="color: red;">Note* </b> This website is only for research and development purpose. The project is contributed by Chitkara University Punjab in colabration with Patiala School for the Deaf- Estd. 1967. Any feedback are most welcome at (virender.kadyan@chitkara.edu.in) . The avatar is contributed by University of Hamburg.</p>
+                    </div>
+                </div>
+    </div>
+    <div id="container-team">
+        <div id="inner-team">
+            <h1 style="margin-left: 10px;">OUR TEAM
+                <div style="float: right;width: 23px;height: 23px;margin-bottom: 5px;margin-right: 15px;cursor: pointer;">
+                <img id="close-team" src="/res/backgrounds/multiply.svg">
+            </div>
+            </h1>
+            
+            <hr>
+            <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;">
+                <div id="head">
+                    <div style="margin: 10px;" id="team1">
+                        <img class="team" src="/res/backgrounds/virender.jpeg" style="background-size:cover">
+                        <h3>Er.Virender Kadyan</h3>
+                        <h4>Team Lead</h4>
+                    </div>
+                </div>
+                <div style="flex-direction: row;display: flex;" id="members">
+                    <div style="margin: 10px" id="team2">
+                        <img class="team" src="/res/backgrounds/vaibhav.jpg" style="background-size:cover;width: 200px;">
+                        <h3>Vaibhav</h3>
+                        <h4>Developer</h4>
+                    </div>
+                    <div style="margin: 10px" id="team3">
+                        <img class="team" src="/res/backgrounds/ravi.jpg" style="background-size:cover;width: 160px;height: 190px;">
+                        <h3>Ravi</h3>
+                        <h4>Developer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/helper.js"></script>
+    <script src="/scripts/main.js"></script>
+
+</body>
+
+</html>

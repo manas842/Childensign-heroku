@@ -1,0 +1,38 @@
+<sigml>
+	<hns_sign gloss="$PROD:Crab">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamparbegin/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamparend/>
+			<hamclose/>
+			<hamparbegin/>
+			<hammovedo/>
+			<hamplus/>
+			<hammovedo/>
+			<hamparend/>
+			<hamfingerplay/>
+			<hamclose/>
+			<hamparbegin/>
+			<hammoveui/>
+			<hamplus/>
+			<hammoveui/>
+			<hamparend/>
+			<hamclose/>
+			<hamparbegin/>
+			<hammovedo/>
+			<hamplus/>
+			<hammovedo/>
+			<hamparend/>
+			<hamfingerplay/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>
