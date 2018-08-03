@@ -16,15 +16,35 @@ var sidebar = {
             listtext: 'ਫਲ਼',
             id: 'fruits',
         },
-        // {            
-        //     imagesrc: '/res/icons/sidebar/directions.png',
-        //     listtext: 'ਦਿਸ਼ਾਵਾਂ',
-        //     id: 'directions',
-        // },
+        {            
+            imagesrc: '/res/icons/sidebar/directions.png',
+            listtext: 'ਦਿਸ਼ਾਵਾਂ',
+            id: 'directions',
+        },
         {            
             imagesrc: '/res/icons/sidebar/calendar.png',
             listtext: 'ਹਫ਼ਤੇ ਦੇ ਦਿਨ',
             id: 'daysofweek',
+        },
+        {            
+            imagesrc: '/res/icons/sidebar/months.png',
+            listtext: 'ਮਹੀਨੇ',
+            id: 'months',
+        },
+        {            
+            imagesrc: '/res/icons/sidebar/time.png',
+            listtext: 'ਸਮਾਂ',
+            id: 'time',
+        },
+        {            
+            imagesrc: '/res/icons/sidebar/education.png',
+            listtext: 'ਸਿੱਖਿਆ',
+            id: 'education',
+        },
+        {            
+            imagesrc: '/res/icons/sidebar/activity.png',
+            listtext: 'ਗਤੀਵਿਧੀਆਂ',
+            id: 'activity',
         },
         {
             imagesrc: '/res/icons/sidebar/animals.png',
@@ -41,6 +61,11 @@ var sidebar = {
             listtext: 'ਪੰਜਾਬੀ ਵਰਣਮਾਲਾ',
             id: 'punjabiAlphabets',
         },
+        {
+            imagesrc: '/res/icons/sidebar/verbs.png',
+            listtext: 'ਕਿਰਿਆ',
+            id: 'verbs',
+        },
         // {
         //     imagesrc: '/res/icons/sidebar/countries.png',
         //     listtext: 'ਦੇਸ਼',
@@ -51,11 +76,11 @@ var sidebar = {
         //     listtext: 'ਸਮੂਹਿਕ ਨਾਵਾਂ',
         //     id: 'collectivenouns',
         // },
-        {
-            imagesrc: '/res/icons/sidebar/transparent.png',
-            listtext: ' ',
-            id: ' ',
-        },
+        // {
+        //     imagesrc: '/res/icons/sidebar/transparent.png',
+        //     listtext: ' ',
+        //     id: ' ',
+        // },
     ]    
 }
 
@@ -111,6 +136,254 @@ var displayElements = {
             item: 'ਨੌਂ',
             name: '9',
         },
+    ],
+    months: [
+        {
+            imagesrc: '/res/icons/months/1month.png',
+            item: '1 ਮਹੀਨਾ',
+            name: '1month',
+        },
+        {
+            imagesrc: '/res/icons/months/2months.png',
+            item: '2 ਮਹੀਨੇ',
+            name: '2months',
+        },
+        // {
+        //     imagesrc: '/res/icons/numbers/002.png',
+        //     item: 'ਦੋ',
+        //     name: '2',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/003.png',
+        //     item: 'ਤਿੰਨ',
+        //     name: '3',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/004.png',
+        //     item: 'ਚਾਰ',
+        //     name: '4',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/005.png',
+        //     item: 'ਪੰਜ',
+        //     name: '5',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/006.png',
+        //     item: 'ਛੇ',
+        //     name: '6',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/007.png',
+        //     item: 'ਸੱਤ',
+        //     name: '7',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/008.png',
+        //     item: 'ਅੱਠ',
+        //     name: '8',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/009.png',
+        //     item: 'ਨੌਂ',
+        //     name: '9',
+        // },
+    ],
+    time: [
+        {
+            imagesrc: '/res/icons/time/tomorrow.png',
+            item: 'ਕੱਲ੍ਹ',
+            name: 'tomorrow',
+        },
+        {
+            imagesrc: '/res/icons/time/past.png',
+            item: 'ਪਿਛਲੇ',
+            name: 'past',
+        },
+        // {
+        //     imagesrc: '/res/icons/numbers/002.png',
+        //     item: 'ਦੋ',
+        //     name: '2',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/003.png',
+        //     item: 'ਤਿੰਨ',
+        //     name: '3',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/004.png',
+        //     item: 'ਚਾਰ',
+        //     name: '4',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/005.png',
+        //     item: 'ਪੰਜ',
+        //     name: '5',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/006.png',
+        //     item: 'ਛੇ',
+        //     name: '6',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/007.png',
+        //     item: 'ਸੱਤ',
+        //     name: '7',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/008.png',
+        //     item: 'ਅੱਠ',
+        //     name: '8',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/009.png',
+        //     item: 'ਨੌਂ',
+        //     name: '9',
+        // },
+    ],
+    education: [
+        {
+            imagesrc: '/res/icons/education/child.png',
+            item: 'ਬੱਚਾ',
+            name: 'child',
+        },
+        {
+            imagesrc: '/res/icons/education/children.png',
+            item: 'ਬੱਚੇ',
+            name: 'children',
+        },
+        {
+            imagesrc: '/res/icons/education/class.png',
+            item: 'ਕਲਾਸ',
+            name: 'class',
+        },
+        {
+            imagesrc: '/res/icons/education/add.png',
+            item: 'ਜੋੜਨਾ',
+            name: 'add',
+        },
+        {
+            imagesrc: '/res/icons/education/english.png',
+            item: 'ਅੰਗਰੇਜ਼ੀ',
+            name: 'english',
+        },
+        {
+            imagesrc: '/res/icons/education/equal.png',
+            item: 'ਬਰਾਬਰ',
+            name: 'equal',
+        },
+        {
+            imagesrc: '/res/icons/education/exam.png',
+            item: 'ਪ੍ਰੀਖਿਆ',
+            name: 'exam',
+        },
+        {
+            imagesrc: '/res/icons/education/idea.png',
+            item: 'ਵਿਚਾਰ',
+            name: 'idea',
+        },
+        {
+            imagesrc: '/res/icons/education/important.png',
+            item: 'ਮਹੱਤਵਪੂਰਣ',
+            name: 'important',
+        },
+        {
+            imagesrc: '/res/icons/education/information.png',
+            item: 'ਜਾਣਕਾਰੀ',
+            name: 'information',
+        },
+        {
+            imagesrc: '/res/icons/education/internet.png',
+            item: 'ਇੰਟਰਨੈੱਟ',
+            name: 'internet',
+        },
+        {
+            imagesrc: '/res/icons/education/mind.png',
+            item: 'ਮਨ',
+            name: 'mind',
+        },
+        {
+            imagesrc: '/res/icons/education/practice.png',
+            item: 'ਅਭਿਆਸ',
+            name: 'practice',
+        },
+        {
+            imagesrc: '/res/icons/education/remind.png',
+            item: 'ਯਾਦ ਕਰੋ',
+            name: 'remind',
+        },
+        {
+            imagesrc: '/res/icons/education/research.png',
+            item: 'ਖੋਜ',
+            name: 'research',
+        },
+        {
+            imagesrc: '/res/icons/education/science.png',
+            item: 'ਵਿਗਿਆਨ',
+            name: 'science',
+        },
+        {
+            imagesrc: '/res/icons/education/sign.png',
+            item: 'ਸਾਈਨ',
+            name: 'sign',
+        },
+        {
+            imagesrc: '/res/icons/education/teacher.png',
+            item: 'ਅਧਿਆਪਕ',
+            name: 'teacher',
+        },
+    ],
+    activity: [
+        {
+            imagesrc: '/res/icons/activity/acting.png',
+            item: 'ਅਦਾਕਾਰੀ',
+            name: 'acting',
+        },
+        {
+            imagesrc: '/res/icons/activity/dance.png',
+            item: 'ਨਾਚ',
+            name: 'dance',
+        },
+        {
+            imagesrc: '/res/icons/activity/prayer.png',
+            item: 'ਪ੍ਰਾਰਥਨਾ',
+            name: 'prayer',
+        },
+        {
+            imagesrc: '/res/icons/activity/search.png',
+            item: 'ਖੋਜ ਕਰੋ',
+            name: 'search',
+        },
+        {
+            imagesrc: '/res/icons/activity/see.png',
+            item: 'ਦੇਖੋ',
+            name: 'see',
+        },
+        {
+            imagesrc: '/res/icons/activity/clap.png',
+            item: 'ਤਾਣਾ',
+            name: 'clap',
+        },
+        {
+            imagesrc: '/res/icons/activity/hold.png',
+            item: 'ਕਬਜ਼ਾ',
+            name: 'hold',
+        },
+        // {
+        //     imagesrc: '/res/icons/numbers/007.png',
+        //     item: 'ਸੱਤ',
+        //     name: '7',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/008.png',
+        //     item: 'ਅੱਠ',
+        //     name: '8',
+        // },
+        // {
+        //     imagesrc: '/res/icons/numbers/009.png',
+        //     item: 'ਨੌਂ',
+        //     name: '9',
+        // },
     ],
     colors: [
         {
@@ -364,25 +637,40 @@ var displayElements = {
         // },
     ],
     directions: [
-        {
-            imagesrc: '/res/icons/directions/up.png',
-            item: 'ਅਪ',
-            name: 'up',
-        },
-        {
-            imagesrc: '/res/icons/directions/right.png',
-            item: 'ਸੱਜੇ',
-            name: 'right',
-        },
-        {
-            imagesrc: '/res/icons/directions/left.png',
-            item: 'ਖੱਬੇ',
-            name: 'left',
-        },
+        // {
+        //     imagesrc: '/res/icons/directions/up.png',
+        //     item: 'ਅਪ',
+        //     name: 'up',
+        // },
+        // {
+        //     imagesrc: '/res/icons/directions/right.png',
+        //     item: 'ਸੱਜੇ',
+        //     name: 'right',
+        // },
+        // {
+        //     imagesrc: '/res/icons/directions/left.png',
+        //     item: 'ਖੱਬੇ',
+        //     name: 'left',
+        // },
         {
             imagesrc: '/res/icons/directions/down.png',
             item: 'ਥੱਲੇ',
             name: 'down',
+        },
+        {
+            imagesrc: '/res/icons/directions/above.png',
+            item: 'ਉਪਰੋਕਤ',
+            name: 'above',
+        },
+        {
+            imagesrc: '/res/icons/directions/allow.png',
+            item: 'ਇਜਾਜ਼ਤ',
+            name: 'allow',
+        },
+        {
+            imagesrc: '/res/icons/directions/below.png',
+            item: 'ਹੇਠਾਂ',
+            name: 'below',
         },
     ],
     daysofweek: [
@@ -823,6 +1111,43 @@ var displayElements = {
             name: 'lallaa1',
         },
     ],
+    verbs: [
+        {
+            imagesrc: '/res/icons/verbs/best.png',
+            item: 'ਵਧੀਆ',
+            name: 'best',
+        },
+        // {
+        //     imagesrc: '/res/icons/daysofweek/tuesday.png',
+        //     item: 'ਮੰਗਲਵਾਰ',
+        //     name: 'tuesday',
+        // },
+        // {
+        //     imagesrc: '/res/icons/daysofweek/wednesday.png',
+        //     item: 'ਬੁੱਧਵਾਰ',
+        //     name: 'wednesday',
+        // },
+        // {
+        //     imagesrc: '/res/icons/daysofweek/thursday.png',
+        //     item: 'ਵੀਰਵਾਰ',
+        //     name: 'thursday',
+        // },
+        // {
+        //     imagesrc: '/res/icons/daysofweek/friday.png',
+        //     item: 'ਸ਼ੁੱਕਰਵਾਰ',
+        //     name: 'friday',
+        // },
+        // {
+        //     imagesrc: '/res/icons/daysofweek/saturday.png',
+        //     item: 'ਸ਼ਨੀਵਾਰ',
+        //     name: 'saturday',
+        // },
+        // {
+        //     imagesrc: '/res/icons/daysofweek/sunday.png',
+        //     item: 'ਐਤਵਾਰ',
+        //     name: 'sunday',
+        // },
+    ],
     collectivenouns: [
         {
 
@@ -937,8 +1262,7 @@ function startPlayer(sigmlURL) {
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
-
-// USELESS FUNCTIONS BY USELESS PEOPLE :|
+// CRAFTY FUNCTIONS BY CRAFTY PEOPLE :|
 
 // $('#button-about').click(function () {
 //     $('.container').attr('style','z-index:-1;');
