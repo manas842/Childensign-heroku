@@ -1,15 +1,15 @@
 <sigml>
-<hns_sign gloss="power">
-	<hamnosys_nonmanual>
-	</hamnosys_nonmanual>
-	<hamnosys_manual>
-		<hamfist/>
-		<hamthumboutmod/>
-		<hamextfingeru/>
-		<hampalml/>
-		<hamshouldertop/>
-		<hamlrat/>
-		<hammoveui/>
-	</hamnosys_manual>
-</hns_sign>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamshouldertop/>
+			<hamlrat/>
+		</hamnosys_manual>
+	</hns_sign>
+
 </sigml>

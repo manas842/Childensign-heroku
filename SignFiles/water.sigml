@@ -1,17 +1,15 @@
 <sigml>
-<hns_sign gloss="water">
-	<hamnosys_nonmanual>
-	</hamnosys_nonmanual>
-	<hamnosys_manual>
-		<hamfist/>
-		<hamthumboutmod/>
-		<hamextfingeru/>
-		<hampalmd/>
-		<hambetween/>
-		<hampalml/>
-		<hamlips/>
-		<hamlrat/>
-		<hamclose/>
-	</hamnosys_manual>
-</hns_sign>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamfingerbendmod/>
+			<hamextfingerol/>
+			<hampalmu/>
+			<hamlips/>
+			<hamclose/>
+		</hamnosys_manual>
+	</hns_sign>
+
 </sigml>
