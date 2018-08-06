@@ -112,52 +112,52 @@ var sidebar = {
 var displayElements = {
     numbers: [
         {
-            imagesrc: '/res/icons/numbers/000.png',
+            imagesrc: '/res/icons/numbers/0.png',
             item: 'ਜ਼ੀਰੋ',
             name: '0',
         },
         {
-            imagesrc: '/res/icons/numbers/001.png',
+            imagesrc: '/res/icons/numbers/1.png',
             item: 'ਇੱਕ',
             name: '1',
         },
         {
-            imagesrc: '/res/icons/numbers/002.png',
+            imagesrc: '/res/icons/numbers/2.png',
             item: 'ਦੋ',
             name: '2',
         },
         {
-            imagesrc: '/res/icons/numbers/003.png',
+            imagesrc: '/res/icons/numbers/3.png',
             item: 'ਤਿੰਨ',
             name: '3',
         },
         {
-            imagesrc: '/res/icons/numbers/004.png',
+            imagesrc: '/res/icons/numbers/4.png',
             item: 'ਚਾਰ',
             name: '4',
         },
         {
-            imagesrc: '/res/icons/numbers/005.png',
+            imagesrc: '/res/icons/numbers/5.png',
             item: 'ਪੰਜ',
             name: '5',
         },
         {
-            imagesrc: '/res/icons/numbers/006.png',
+            imagesrc: '/res/icons/numbers/6.png',
             item: 'ਛੇ',
             name: '6',
         },
         {
-            imagesrc: '/res/icons/numbers/007.png',
+            imagesrc: '/res/icons/numbers/7.png',
             item: 'ਸੱਤ',
             name: '7',
         },
         {
-            imagesrc: '/res/icons/numbers/008.png',
+            imagesrc: '/res/icons/numbers/8.png',
             item: 'ਅੱਠ',
             name: '8',
         },
         {
-            imagesrc: '/res/icons/numbers/009.png',
+            imagesrc: '/res/icons/numbers/9.png',
             item: 'ਨੌਂ',
             name: '9',
         },
@@ -231,24 +231,24 @@ var displayElements = {
             name: '1month',
         },
         {
-            imagesrc: '/res/icons/time/2months.png',
+            imagesrc: '/res/icons/time/2month.png',
             item: '2 ਮਹੀਨੇ',
             name: '2months',
         },
     ],
     education: [
         {
-            imagesrc: '/res/icons/education/child.png',
+            imagesrc: '/res/icons/education/child.jpg',
             item: 'ਬੱਚਾ',
             name: 'child',
         },
         {
-            imagesrc: '/res/icons/education/children.png',
+            imagesrc: '/res/icons/education/children.jpg',
             item: 'ਬੱਚੇ',
             name: 'children',
         },
         {
-            imagesrc: '/res/icons/education/class.png',
+            imagesrc: '/res/icons/education/class.jpg',
             item: 'ਕਲਾਸ',
             name: 'class',
         },
@@ -258,12 +258,12 @@ var displayElements = {
             name: 'add',
         },
         {
-            imagesrc: '/res/icons/education/english.png',
+            imagesrc: '/res/icons/education/english.jpg',
             item: 'ਅੰਗਰੇਜ਼ੀ',
             name: 'english',
         },
         {
-            imagesrc: '/res/icons/education/equal.png',
+            imagesrc: '/res/icons/education/equal.jpg',
             item: 'ਬਰਾਬਰ',
             name: 'equal',
         },
@@ -298,7 +298,7 @@ var displayElements = {
             name: 'mind',
         },
         {
-            imagesrc: '/res/icons/education/practice.png',
+            imagesrc: '/res/icons/education/practice.jpg',
             item: 'ਅਭਿਆਸ',
             name: 'practice',
         },
@@ -318,27 +318,27 @@ var displayElements = {
             name: 'science',
         },
         {
-            imagesrc: '/res/icons/education/sign.png',
+            imagesrc: '/res/icons/education/sign.jpg',
             item: 'ਸਾਈਨ',
             name: 'sign',
         },
         {
-            imagesrc: '/res/icons/education/teacher.png',
+            imagesrc: '/res/icons/education/teacher.jpg',
             item: 'ਅਧਿਆਪਕ',
             name: 'teacher',
         },
         {
-            imagesrc: '/res/icons/education/doctor.png',
+            imagesrc: '/res/icons/education/doctor.jpg',
             item: 'ਡਾਕਟਰ',
             name: 'doctor',
         },
         {
-            imagesrc: '/res/icons/education/doctor1.png',
+            imagesrc: '/res/icons/education/doctor1.jpg',
             item: 'ਡਾਕਟਰ',
             name: 'doctor1',
         },
         {
-            imagesrc: '/res/icons/education/girl.png',
+            imagesrc: '/res/icons/education/girl.jpg',
             item: 'ਕੁੜੀ',
             name: 'girl',
         },
@@ -370,12 +370,12 @@ var displayElements = {
             name: 'delete',
         },
         {
-            imagesrc: '/res/icons/action/teachme.png',
+            imagesrc: '/res/icons/action/teachme.jpg',
             item: 'ਸਿਖਾ ਮੈਨੂੰ',
             name: 'teachme',
         },
         {
-            imagesrc: '/res/icons/action/teachyou.png',
+            imagesrc: '/res/icons/action/teachyou.jpg',
             item: 'ਤੁਹਾਨੂੰ ਸਿਖਾਓ',
             name: 'teachyou',
         },
@@ -390,17 +390,17 @@ var displayElements = {
             name: 'possible',
         },
         {
-            imagesrc: '/res/icons/action/show.png',
+            imagesrc: '/res/icons/action/show.jpg',
             item: 'ਦਿਖਾਓ',
             name: 'show',
         },
         {
-            imagesrc: '/res/icons/action/complaint.png',
+            imagesrc: '/res/icons/action/complaint.jpg',
             item: 'ਸ਼ਿਕਾਇਤ',
             name: 'complaint',
         },
         {
-            imagesrc: '/res/icons/action/quiet.png',
+            imagesrc: '/res/icons/action/quiet.jpeg',
             item: 'ਸ਼ਾਂਤ',
             name: 'quiet',
         },
@@ -410,7 +410,7 @@ var displayElements = {
             name: 'remove',
         },
         {
-            imagesrc: '/res/icons/action/dance.png',
+            imagesrc: '/res/icons/action/dance.jpg',
             item: 'ਨਾਚ',
             name: 'dance',
         },
@@ -420,7 +420,7 @@ var displayElements = {
             name: 'prayer',
         },
         {
-            imagesrc: '/res/icons/action/search.png',
+            imagesrc: '/res/icons/action/search.jpg',
             item: 'ਖੋਜ ਕਰੋ',
             name: 'search',
         },
@@ -440,17 +440,17 @@ var displayElements = {
             name: 'hold',
         },
         {
-            imagesrc: '/res/icons/action/bye.png',
+            imagesrc: '/res/icons/action/bye.jpg',
             item: 'ਬਾਈ',
             name: 'bye',
         },
         {
-            imagesrc: '/res/icons/action/concentrate.png',
+            imagesrc: '/res/icons/action/concentrate.jpg',
             item: 'ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰੋ',
             name: 'concentrate',
         },
         {
-            imagesrc: '/res/icons/action/close.png',
+            imagesrc: '/res/icons/action/close.jpg',
             item: 'ਬੰਦ',
             name: 'close',
         },
@@ -460,12 +460,12 @@ var displayElements = {
             name: 'active',
         },
         {
-            imagesrc: '/res/icons/action/bath.png',
+            imagesrc: '/res/icons/action/bath.jpg',
             item: 'ਨਹਾਉਣਾ',
             name: 'bath',
         },
         {
-            imagesrc: '/res/icons/action/arrest.png',
+            imagesrc: '/res/icons/action/arrest.jpg',
             item: 'ਗ੍ਰਿਫਤਾਰ',
             name: 'arrest',
         },
@@ -475,7 +475,7 @@ var displayElements = {
             name: 'drinking',
         },
         {
-            imagesrc: '/res/icons/action/fly.png',
+            imagesrc: '/res/icons/action/fly.jpg',
             item: 'ਉੱਡੋ',
             name: 'fly',
         },
@@ -490,7 +490,7 @@ var displayElements = {
             name: 'organise',
         },
         {
-            imagesrc: '/res/icons/action/save.png',
+            imagesrc: '/res/icons/action/save.jpg',
             item: 'ਬਚਾਓ',
             name: 'save',
         },
@@ -738,7 +738,7 @@ var displayElements = {
     ],
     directions: [
         {
-            imagesrc: '/res/icons/directions/up.png',
+            imagesrc: '/res/icons/directions/up.jpg',
             item: 'ਅਪ',
             name: 'up',
         },
@@ -753,7 +753,7 @@ var displayElements = {
         //     name: 'left',
         // },
         {
-            imagesrc: '/res/icons/directions/down.png',
+            imagesrc: '/res/icons/directions/down.jpg',
             item: 'ਥੱਲੇ',
             name: 'down',
         },
@@ -778,12 +778,12 @@ var displayElements = {
             name: 'open',
         },
         {
-            imagesrc: '/res/icons/directions/among.png',
+            imagesrc: '/res/icons/directions/among.jpeg',
             item: 'ਆਪਸ ਵਿੱਚ',
             name: 'among',
         },
         {
-            imagesrc: '/res/icons/directions/around.png',
+            imagesrc: '/res/icons/directions/around.jpg',
             item: 'ਆਲੇ ਦੁਆਲੇ',
             name: 'around',
         },
@@ -793,7 +793,7 @@ var displayElements = {
             name: 'at',
         },
         {
-            imagesrc: '/res/icons/directions/arrive.png',
+            imagesrc: '/res/icons/directions/arrive.jpg',
             item: 'ਪਹੁੰਚੋ',
             name: 'arrive',
         },
@@ -1248,32 +1248,32 @@ var displayElements = {
     ],
     verbs: [
         {
-            imagesrc: '/res/icons/verbs/best.png',
+            imagesrc: '/res/icons/verbs/best.jpg',
             item: 'ਵਧੀਆ',
             name: 'best',
         },
         {
-            imagesrc: '/res/icons/verbs/correct.png',
+            imagesrc: '/res/icons/verbs/correct.jpg',
             item: 'ਸਹੀ',
             name: 'correct',
         },
         {
-            imagesrc: '/res/icons/verbs/continue.png',
+            imagesrc: '/res/icons/verbs/continue.jpg',
             item: 'ਜਾਰੀ ਰੱਖੋ',
             name: 'continue',
         },
-        {
-            imagesrc: '/res/icons/verbs/among.png',
-            item: 'ਆਪਸ ਵਿੱਚ',
-            name: 'among',
-        },
+        // {
+        //     imagesrc: '/res/icons/verbs/among.png',
+        //     item: 'ਆਪਸ ਵਿੱਚ',
+        //     name: 'among',
+        // },
         {
             imagesrc: '/res/icons/verbs/answer.png',
             item: 'ਜਵਾਬ',
             name: 'answer',
         },
         {
-            imagesrc: '/res/icons/verbs/arrange.png',
+            imagesrc: '/res/icons/verbs/arrange.jpg',
             item: 'ਪ੍ਰਬੰਧ ਕਰੋ',
             name: 'arrange',
         },
@@ -1288,7 +1288,7 @@ var displayElements = {
             name: 'always',
         },
         {
-            imagesrc: '/res/icons/verbs/different.png',
+            imagesrc: '/res/icons/verbs/different.jpg',
             item: 'ਵੱਖ ਵੱਖ',
             name: 'different',
         },
@@ -1298,7 +1298,7 @@ var displayElements = {
             name: 'easy',
         },
         {
-            imagesrc: '/res/icons/verbs/empty.png',
+            imagesrc: '/res/icons/verbs/empty.jpg',
             item: 'ਖਾਲੀ',
             name: 'empty',
         },
@@ -1308,7 +1308,7 @@ var displayElements = {
             name: 'manner',
         },
         {
-            imagesrc: '/res/icons/verbs/power.png',
+            imagesrc: '/res/icons/verbs/power.jpg',
             item: 'ਤਾਕਤ',
             name: 'power',
         },
@@ -1325,7 +1325,7 @@ var displayElements = {
     ],
     measurement: [
         {
-            imagesrc: '/res/icons/measurement/tall.png',
+            imagesrc: '/res/icons/measurement/tall.jpg',
             item: 'ਲੰਮਾ',
             name: 'tall',
         },
@@ -1340,7 +1340,7 @@ var displayElements = {
             name: 'long',
         },
         {
-            imagesrc: '/res/icons/measurement/decrease.png',
+            imagesrc: '/res/icons/measurement/decrease.jpg',
             item: 'ਘਟਾਓ',
             name: 'decrease',
         },
@@ -1355,7 +1355,7 @@ var displayElements = {
             name: 'age',
         },
         {
-            imagesrc: '/res/icons/measurement/profit.png',
+            imagesrc: '/res/icons/measurement/profit.jpg',
             item: 'ਲਾਭ',
             name: 'profit',
         },
@@ -1367,27 +1367,27 @@ var displayElements = {
     ],
     objects: [
         {
-            imagesrc: '/res/icons/objects/ball.png',
+            imagesrc: '/res/icons/objects/ball.jpg',
             item: 'ਗੇਂਦ',
             name: 'ball',
         },
         {
-            imagesrc: '/res/icons/objects/bag.png',
+            imagesrc: '/res/icons/objects/bag.jpg',
             item: 'ਬੈਗ',
             name: 'bag',
         },
         {
-            imagesrc: '/res/icons/objects/book.png',
+            imagesrc: '/res/icons/objects/book.jpg',
             item: 'ਕਿਤਾਬ',
             name: 'book',
         },
         {
-            imagesrc: '/res/icons/objects/bowl.png',
+            imagesrc: '/res/icons/objects/bowl.jpg',
             item: 'ਕਟੋਰਾ',
             name: 'bowl',
         },
         {
-            imagesrc: '/res/icons/objects/bandage.png',
+            imagesrc: '/res/icons/objects/bandage.jpg',
             item: 'ਪੱਟੀ',
             name: 'bandage',
         },
@@ -1417,7 +1417,7 @@ var displayElements = {
             name: 'phone',
         },
         {
-            imagesrc: '/res/icons/objects/tv.png',
+            imagesrc: '/res/icons/objects/tv.jpg',
             item: 'ਟੀਵੀ',
             name: 'tv',
         },
@@ -1427,7 +1427,7 @@ var displayElements = {
             name: 'pot',
         },
         {
-            imagesrc: '/res/icons/objects/sewingmachine.png',
+            imagesrc: '/res/icons/objects/sewingmachine.jpg',
             item: 'ਸਿਲਾਈ ਮਸ਼ੀਨ',
             name: 'sewingmachine',
         },
@@ -1437,17 +1437,17 @@ var displayElements = {
             name: 'train',
         },
         {
-            imagesrc: '/res/icons/objects/tub.png',
+            imagesrc: '/res/icons/objects/tub.jpg',
             item: 'ਟੱਬ',
             name: 'tub',
         },
         {
-            imagesrc: '/res/icons/objects/wire.png',
+            imagesrc: '/res/icons/objects/wire.jpg',
             item: 'ਤਾਰ',
             name: 'wire',
         },
         {
-            imagesrc: '/res/icons/objects/circle.png',
+            imagesrc: '/res/icons/objects/circle.jpg',
             item: 'ਚੱਕਰ',
             name: 'circle',
         },
@@ -1469,7 +1469,7 @@ var displayElements = {
     ],
     eatables: [
         {
-            imagesrc: '/res/icons/eatables/food.png',
+            imagesrc: '/res/icons/eatables/food.jpg',
             item: 'ਭੋਜਨ',
             name: 'food',
         },
@@ -1491,12 +1491,12 @@ var displayElements = {
             name: 'sad',
         },
         {
-            imagesrc: '/res/icons/sensations/feel.png',
+            imagesrc: '/res/icons/sensations/feel.jpg',
             item: 'ਮਹਿਸੂਸ ਕਰੋ',
             name: 'feel',
         },
         {
-            imagesrc: '/res/icons/sensations/feel1.png',
+            imagesrc: '/res/icons/sensations/feel1.jpg',
             item: 'ਮਹਿਸੂਸ ਕਰੋ',
             name: 'feel1',
         },
@@ -1516,7 +1516,7 @@ var displayElements = {
             name: 'loss1',
         },
         {
-            imagesrc: '/res/icons/sensations/alone.png',
+            imagesrc: '/res/icons/sensations/alone.jpg',
             item: 'ਇਕੱਲਾ',
             name: 'alone',
         },
@@ -1526,19 +1526,19 @@ var displayElements = {
             name: 'relation',
         },
         {
-            imagesrc: '/res/icons/sensations/deaf.png',
+            imagesrc: '/res/icons/sensations/deaf.jpg',
             item: 'ਬੋਲ਼ੇ',
             name: 'deaf',
         },
         {
-            imagesrc: '/res/icons/sensations/art.png',
+            imagesrc: '/res/icons/sensations/art.jpg',
             item: 'ਕਲਾ',
             name: 'art',
         },
     ],
     recognizations: [
         {
-            imagesrc: '/res/icons/recognizations/he.png',
+            imagesrc: '/res/icons/recognizations/he.jpeg',
             item: 'ਉਹ',
             name: 'he',
         },
@@ -1558,7 +1558,7 @@ var displayElements = {
             name: 'new',
         },
         {
-            imagesrc: '/res/icons/recognizations/place.png',
+            imagesrc: '/res/icons/recognizations/place.jpg',
             item: 'ਸਥਾਨ',
             name: 'place',
         },
@@ -1588,22 +1588,22 @@ var displayElements = {
             name: 'what',
         },
         {
-            imagesrc: '/res/icons/recognizations/when.png',
+            imagesrc: '/res/icons/recognizations/when.jpg',
             item: 'ਜਦੋਂ',
             name: 'when',
         },
         {
-            imagesrc: '/res/icons/recognizations/who.png',
+            imagesrc: '/res/icons/recognizations/who.jpg',
             item: 'ਕੌਣ',
             name: 'who',
         },
         {
-            imagesrc: '/res/icons/recognizations/with.png',
+            imagesrc: '/res/icons/recognizations/with.jpg',
             item: 'ਦੇ ਨਾਲ',
             name: 'with',
         },
         {
-            imagesrc: '/res/icons/recognizations/your.png',
+            imagesrc: '/res/icons/recognizations/your.jpg',
             item: 'ਤੁਹਾਡੀ',
             name: 'your',
         },
