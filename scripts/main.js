@@ -1655,30 +1655,59 @@ for (var i=0; i<sidebarLength; i++) {
 // function to fill the display window with selected category elements from sidebar
 $('.side-list').click(function () {
     a = $(this.children[0]);
-    console.log(a[0].id);
+    console.log(a[0].id );
     a = a[0].id;
     console.log(displayElements[a][5]);
     cleardisplaywindow();
-    if (a == "colors") {
+    $('#inner-footer').html("");
+    // if (a == "colors") {
+    //     for (var i = 0; i < displayElements[a].length; i++) {
+    //         var formatedDisplayWindowElem = displayWindowElemRound.replace('%imagesrc%', displayElements[a][i].imagesrc);
+    //         var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
+    //         var te = "\'".concat(displayElements[a][i].name).concat("\'");
+    //         console.log(te);
+    //         var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+    //         $('.displayWindow').append(formatedDisplayWindowElem);
+    //     }
+    // }
+     // else {
+        var innerFooter = $('#inner-footer');
+        var heading = itemsHeading.replace('%heading%' , a);
+        innerFooter.append(heading.toUpperCase());
+        innerFooter.append(itemsColMd);
+        $('#image-content').append(carouselDiv);
+        $('#theCarousel').append(carouselInner);
+        var count = 0;
         for (var i = 0; i < displayElements[a].length; i++) {
-            var formatedDisplayWindowElem = displayWindowElemRound.replace('%imagesrc%', displayElements[a][i].imagesrc);
-            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
-            var te = "\'".concat(displayElements[a][i].name).concat("\'");
-            console.log(te);
-            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
-            $('.displayWindow').append(formatedDisplayWindowElem);
+            // var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
+            // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
+            // var te = "\'".concat(displayElements[a][i].name).concat("\'");
+            // console.log(te);
+            // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+            // $('.displayWindow').append(formatedDisplayWindowElem);
+            console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
+            if(count == 0) {
+                var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+                $('.carousel-inner').append(appendImage);
+                // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
+                // $('.carousel-inner').append(appendImage);
+                // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
+                // $('.carousel-inner').append(appendImage);
+            }
+            else {
+                var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+                $('.carousel-inner').append(appendImage);
+                // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
+                // $('.carousel-inner').append(appendImage);
+                // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
+                // $('.carousel-inner').append(appendImage);
+            }
+            count++;
         }
-    }
-     else {
-        for (var i = 0; i < displayElements[a].length; i++) {
-            var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
-            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
-            var te = "\'".concat(displayElements[a][i].name).concat("\'");
-            console.log(te);
-            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
-            $('.displayWindow').append(formatedDisplayWindowElem);
-        }
-    }
+        $('#theCarousel').append(carouselInnerLeft);
+        $('#theCarousel').append(carouselInnerRight);
+        makeCarousel();
+    // }
 });
 
 $('#button-team').click(function () {
@@ -1750,4 +1779,44 @@ function startPlayer(sigmlURL) {
 // $('#close-team').click(function () {
 //     $('.container').attr('style','none;z-index:1;');
 //     $('#container-team').attr('style','display:none;z-index:-1;');
+// });
+function makeCarousel() {
+    $('.multi-item-carousel').carousel({
+      interval: false
+    });
+
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      } else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+}
+// $('.multi-item-carousel').carousel({
+//   interval: false
+// });
+
+// // for every slide in carousel, copy the next slide's item in the slide.
+// // Do the same for the next, next item.
+// $('.multi-item-carousel .item').each(function(){
+//   var next = $(this).next();
+//   if (!next.length) {
+//     next = $(this).siblings(':first');
+//   }
+//   next.children(':first-child').clone().appendTo($(this));
+  
+//   if (next.next().length>0) {
+//     next.next().children(':first-child').clone().appendTo($(this));
+//   } else {
+//     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+//   }
 // });
