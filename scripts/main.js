@@ -1688,6 +1688,7 @@ $('.side-list').click(function () {
             console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
             if(count == 0) {
                 var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+                appendImage = appendImage.replace('%name%',displayElements[a][i].item);
                 $('.carousel-inner').append(appendImage);
                 // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
                 // $('.carousel-inner').append(appendImage);
@@ -1696,6 +1697,7 @@ $('.side-list').click(function () {
             }
             else {
                 var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+                appendImage = appendImage.replace('%name%',displayElements[a][i].item);
                 $('.carousel-inner').append(appendImage);
                 // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
                 // $('.carousel-inner').append(appendImage);
