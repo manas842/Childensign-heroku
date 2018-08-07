@@ -216,7 +216,7 @@ var displayElements = {
     ],
     time: [
         {
-            imagesrc: '/res/icons/time/tomorrow.png',
+            imagesrc: '/res/icons/time/tomorrow.jpg',
             item: 'ਕੱਲ੍ਹ',
             name: 'tomorrow',
         },
@@ -273,7 +273,7 @@ var displayElements = {
             name: 'exam',
         },
         {
-            imagesrc: '/res/icons/education/idea.png',
+            imagesrc: '/res/icons/education/idea.jpg',
             item: 'ਵਿਚਾਰ',
             name: 'idea',
         },
@@ -283,12 +283,12 @@ var displayElements = {
             name: 'important',
         },
         {
-            imagesrc: '/res/icons/education/information.png',
+            imagesrc: '/res/icons/education/information.jpg',
             item: 'ਜਾਣਕਾਰੀ',
             name: 'information',
         },
         {
-            imagesrc: '/res/icons/education/internet.png',
+            imagesrc: '/res/icons/education/internet.jpg',
             item: 'ਇੰਟਰਨੈੱਟ',
             name: 'internet',
         },
@@ -380,7 +380,7 @@ var displayElements = {
             name: 'teachyou',
         },
         {
-            imagesrc: '/res/icons/action/impossible.png',
+            imagesrc: '/res/icons/action/impossible.jpg',
             item: 'ਅਸੰਭਵ',
             name: 'impossible',
         },
@@ -798,7 +798,7 @@ var displayElements = {
             name: 'arrive',
         },
         {
-            imagesrc: '/res/icons/directions/keep.png',
+            imagesrc: '/res/icons/directions/keep.jpg',
             item: 'ਰੱਖੋ',
             name: 'keep',
         },
@@ -1278,7 +1278,7 @@ var displayElements = {
             name: 'arrange',
         },
         {
-            imagesrc: '/res/icons/verbs/any.png',
+            imagesrc: '/res/icons/verbs/any.jpg',
             item: 'ਕੋਈ ਵੀ',
             name: 'any',
         },
@@ -1457,7 +1457,7 @@ var displayElements = {
             name: 'rectangle',
         },
         {
-            imagesrc: '/res/icons/objects/line.png',
+            imagesrc: '/res/icons/objects/line.jpg',
             item: 'ਲਾਈਨ',
             name: 'line',
         },
@@ -1573,12 +1573,12 @@ var displayElements = {
             name: 'these',
         },
         {
-            imagesrc: '/res/icons/recognizations/those.png',
+            imagesrc: '/res/icons/recognizations/those.jpg',
             item: 'ਉਨ੍ਹਾਂ',
             name: 'those',
         },
         {
-            imagesrc: '/res/icons/recognizations/this.png',
+            imagesrc: '/res/icons/recognizations/this.jpg',
             item: 'ਇਸ',
             name: 'this',
         },
