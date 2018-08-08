@@ -1636,6 +1636,10 @@ var displayElements = {
         },
     ],
 }
+
+var numImages = {
+    loss : 5,
+};
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 // function to called to clear the display WIndow next to avtar window
@@ -1689,6 +1693,9 @@ $('.side-list').click(function () {
             if(count == 0) {
                 var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
                 appendImage = appendImage.replace('%name%',displayElements[a][i].item);
+                var te = "\'".concat(displayElements[a][i].name).concat("\'");
+                console.log(te);
+                appendImage = appendImage.replace('%sigmlurl%',te);
                 $('.carousel-inner').append(appendImage);
                 // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
                 // $('.carousel-inner').append(appendImage);
@@ -1698,6 +1705,9 @@ $('.side-list').click(function () {
             else {
                 var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
                 appendImage = appendImage.replace('%name%',displayElements[a][i].item);
+                var te = "\'".concat(displayElements[a][i].name).concat("\'");
+                console.log(te);
+                appendImage = appendImage.replace('%sigmlurl%',te);
                 $('.carousel-inner').append(appendImage);
                 // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
                 // $('.carousel-inner').append(appendImage);
@@ -1731,6 +1741,14 @@ $('.displayWindow').on("swiperight", function (event) {
     
 });
 
+function changeBigImage(imageSRC) {
+    console.log(imageSRC);
+    var imageNumber = parseInt(imageSRC[imageSRC.length-5]);
+    // console.log(imageNumber);
+    imageSRC[imageSRC.length-5] = (imageNumber+1).toString();
+    $('.displayWindow-big-image').attr('src',imageSRC);
+}
+
 // function to play the avtar just call startPlayer() and see it in action 
 function setSiGMLURL(sigmlURL) {
     var loc = window.location.href;
@@ -1744,11 +1762,51 @@ function setSiGMLURL(sigmlURL) {
 }
 
 function startPlayer(sigmlURL) {
+    // console.log(sigmlURL);
+    cleardisplaywindow();
+    var loc = window.location.href;
+    var locDir = loc.substring(0, loc.lastIndexOf('/'));
+    var pathToScreenshot = locDir + '/res/screenshots/' + sigmlURL + '/';
+
+    for(var i=0;i<numImages[sigmlURL];i++) {
+        if(i==0) {
+            var appendImage = displayWindowBigImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
+            $('.displayWindow').append(appendImage);
+            $('.displayWindow').append(displayWindowInnerDiv);
+            var appendImage = displayWindowSmallImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
+            $('.displayWindow-inner-div').append(appendImage);
+        }
+        else {
+            var appendImage = displayWindowSmallImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
+            $('.displayWindow-inner-div').append(appendImage);
+        }
+    }
     sigmlURL = setSiGMLURL(sigmlURL);
     // Equivalent to click on Sign button
     return CWASA.playSiGMLURL(sigmlURL);
 }
 
+function makeCarousel() {
+    $('.multi-item-carousel').carousel({
+      interval: false
+    });
+
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      } else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -1782,43 +1840,4 @@ function startPlayer(sigmlURL) {
 //     $('.container').attr('style','none;z-index:1;');
 //     $('#container-team').attr('style','display:none;z-index:-1;');
 // });
-function makeCarousel() {
-    $('.multi-item-carousel').carousel({
-      interval: false
-    });
 
-    // for every slide in carousel, copy the next slide's item in the slide.
-    // Do the same for the next, next item.
-    $('.multi-item-carousel .item').each(function(){
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-      
-      if (next.next().length>0) {
-        next.next().children(':first-child').clone().appendTo($(this));
-      } else {
-        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-      }
-    });
-}
-// $('.multi-item-carousel').carousel({
-//   interval: false
-// });
-
-// // for every slide in carousel, copy the next slide's item in the slide.
-// // Do the same for the next, next item.
-// $('.multi-item-carousel .item').each(function(){
-//   var next = $(this).next();
-//   if (!next.length) {
-//     next = $(this).siblings(':first');
-//   }
-//   next.children(':first-child').clone().appendTo($(this));
-  
-//   if (next.next().length>0) {
-//     next.next().children(':first-child').clone().appendTo($(this));
-//   } else {
-//     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-//   }
-// });
