@@ -104,7 +104,7 @@ ul{
 }
 
 .side-list{
-    width: 100vw;
+    width: 20vw;
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
