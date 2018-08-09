@@ -1647,6 +1647,7 @@ cleardisplaywindow = function () {
     $('.displayWindow').html("");
 }
 
+
 // fill sidebar with diff categories //
 sidebarLength = sidebar.elements.length;
 for (var i=0; i<sidebarLength; i++) {
@@ -1721,6 +1722,17 @@ $('.side-list').click(function () {
         makeCarousel();
     // }
 });
+
+$('.side-list').hover(function () {
+    // console.log(1);
+    $('#avat').attr('style','margin-left:160px;');
+});
+
+$('.side-list').mouseout(function () {
+    // console.log(1);
+    $('#avat').attr('style','margin-left:90px;');
+});
+
 
 $('#button-team').click(function () {
     cleardisplaywindow();

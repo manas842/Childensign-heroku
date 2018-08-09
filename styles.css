@@ -39,12 +39,13 @@ h1 {
 }
 
 .title {
+    height: 60px;
     padding: 1%;
-    background-color: grey;
-    color: whitesmoke;
+    background-color: #57606f;
+    color: #dfe4ea;
     box-shadow: 2cm;
     text-transform: capitalize;
-    border-bottom: 2px solid rgba(41, 38, 38, 0.274);
+    /*border-bottom: 2px solid rgba(41, 38, 38, 0.274);*/
 }
 
 ul{
@@ -54,6 +55,7 @@ ul{
 
 
 .sidebar{
+    color: #57606f;
     float: left;
     height: 90%;
     position:absolute;
@@ -103,16 +105,20 @@ ul{
     align-items: flex-start;
 }
 
+
 .side-list{
+    background-color: #57606f;
     width: 25vw;
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     position: relative;
+    border-color: #57606f;
 }
 
 .side-list:hover{
-    background-color: #8d8d8d5e;
+    /*background-color: #8d8d8d5e;*/
+    background-color: #57606f;
 }
 
 .list-text{
@@ -120,8 +126,12 @@ ul{
     vertical-align:middle;
     text-align: center;
     font-size: 20px;  
-    color: black;
+    color: #dfe4ea;
 }
+
+/*.list-text #avat:hover {
+    margin-left: 150px;
+}*/
 
 .app {
     display: flex;
@@ -347,7 +357,7 @@ ul{
     
 }
 
-@media screen and (max-height:445px) {
+@media screen and (max-height:max-content) {
     .main-menu:hover,nav.main-menu.expanded {
         width:100vw;
         /* height: 100vh; */
@@ -527,6 +537,12 @@ ul{
 }*/
 
 @media (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
     .container {
         width: 100%;
     }
