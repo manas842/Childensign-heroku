@@ -1651,10 +1651,15 @@ cleardisplaywindow = function () {
 // fill sidebar with diff categories //
 sidebarLength = sidebar.elements.length;
 for (var i=0; i<sidebarLength; i++) {
-    var formatedsidebarelem = sidebarelem.replace("%imagesrc%", sidebar.elements[i].imagesrc);
-    var formatedsidebarelem = formatedsidebarelem.replace("%listtitle%", sidebar.elements[i].listtext);
-    var formatedsidebarelem = formatedsidebarelem.replace("%id%", sidebar.elements[i].id);
-    $('.main-menu ul:last').append(formatedsidebarelem);
+    // var formatedsidebarelem = sidebarelem.replace("%imagesrc%", sidebar.elements[i].imagesrc);
+    // var formatedsidebarelem = formatedsidebarelem.replace("%listtitle%", sidebar.elements[i].listtext);
+    // var formatedsidebarelem = formatedsidebarelem.replace("%id%", sidebar.elements[i].id);
+    // $('.main-menu ul:last').append(formatedsidebarelem);
+    var formatedMain = mainSidebarElem.replace('%imagesrc%',sidebar.elements[i].imagesrc);
+    formatedMain = formatedMain.replace('%id%',sidebar.elements[i].id);
+    var formatedSecond = secondSidebarElem.replace('%listtitle%',sidebar.elements[i].listtext);
+    $('.main-menu ul:last').append(formatedMain);
+    $('.second-menu ul:last').append(formatedSecond);
 };
 
 // function to fill the display window with selected category elements from sidebar
@@ -1723,14 +1728,18 @@ $('.side-list').click(function () {
     // }
 });
 
-$('.side-list').hover(function () {
+$('.main-menu').hover(function () {
     // console.log(1);
-    $('#avat').attr('style','margin-left:160px;');
+    $('.second-menu').attr('style','display:block;');
+    // $('#avat').attr('style','margin-left:160px;');
+    // $('.side-list').attr('display','block');
 });
 
-$('.side-list').mouseout(function () {
-    // console.log(1);
-    $('#avat').attr('style','margin-left:90px;');
+$('.second-menu').mouseout(function () {
+    console.log(1);
+    // $('.side-list').attr('display','none');
+    $('.second-menu').attr('style','display:none;');
+    // $('#avat').attr('style','margin-left:90px;');
 });
 
 
