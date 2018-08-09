@@ -30,4 +30,4 @@ var displayWindowSmallImage = '<img class="displayWindow-small-image" src="%imag
 
 var mainSidebarElem = '<li class="side-list"> <img src="%imagesrc%" class="icons" id="%id%"></li>';
 
-var secondSidebarElem = '<li class="side-list-names"> <span class="list-text" id="%id%"> %listtitle% </span> </li>';
+var secondSidebarElem = '<li class="side-list-names"> <span class="list-text %class%"> %listtitle% </span> </li>';

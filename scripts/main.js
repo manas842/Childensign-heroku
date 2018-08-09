@@ -5,26 +5,31 @@ var sidebar = {
             imagesrc: '/res/icons/sidebar/numbers.jpg',
             listtext: 'ਨੰਬਰ',
             id: 'numbers',
+            class: 'numbers_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/colors.jpg',
             listtext: 'ਰੰਗ',
             id: 'colors',
+            class: 'colors_sidebar',
         },
         {            
             imagesrc: '/res/icons/sidebar/fruits.jpg',
             listtext: 'ਫਲ਼',
             id: 'fruits',
+            class: 'fruits_sidebar',
         },
         {            
             imagesrc: '/res/icons/sidebar/directions.jpg',
             listtext: 'ਦਿਸ਼ਾਵਾਂ',
             id: 'directions',
+            class: 'directions_sidebar',
         },
         {            
             imagesrc: '/res/icons/sidebar/calender.jpg',
             listtext: 'ਹਫ਼ਤੇ ਦੇ ਦਿਨ',
             id: 'daysofweek',
+            class: 'daysofweek_sidebar',
         },
         // {            
         //     imagesrc: '/res/icons/sidebar/months.png',
@@ -35,61 +40,73 @@ var sidebar = {
             imagesrc: '/res/icons/sidebar/time.jpg',
             listtext: 'ਸਮਾਂ',
             id: 'time',
+            class: 'time_sidebar',
         },
         {            
             imagesrc: '/res/icons/sidebar/education.jpg',
             listtext: 'ਸਿੱਖਿਆ',
             id: 'education',
+            class: 'education_sidebar',
         },
         {            
             imagesrc: '/res/icons/sidebar/actions.png',
             listtext: 'ਕਾਰਵਾਈ',
             id: 'action',
+            class: 'action_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/animals.jpg',
             listtext: 'ਜਾਨਵਰ',
             id: 'animals',
+            class: 'animals_sidebar',
         },
         {            
             imagesrc: '/res/icons/sidebar/alphabets.jpg',
             listtext: 'ਵਰਣਮਾਲਾ',
             id: 'alphabets',
+            class: 'alphabets_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/punjabialphabets.jpg',
             listtext: 'ਪੰਜਾਬੀ ਵਰਣਮਾਲਾ',
             id: 'punjabiAlphabets',
+            class: 'punjabiAlphabets_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/measurement.jpg',
             listtext: 'ਮਾਪ',
             id: 'measurement',
+            class: 'measurement_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/objects.jpg',
             listtext: 'ਵਸਤੂਆਂ',
             id: 'objects',
+            class: 'objects_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/verbs.jpg',
             listtext: 'ਕਿਰਿਆ',
             id: 'verbs',
+            class: 'verbs_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/eatables.jpg',
             listtext: 'ਖਾਣਯੋਗ',
             id: 'eatables',
+            class: 'eatables_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/sensation.jpg',
             listtext: 'ਸੰਵੇਦਨਾ',
             id: 'sensations',
+            class: 'sensations_sidebar',
         },
         {
             imagesrc: '/res/icons/sidebar/recognizations.jpg',
             listtext: 'ਪਛਾਣ',
             id: 'recognizations',
+            class: 'recognizations_sidebar',
         },
         // {
         //     imagesrc: '/res/icons/sidebar/countries.png',
@@ -1647,6 +1664,26 @@ cleardisplaywindow = function () {
     $('.displayWindow').html("");
 }
 
+function changeSidebarText(elem) {
+    var a = elem.className;
+    // console.log(a);
+    a = (a.split(" "))[1];
+    // a = a.slice(0,a.length-8);
+    // console.log(a);
+    for(var i=0;i<sidebar.elements.length;i++) {
+        console.log(sidebar.elements[i].class , a);
+        if(sidebar.elements[i].class === a) {
+            console.log(a);
+            $('.' + a).attr('style','color:#00cec9;font-size:28px;');
+        }
+        else{
+            // console.log($('.'+sidebar.elements[i].id));
+            $('.'+sidebar.elements[i].class).attr('style','color:#dfe4ea;font-size:20px;')
+        }
+    }
+    // $(elem).attr('style','color:#00cec9;font-size:25px;');
+}
+
 
 // fill sidebar with diff categories //
 sidebarLength = sidebar.elements.length;
@@ -1658,7 +1695,7 @@ for (var i=0; i<sidebarLength; i++) {
     var formatedMain = mainSidebarElem.replace('%imagesrc%',sidebar.elements[i].imagesrc);
     formatedMain = formatedMain.replace('%id%',sidebar.elements[i].id);
     var formatedSecond = secondSidebarElem.replace('%listtitle%',sidebar.elements[i].listtext);
-    formatedSecond = formatedSecond.replace('%id%',sidebar.elements[i].id);
+    formatedSecond = formatedSecond.replace('%class%',sidebar.elements[i].class);
     $('.main-menu ul:last').append(formatedMain);
     $('.second-menu ul:last').append(formatedSecond);
 };
@@ -1731,8 +1768,14 @@ $('.side-list').click(function () {
 
 $('.side-list-names').click(function () {
     a = $(this.children[0]);
-    console.log(a[0].id );
-    a = a[0].id;
+    // console.log($(a[0]));
+    changeSidebarText(a[0]);
+    // $(a[0]).attr('style','color:#00cec9;font-size:25px;');
+    // console.log(a[0]);
+    a = a[0].className;
+    // console.log(a);
+    a = (a.split(" "))[1];
+    a = a.slice(0,a.length-8);
     console.log(displayElements[a]);
     cleardisplaywindow();
     $('#inner-footer').html("");
