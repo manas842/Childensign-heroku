@@ -1664,12 +1664,29 @@ cleardisplaywindow = function () {
     $('.displayWindow').html("");
 }
 
-function changeSidebarText(elem) {
+function changeSidebarNameText(elem) {
     var a = elem.className;
     // console.log(a);
     a = (a.split(" "))[1];
     // a = a.slice(0,a.length-8);
     // console.log(a);
+    for(var i=0;i<sidebar.elements.length;i++) {
+        console.log(sidebar.elements[i].class , a);
+        if(sidebar.elements[i].class === a) {
+            console.log(a);
+            $('.' + a).attr('style','color:#00cec9;font-size:28px;');
+        }
+        else{
+            // console.log($('.'+sidebar.elements[i].id));
+            $('.'+sidebar.elements[i].class).attr('style','color:#dfe4ea;font-size:20px;')
+        }
+    }
+    // $(elem).attr('style','color:#00cec9;font-size:25px;');
+}
+
+function changeSidebarText(elem) {
+    var a = elem.id;
+    a += '_sidebar';
     for(var i=0;i<sidebar.elements.length;i++) {
         console.log(sidebar.elements[i].class , a);
         if(sidebar.elements[i].class === a) {
@@ -1704,6 +1721,7 @@ for (var i=0; i<sidebarLength; i++) {
 $('.side-list').click(function () {
     a = $(this.children[0]);
     console.log(a[0].id );
+    changeSidebarText(a[0]);
     a = a[0].id;
     console.log(displayElements[a][5]);
     cleardisplaywindow();
@@ -1769,7 +1787,7 @@ $('.side-list').click(function () {
 $('.side-list-names').click(function () {
     a = $(this.children[0]);
     // console.log($(a[0]));
-    changeSidebarText(a[0]);
+    changeSidebarNameText(a[0]);
     // $(a[0]).attr('style','color:#00cec9;font-size:25px;');
     // console.log(a[0]);
     a = a[0].className;
