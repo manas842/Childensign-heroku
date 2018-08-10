@@ -2006,27 +2006,29 @@ function setSiGMLURL(sigmlURL) {
     return sigmlURL;
 }
 
-function startPlayer(sigmlURL , imageSRC) {
+function startPlayer(sigmlURL , elem) {
     // console.log(sigmlURL);
-    cleardisplaywindow();
-    console.log(imageSRC);
+    // cleardisplaywindow();
+    // console.log(elem);
+    $(elem).parent().attr('style','background-color:white');
+    $(elem).next().attr('style','color:#00cec9;')
     var loc = window.location.href;
     var locDir = loc.substring(0, loc.lastIndexOf('/'));
     var pathToScreenshot = locDir + '/res/screenshots/' + sigmlURL + '/';
 
-    for(var i=0;i<numImages[sigmlURL];i++) {
-        if(i==0) {
-            var appendImage = displayWindowBigImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
-            $('.displayWindow').append(appendImage);
-            $('.displayWindow').append(displayWindowInnerDiv);
-            var appendImage = displayWindowSmallImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
-            $('.displayWindow-inner-div').append(appendImage);
-        }
-        else {
-            var appendImage = displayWindowSmallImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
-            $('.displayWindow-inner-div').append(appendImage);
-        }
-    }
+    // for(var i=0;i<numImages[sigmlURL];i++) {
+    //     if(i==0) {
+    //         var appendImage = displayWindowBigImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
+    //         $('.displayWindow').append(appendImage);
+    //         $('.displayWindow').append(displayWindowInnerDiv);
+    //         var appendImage = displayWindowSmallImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
+    //         $('.displayWindow-inner-div').append(appendImage);
+    //     }
+    //     else {
+    //         var appendImage = displayWindowSmallImage.replace('%imagesrc%',pathToScreenshot + 's' + (i+1) + '.png');
+    //         $('.displayWindow-inner-div').append(appendImage);
+    //     }
+    // }
     sigmlURL = setSiGMLURL(sigmlURL);
     // Equivalent to click on Sign button
     return CWASA.playSiGMLURL(sigmlURL);

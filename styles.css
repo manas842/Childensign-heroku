@@ -603,6 +603,36 @@ ul{
     }
 }
 
+@media only screen and (max-height: 1200px) and (min-height: 1100px) {
+    #avat {
+        height: 96%;
+    }
+}
+
+@media only screen and (max-height: 1099px) and (min-height: 1000px) {
+    #avat {
+        height: 95.5%;
+    }
+}
+
+@media only screen and (max-height: 999px) and (min-height: 850px) {
+    #avat {
+        height: 95%;
+    }
+}
+
+@media only screen and (max-height: 849px) and (min-height: 700px) {
+    #avat {
+        height: 94.5%;
+    }
+}
+
+@media only screen and (max-height: 699px) and (min-height: 550px) {
+    #avat {
+        height: 94%;
+    }
+}
+
 .img-responsive {
     max-height: 100px;
     cursor: pointer;
