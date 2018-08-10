@@ -1682,7 +1682,7 @@ function changeSidebarNameText(elem) {
             $('.'+sidebar.elements[i].class).attr('style','color:#dfe4ea;font-size:20px;')
         }
     }
-    $('#avat').attr('style','display:none;margin-left:170px;');
+    $('#avat').attr('style','display:none;margin-left:200px;');
     $('#avat').slideDown("slow");
     // $(elem).attr('style','color:#00cec9;font-size:25px;');
 }
@@ -1861,7 +1861,7 @@ $('.side-list-names').click(function () {
 $('.main-menu').hover(function () {
     // console.log(1);
     $('.second-menu').attr('style','display:block;');
-    $('#avat').attr('style','margin-left:170px;');
+    $('#avat').attr('style','margin-left:200px;');
     // $('.side-list').attr('display','block');
 });
 
