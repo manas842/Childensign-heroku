@@ -123,7 +123,8 @@ ul{
 }
 
 .side-list-names {
-    width: 110px;
+    width: 155px;
+    justify-content: center;
 }
 
 .side-list:hover{

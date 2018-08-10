@@ -14,9 +14,9 @@ var carouselDiv = '<div class="carousel slide multi-item-carousel" id="theCarous
 
 var carouselInner = '<div class="carousel-inner"></div>';
 
-var carouselActiveImage = '<div style="padding-left:60px;" class="item active"><div class="col-xs-4"><p><img src="%imagesrc%" class="img-responsive" onclick="startPlayer(%sigmlurl%)"><h3>%name%</h3></p></div></div>';
+var carouselActiveImage = '<div style="padding-left:60px;" class="item active"><div class="col-xs-4"><p><img src="%imagesrc%" class="img-responsive" onclick="startPlayer(%sigmlurl% , this.src)"><h3>%name%</h3></p></div></div>';
 
-var carouselImage = '<div style="padding-left:60px;" class="item"><div class="col-xs-4"><p><img src="%imagesrc%" class="img-responsive" onclick="startPlayer(%sigmlurl%)"><h3>%name%</h3></p></div></div>';
+var carouselImage = '<div style="padding-left:60px;" class="item"><div class="col-xs-4"><p><img src="%imagesrc%" class="img-responsive" onclick="startPlayer(%sigmlurl% , this.src)"><h3>%name%</h3></p></div></div>';
 
 var carouselInnerLeft = '<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i style="color:red;" class="glyphicon glyphicon-chevron-left"></i></a>';
 

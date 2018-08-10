@@ -1666,6 +1666,7 @@ cleardisplaywindow = function () {
 
 function changeSidebarNameText(elem) {
     var a = elem.className;
+    // $('#avat').fadeOut();
     // console.log(a);
     a = (a.split(" "))[1];
     // a = a.slice(0,a.length-8);
@@ -1681,6 +1682,8 @@ function changeSidebarNameText(elem) {
             $('.'+sidebar.elements[i].class).attr('style','color:#dfe4ea;font-size:20px;')
         }
     }
+    $('#avat').attr('style','display:none;margin-left:170px;');
+    $('#avat').slideDown("slow");
     // $(elem).attr('style','color:#00cec9;font-size:25px;');
 }
 
@@ -1858,11 +1861,11 @@ $('.side-list-names').click(function () {
 $('.main-menu').hover(function () {
     // console.log(1);
     $('.second-menu').attr('style','display:block;');
-    $('#avat').attr('style','margin-left:150px;');
+    $('#avat').attr('style','margin-left:170px;');
     // $('.side-list').attr('display','block');
 });
 
-$('.second-menu').mouseout(function () {
+$('.second-menu').mouseleave(function () {
     console.log(1);
     // $('.side-list').attr('display','none');
     $('.second-menu').attr('style','display:none;');
@@ -1909,9 +1912,10 @@ function setSiGMLURL(sigmlURL) {
     return sigmlURL;
 }
 
-function startPlayer(sigmlURL) {
+function startPlayer(sigmlURL , imageSRC) {
     // console.log(sigmlURL);
     cleardisplaywindow();
+    console.log(imageSRC);
     var loc = window.location.href;
     var locDir = loc.substring(0, loc.lastIndexOf('/'));
     var pathToScreenshot = locDir + '/res/screenshots/' + sigmlURL + '/';
