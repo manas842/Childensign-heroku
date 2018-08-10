@@ -1822,7 +1822,7 @@ $('.side-list').click(function () {
     a = a[0].id;
     console.log(displayElements[a][5]);
     cleardisplaywindow();
-    $('#inner-footer').html("");
+    // $('#inner-footer').html("");
     // if (a == "colors") {
     //     for (var i = 0; i < displayElements[a].length; i++) {
     //         var formatedDisplayWindowElem = displayWindowElemRound.replace('%imagesrc%', displayElements[a][i].imagesrc);
@@ -1834,50 +1834,50 @@ $('.side-list').click(function () {
     //     }
     // }
      // else {
-        var innerFooter = $('#inner-footer');
-        var heading = itemsHeading.replace('%heading%' , a);
-        innerFooter.append(heading.toUpperCase());
-        innerFooter.append(itemsColMd);
-        $('#image-content').append(carouselDiv);
-        $('#theCarousel').append(carouselInner);
-        var count = 0;
+        // var innerFooter = $('#inner-footer');
+        // var heading = itemsHeading.replace('%heading%' , a);
+        // innerFooter.append(heading.toUpperCase());
+        // innerFooter.append(itemsColMd);
+        // $('#image-content').append(carouselDiv);
+        // $('#theCarousel').append(carouselInner);
+        // var count = 0;
         for (var i = 0; i < displayElements[a].length; i++) {
-            // var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
-            // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
-            // var te = "\'".concat(displayElements[a][i].name).concat("\'");
-            // console.log(te);
-            // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
-            // $('.displayWindow').append(formatedDisplayWindowElem);
-            console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
-            if(count == 0) {
-                var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
-                appendImage = appendImage.replace('%name%',displayElements[a][i].item);
-                var te = "\'".concat(displayElements[a][i].name).concat("\'");
-                console.log(te);
-                appendImage = appendImage.replace('%sigmlurl%',te);
-                $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-            }
-            else {
-                var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
-                appendImage = appendImage.replace('%name%',displayElements[a][i].item);
-                var te = "\'".concat(displayElements[a][i].name).concat("\'");
-                console.log(te);
-                appendImage = appendImage.replace('%sigmlurl%',te);
-                $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-            }
-            count++;
+            var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
+            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
+            var te = "\'".concat(displayElements[a][i].name).concat("\'");
+            console.log(te);
+            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+            $('.displayWindow').append(formatedDisplayWindowElem);
+            // console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
+            // if(count == 0) {
+            //     var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+            //     appendImage = appendImage.replace('%name%',displayElements[a][i].item);
+            //     var te = "\'".concat(displayElements[a][i].name).concat("\'");
+            //     console.log(te);
+            //     appendImage = appendImage.replace('%sigmlurl%',te);
+            //     $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            // }
+            // else {
+            //     var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+            //     appendImage = appendImage.replace('%name%',displayElements[a][i].item);
+            //     var te = "\'".concat(displayElements[a][i].name).concat("\'");
+            //     console.log(te);
+            //     appendImage = appendImage.replace('%sigmlurl%',te);
+            //     $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            // }
+            // count++;
         }
-        $('#theCarousel').append(carouselInnerLeft);
-        $('#theCarousel').append(carouselInnerRight);
-        makeCarousel();
+        // $('#theCarousel').append(carouselInnerLeft);
+        // $('#theCarousel').append(carouselInnerRight);
+        // makeCarousel();
     // }
 });
 
@@ -1893,7 +1893,7 @@ $('.side-list-names').click(function () {
     a = a.slice(0,a.length-8);
     console.log(displayElements[a]);
     cleardisplaywindow();
-    $('#inner-footer').html("");
+    // $('#inner-footer').html("");
     // if (a == "colors") {
     //     for (var i = 0; i < displayElements[a].length; i++) {
     //         var formatedDisplayWindowElem = displayWindowElemRound.replace('%imagesrc%', displayElements[a][i].imagesrc);
@@ -1905,50 +1905,50 @@ $('.side-list-names').click(function () {
     //     }
     // }
      // else {
-        var innerFooter = $('#inner-footer');
-        var heading = itemsHeading.replace('%heading%' , a);
-        innerFooter.append(heading.toUpperCase());
-        innerFooter.append(itemsColMd);
-        $('#image-content').append(carouselDiv);
-        $('#theCarousel').append(carouselInner);
-        var count = 0;
+        // var innerFooter = $('#inner-footer');
+        // var heading = itemsHeading.replace('%heading%' , a);
+        // innerFooter.append(heading.toUpperCase());
+        // innerFooter.append(itemsColMd);
+        // $('#image-content').append(carouselDiv);
+        // $('#theCarousel').append(carouselInner);
+        // var count = 0;
         for (var i = 0; i < displayElements[a].length; i++) {
-            // var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
-            // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
-            // var te = "\'".concat(displayElements[a][i].name).concat("\'");
-            // console.log(te);
-            // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
-            // $('.displayWindow').append(formatedDisplayWindowElem);
-            console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
-            if(count == 0) {
-                var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
-                appendImage = appendImage.replace('%name%',displayElements[a][i].item);
-                var te = "\'".concat(displayElements[a][i].name).concat("\'");
-                console.log(te);
-                appendImage = appendImage.replace('%sigmlurl%',te);
-                $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-            }
-            else {
-                var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
-                appendImage = appendImage.replace('%name%',displayElements[a][i].item);
-                var te = "\'".concat(displayElements[a][i].name).concat("\'");
-                console.log(te);
-                appendImage = appendImage.replace('%sigmlurl%',te);
-                $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-                // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
-                // $('.carousel-inner').append(appendImage);
-            }
-            count++;
+            var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
+            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
+            var te = "\'".concat(displayElements[a][i].name).concat("\'");
+            console.log(te);
+            var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+            $('.displayWindow').append(formatedDisplayWindowElem);
+            // console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
+            // if(count == 0) {
+            //     var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+            //     appendImage = appendImage.replace('%name%',displayElements[a][i].item);
+            //     var te = "\'".concat(displayElements[a][i].name).concat("\'");
+            //     console.log(te);
+            //     appendImage = appendImage.replace('%sigmlurl%',te);
+            //     $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselActiveImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            // }
+            // else {
+            //     var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i].imagesrc);
+            //     appendImage = appendImage.replace('%name%',displayElements[a][i].item);
+            //     var te = "\'".concat(displayElements[a][i].name).concat("\'");
+            //     console.log(te);
+            //     appendImage = appendImage.replace('%sigmlurl%',te);
+            //     $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+1].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            //     // var appendImage = carouselImage.replace('%imagesrc%' , displayElements[a][i+2].imagesrc);
+            //     // $('.carousel-inner').append(appendImage);
+            // }
+            // count++;
         }
-        $('#theCarousel').append(carouselInnerLeft);
-        $('#theCarousel').append(carouselInnerRight);
-        makeCarousel();
+        // $('#theCarousel').append(carouselInnerLeft);
+        // $('#theCarousel').append(carouselInnerRight);
+        // makeCarousel();
     // }
 });
 
