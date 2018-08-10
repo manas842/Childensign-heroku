@@ -1,20 +1,39 @@
 html {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 30px;
 }
 
 ::-webkit-scrollbar-track {
-    display: none;
+    /*display: none;*/
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black; 
 }
 
 body {
     max-width: 100%;
-    max-height: 100VH;
+    max-height: 100%;
     margin: 0;
     padding: 0;
     /* background-image: url(/res/backgrounds/bg5.jpeg); */
@@ -168,12 +187,12 @@ ul{
     justify-content: center;
     flex-wrap: wrap;
     /*margin-top: 55px;*/
-    margin-left: 90px;
+    /*margin-left: 90px;*/
     margin-right: 10px;
-    height: 75%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     /* border: 1px solid; */
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     /* align-content: center; */
     align-items: self-start;
     /* background-image: url(/res/backgrounds/bg4.jpg); */
