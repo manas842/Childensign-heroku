@@ -1681,7 +1681,7 @@ function changeSidebarNameText(elem) {
             // console.log(a);
             $('.'+a).parent().attr('style','background-color:white;');
             $('.' + a).attr('style','color:#00cec9;');
-            console.log($('#'+temp));
+            // console.log($('#'+temp));
             $('#'+temp).attr('style','background-color:white');
         }
         else{
@@ -1705,10 +1705,10 @@ function changeSidebarText(elem) {
     a += '_sidebar';
     // $('.'+a).parent().attr('style','background-color:white;');
     for(var i=0;i<sidebar.elements.length;i++) {
-        console.log(sidebar.elements[i].class , a);
+        // console.log(sidebar.elements[i].class , a);
         if(sidebar.elements[i].class === a) {
             // console.log(a);
-            console.log($('#'+temp));
+            // console.log($('#'+temp));
             $('.' + a).attr('style','color:#00cec9;');
             $('.'+a).parent().attr('style','background-color:white;');
             $('#'+temp).attr('style','background-color:white;');
@@ -1741,7 +1741,7 @@ function hoverChangeSidebarNameText(elem) {
             // console.log(a);
             $('.'+a).parent().attr('style','background-color:white;');
             $('.' + a).attr('style','color:#00cec9;');
-            console.log($('#'+temp));
+            // console.log($('#'+temp));
             $('#'+temp).attr('style','background-color:white');
         }
         else{
@@ -1765,10 +1765,10 @@ function hoverChangeSidebarText(elem) {
     a += '_sidebar';
     // $('.'+a).parent().attr('style','background-color:white;');
     for(var i=0;i<sidebar.elements.length;i++) {
-        console.log(sidebar.elements[i].class , a);
+        // console.log(sidebar.elements[i].class , a);
         if(sidebar.elements[i].class === a) {
             // console.log(a);
-            console.log($('#'+temp));
+            // console.log($('#'+temp));
             $('.' + a).attr('style','color:#00cec9;');
             $('.'+a).parent().attr('style','background-color:white;');
             $('#'+temp).attr('style','background-color:white;');
@@ -1802,7 +1802,7 @@ for (var i=0; i<sidebarLength; i++) {
 
 $('.side-list').hover(function () {
    a = $(this.children[0]);
-    console.log(a[0].id );
+    // console.log(a[0].id );
     // changeSidebarText(a[0]);
     hoverChangeSidebarText(a[0]); 
 });
@@ -1817,10 +1817,10 @@ $('.side-list-names').hover(function () {
 // function to fill the display window with selected category elements from sidebar
 $('.side-list').click(function () {
     a = $(this.children[0]);
-    console.log(a[0].id );
+    // console.log(a[0].id );
     changeSidebarText(a[0]);
     a = a[0].id;
-    console.log(displayElements[a][5]);
+    // console.log(displayElements[a][5]);
     cleardisplaywindow();
     // $('#inner-footer').html("");
     // if (a == "colors") {
@@ -1845,7 +1845,7 @@ $('.side-list').click(function () {
             var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
             var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
             var te = "\'".concat(displayElements[a][i].name).concat("\'");
-            console.log(te);
+            // console.log(te);
             var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
             $('.displayWindow').append(formatedDisplayWindowElem);
             // console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
@@ -1891,7 +1891,7 @@ $('.side-list-names').click(function () {
     // console.log(a);
     a = (a.split(" "))[1];
     a = a.slice(0,a.length-8);
-    console.log(displayElements[a]);
+    // console.log(displayElements[a]);
     cleardisplaywindow();
     // $('#inner-footer').html("");
     // if (a == "colors") {
@@ -1916,7 +1916,7 @@ $('.side-list-names').click(function () {
             var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[a][i].imagesrc);
             var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[a][i].item);
             var te = "\'".concat(displayElements[a][i].name).concat("\'");
-            console.log(te);
+            // console.log(te);
             var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
             $('.displayWindow').append(formatedDisplayWindowElem);
             // console.log(displayElements[a][i].imagesrc , displayElements[a][i].item , displayElements[a][i].name);
@@ -2011,7 +2011,22 @@ function startPlayer(sigmlURL , elem) {
     // cleardisplaywindow();
     // console.log(elem);
     $(elem).parent().attr('style','background-color:white');
-    $(elem).next().attr('style','color:#00cec9;')
+    $(elem).next().attr('style','color:#00cec9;');
+    for(var key in displayElements) {
+        for(var j=0;j<displayElements[key].length;j++) {
+            if(elem.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
+                // console.log(elem.src);
+                $(elem).parent().attr('style','background-color:white');
+                $(elem).next().attr('style','color:#00cec9;');
+            }
+            else {
+                // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
+                var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
+                x.next().attr('style','color:white;');
+                x.parent().attr('style','background-color:transparent');
+            }
+        }
+    }
     var loc = window.location.href;
     var locDir = loc.substring(0, loc.lastIndexOf('/'));
     var pathToScreenshot = locDir + '/res/screenshots/' + sigmlURL + '/';
