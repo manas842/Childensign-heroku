@@ -1656,6 +1656,82 @@ var displayElements = {
 
 var numImages = {
     loss : 5,
+    loss1 : 5,
+    mango: 4,
+    manner:5,
+    me: 4,
+    mind: 4,
+    mistake: 5,
+    mistake1 : 5,
+    name :4,
+    new: 5,
+    no: 5,
+    on: 3,
+    open: 4,
+    clap: 5,
+    organise: 5,
+    own: 4,
+    parts: 4,
+    past: 3,
+    pen : 4,
+    phone: 3,
+    pink: 4,
+    place: 4,
+    possible: 4,
+    possible1: 4,
+    pot: 4,
+    power: 3,
+    power1: 3,
+    practice: 5,
+    prayer: 3,
+    problem: 4,
+    profit: 4,
+    quiet:3 ,
+    rectangle: 4,
+    relation: 3,
+    remind: 4,
+    remove: 4,
+    research: 5,
+    sad: 4,
+    save:4 ,
+    science: 4,
+    they: 4,
+    this: 3,
+    those: 4,
+    tomorrow: 3,
+    train: 4,
+    truth: 4,
+    tub: 3,
+    tv:3 ,
+    up: 2,
+    vegetable: 3,
+    water: 2,
+    water1: 2,
+    weight: 4,
+    what: 3,
+    when: 3,
+    who:3,
+    delete: 3,
+    different: 5,
+    doctor: 3,
+    doctor1: 4,
+    down: 3,
+    drinking: 3,
+    easy: 3,
+    empty: 5,
+    english: 6,
+    equal: 4,
+    exam: 4,
+    feel: 5,
+    feel1: 4,
+    fly: 4,
+    food: 4,
+    fruit: 5,
+    fruit1: 6,
+    girl: 2,
+    green: 5,
+    he: 4,
+
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -2005,24 +2081,78 @@ function setSiGMLURL(sigmlURL) {
     // document.getElementById("URLText").value = sigmlURL;
     return sigmlURL;
 }
+var toBeBackElement = null , categoryBackElement = null;
 
+$('#cancel').click(function () {
+    cleardisplaywindow();
+    console.log(toBeBackElement);
+    $('.displayWindowImage').attr('style','max-height:100px;max-width:100px;');
+    var key = categoryBackElement;
+    for(var j=0;j<displayElements[key].length;j++) {
+        var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[key][j].imagesrc);
+        var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[key][j].item);
+        var te = "\'".concat(displayElements[key][j].name).concat("\'");
+        // console.log(te);
+        var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+        $('.displayWindow').append(formatedDisplayWindowElem);
+        
+        if(toBeBackElement.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
+            // console.log(elem.src);
+            $(toBeBackElement).parent().attr('style','background-color:white');
+            $(toBeBackElement).next().attr('style','color:#00cec9;');
+            $('#imageWindow').removeClass('flipInY');
+            // toBeBackElement = elem;
+            setTimeout(function () {
+                $('#imageWindow').addClass('flipInY');
+                // $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -55px;margin-top: 5px;z-index: 2;cursor:pointer;');
+                $('#cancel').attr('style','display:none');
+            },250);
+
+
+            // $('#imageWindow').addClass('flipInY');
+        }
+        // else {
+        //     // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
+        //     var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
+        //     x.next().attr('style','color:white;');
+        //     x.parent().attr('style','background-color:transparent');
+        // }
+    }
+});
 function startPlayer(sigmlURL , elem) {
     // console.log(sigmlURL);
     // cleardisplaywindow();
     // console.log(elem);
+    cleardisplaywindow();
     $('#imageWindow').removeClass('flipInY');
-    $(elem).parent().attr('style','background-color:white');
-    $(elem).next().attr('style','color:#00cec9;');
+    // $(elem).parent().attr('style','background-color:white');
+    // $(elem).next().attr('style','color:#00cec9;');
     for(var key in displayElements) {
         for(var j=0;j<displayElements[key].length;j++) {
             if(elem.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
                 // console.log(elem.src);
+                
+                // $('#imageWindow').removeClass('flipInY');
+                toBeBackElement = elem;
+                categoryBackElement = key;
+                // $('.displayWindowImage').attr('style','max-height:200px;max-width:175px;');
+                for(var k=0;k<numImages[displayElements[key][j].name];k++) {
+                    var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.png');
+                    formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', 'Step ' + (k+1));
+                    // var te = "\'".concat(displayElements[a][i].name).concat("\'");
+                    // console.log(te);
+                    // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+                    $('.displayWindow').append(formatedDisplayWindowElem);
+                }
+                $('.displayWindowImage').attr('style','max-height:300px;max-width:250px;');
                 $(elem).parent().attr('style','background-color:white');
                 $(elem).next().attr('style','color:#00cec9;');
-                // $('#imageWindow').removeClass('flipInY');
                 setTimeout(function () {
                     $('#imageWindow').addClass('flipInY');
+                    $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -55px;margin-top: 5px;z-index: 2;cursor:pointer;');
                 },250);
+
+
                 // $('#imageWindow').addClass('flipInY');
             }
             else {

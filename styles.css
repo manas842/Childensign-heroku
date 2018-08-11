@@ -248,8 +248,8 @@ ul{
 }
 
 .displayWindowContainer {
-    height: 140px;
-    width: 140px;
+    height: auto;
+    width: auto;
     margin: 10px;
     display: flex;
     flex-direction: column;
