@@ -2010,6 +2010,7 @@ function startPlayer(sigmlURL , elem) {
     // console.log(sigmlURL);
     // cleardisplaywindow();
     // console.log(elem);
+    $('#imageWindow').removeClass('flipInY');
     $(elem).parent().attr('style','background-color:white');
     $(elem).next().attr('style','color:#00cec9;');
     for(var key in displayElements) {
@@ -2018,6 +2019,11 @@ function startPlayer(sigmlURL , elem) {
                 // console.log(elem.src);
                 $(elem).parent().attr('style','background-color:white');
                 $(elem).next().attr('style','color:#00cec9;');
+                // $('#imageWindow').removeClass('flipInY');
+                setTimeout(function () {
+                    $('#imageWindow').addClass('flipInY');
+                },250);
+                // $('#imageWindow').addClass('flipInY');
             }
             else {
                 // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
