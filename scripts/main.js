@@ -2164,6 +2164,7 @@ var toBeBackElement = null , categoryBackElement = null;
 
 $('#cancel').click(function () {
     cleardisplaywindow();
+    $('#nameWindow').html("");
     // console.log(toBeBackElement);
     $('.displayWindowImage').attr('style','max-height:100px;max-width:100px;');
     var key = categoryBackElement;
@@ -2218,7 +2219,7 @@ function startPlayer(sigmlURL , elem) {
         for(var j=0;j<displayElements[key].length;j++) {
             if(elem.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
                 // console.log(elem.src);
-                
+                $('#nameWindow').html(displayElements[key][j].item);
                 // $('#imageWindow').removeClass('flipInY');
                 toBeBackElement = elem;
                 categoryBackElement = key;
