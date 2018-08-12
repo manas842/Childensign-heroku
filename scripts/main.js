@@ -1731,8 +1731,85 @@ var numImages = {
     girl: 2,
     green: 5,
     he: 4,
+    hold: 4,
+    i: 3,
+    idea: 5,
+    important: 6,
+    important1: 5,
+    impossible: 4,
+    impossible1: 5,
+    information: 6,
+    internet: 5,
+    keep: 4,
+    keyboard: 5,
+    key: 4,
+    level: 5,
+    line: 5,
+    long: 5,
+    search: 5,
+    see: 5,
+    sewingmachine: 5 ,
+    short: 5,
+    show: 5,
+    show1: 5,
+    sign: 5,
+    stay: 5,
+    tall: 5,
+    teachme: 5,
+    teachyou: 5,
+    teacher: 5,
+    tell: 4,
+    thankyou: 5 ,
+    these: 5,
+    around: 5,
+    arrange: 5,
+    arrest: 5,
+    arrive: 5,
+    art: 5,
+    at: 5,
+    bag: 5,
+    ball: 5,
+    ball1: 5,
+    bandage:5 ,
+    bath: 5,
+    below: 5,
+    best: 5,
+    book: 5,
+    bowl: 5,
+    bowl1: 4,
+    bye: 4,
+    child: 4 ,
+    children: 5,
+    circle: 6,
+    class: 5,
+    close: 3,
+    colours: 3,
+    complaints: 6,
+    concentrate: 5,
+    continue: 6,
+    correct: 5,
+    dance: 4,
+    deaf: 4,
+    decrease: 4,
+    // 1month: 4,
+    // 2month: 4,
+    above: 4,
+    acting: 5,
+    active: 5,
+    add: 5,
+    aeroplane: 4 ,
+    age: 5,
+    allow: 5 ,
+    allow1: 5,
+    alone: 4,
+    always: 6,
+    among: 5,
+    answer: 5,
+    any: 6,
 
 };
+
+// console.log(Object.keys(numImages).length);
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 // function to called to clear the display WIndow next to avtar window
@@ -1745,6 +1822,7 @@ function changeSidebarNameText(elem) {
     // $('#avat').fadeOut();
     // console.log(a);
     a = (a.split(" "))[1];
+    $('#cancel').attr('style','display:none');
     $('.second-menu').attr('style','display:none;');
     // a = a.slice(0,a.length-8);
     // console.log(a);
@@ -1776,6 +1854,7 @@ function changeSidebarNameText(elem) {
 function changeSidebarText(elem) {
     var a = elem.id;
     var temp = a;
+    $('#cancel').attr('style','display:none');
     $('.second-menu').attr('style','display:none;');
     // $('#'+a).attr('style','background-color:white;');
     a += '_sidebar';
@@ -2085,38 +2164,46 @@ var toBeBackElement = null , categoryBackElement = null;
 
 $('#cancel').click(function () {
     cleardisplaywindow();
-    console.log(toBeBackElement);
+    // console.log(toBeBackElement);
     $('.displayWindowImage').attr('style','max-height:100px;max-width:100px;');
     var key = categoryBackElement;
     for(var j=0;j<displayElements[key].length;j++) {
         var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', displayElements[key][j].imagesrc);
-        var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[key][j].item);
+        formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', displayElements[key][j].item);
         var te = "\'".concat(displayElements[key][j].name).concat("\'");
         // console.log(te);
-        var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+        formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
         $('.displayWindow').append(formatedDisplayWindowElem);
-        
-        if(toBeBackElement.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
-            // console.log(elem.src);
-            $(toBeBackElement).parent().attr('style','background-color:white');
-            $(toBeBackElement).next().attr('style','color:#00cec9;');
+        if(toBeBackElement.src.indexOf(displayElements[key][j].imagesrc) != -1) {
+            toBeBackElement = formatedDisplayWindowElem;
+            toBeBackElement = $(toBeBackElement).children()[0];
+            console.log(toBeBackElement);
+            var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
+            x.next().attr('style','color:#00cec9;');
+            x.parent().attr('style','background-color:white');
+            // $(toBeBackElement).parent().attr('style','background-color:white');
+            // $(toBeBackElement).next().attr('style','color:#00cec9;');
             $('#imageWindow').removeClass('flipInY');
-            // toBeBackElement = elem;
             setTimeout(function () {
                 $('#imageWindow').addClass('flipInY');
                 // $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -55px;margin-top: 5px;z-index: 2;cursor:pointer;');
                 $('#cancel').attr('style','display:none');
+                // $(toBeBackElement).parent().attr('style','background-color:white;display:none;');
+                // $(toBeBackElement).next().attr('style','color:#00cec9;');
+                
+                //console.log($(toBeBackElement).next().attr('style') , $(toBeBackElement).parent().attr('style'));
             },250);
 
-
-            // $('#imageWindow').addClass('flipInY');
+            
         }
-        // else {
-        //     // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
-        //     var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
-        //     x.next().attr('style','color:white;');
-        //     x.parent().attr('style','background-color:transparent');
-        // }
+
+        else {
+            // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
+            console.log('other');
+            var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
+            x.next().attr('style','color:white;');
+            x.parent().attr('style','background-color:transparent');
+        }
     }
 });
 function startPlayer(sigmlURL , elem) {
@@ -2137,14 +2224,14 @@ function startPlayer(sigmlURL , elem) {
                 categoryBackElement = key;
                 // $('.displayWindowImage').attr('style','max-height:200px;max-width:175px;');
                 for(var k=0;k<numImages[displayElements[key][j].name];k++) {
-                    var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.png');
+                    var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.jpg');
                     formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', 'Step ' + (k+1));
                     // var te = "\'".concat(displayElements[a][i].name).concat("\'");
                     // console.log(te);
                     // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
                     $('.displayWindow').append(formatedDisplayWindowElem);
                 }
-                $('.displayWindowImage').attr('style','max-height:300px;max-width:250px;');
+                $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
                 $(elem).parent().attr('style','background-color:white');
                 $(elem).next().attr('style','color:#00cec9;');
                 setTimeout(function () {
