@@ -515,7 +515,7 @@ var displayElements = {
     colors: [
         {
             imagesrc: '/res/icons/colors/colors.jpg',
-            item: 'ਕਾਲਾ',
+            item: 'ਰੰਗ',
             name: 'colors',
         },
         {
@@ -684,7 +684,7 @@ var displayElements = {
     fruits: [
         {
             imagesrc: '/res/icons/fruits/fruits.jpg',
-            item: 'ਸੇਬ',
+            item: 'ਫਲ',
             name: 'fruits',
         },
         {
@@ -1784,7 +1784,7 @@ var numImages = {
     class: 5,
     close: 3,
     colours: 3,
-    complaints: 6,
+    complaint: 6,
     concentrate: 5,
     continue: 6,
     correct: 5,
@@ -1792,7 +1792,7 @@ var numImages = {
     deaf: 4,
     decrease: 4,
     '1month': 4,
-    '2month': 4,
+    '2months': 4,
     above: 4,
     acting: 5,
     active: 5,
@@ -1852,9 +1852,9 @@ var numImages = {
     'u': 2,
     'v': 2,
     'w': 3,
-    'x': 3,
+    'x': 2,
     'y': 2,
-    'z': 3,
+    'z': 2,
     'potato': 4,
     'purple': 4,
     'red': 3,
