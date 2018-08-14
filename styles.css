@@ -259,8 +259,9 @@ ul{
 }
 
 .teamContainer {
-    height: 220px;
-    width: 220px;
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -283,8 +284,8 @@ ul{
 }
 
 .teamImageRound {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     /* cursor: pointer; */
     border-radius: 50%;
     /* border: 3px solid rgb(0, 0, 0); */
@@ -653,4 +654,9 @@ ul{
     margin-bottom: 10px;
     margin-left: 25px;
     cursor: pointer;
+}
+
+.collapseBtn {
+    font-size: 1.5rem;
+    width: 100%;
 }

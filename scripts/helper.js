@@ -4,7 +4,7 @@ var displayWindowElem = '<div class="displayWindowContainer"> <img src="%imagesr
 
 var displayWindowElemRound = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImageRound" onclick="startPlayer(%sigmlurl% ,this)"> <span class="displayWindowElemText">%data%</span> </div>';
 
-var teamRound = '<div class="teamContainer"> <img src="%imagesrc%" class="teamImageRound"> <span class="teamElemText">%data%</span> </div>';
+var teamRound = '<div class="teamContainer"> <img src="%imagesrc%" class="teamImageRound"> <span style="font-size:16px;color:white;" class="teamElemText">%data%</span> </div>';
 
 var itemsHeading = '<h1 style="margin: 15px;font-size: 3em;">%heading%</h1>';
 
@@ -31,3 +31,7 @@ var displayWindowSmallImage = '<img class="displayWindow-small-image" src="%imag
 var mainSidebarElem = '<li class="side-list"> <img src="%imagesrc%" class="icons" id="%id%"></li>';
 
 var secondSidebarElem = '<li class="side-list-names"> <span class="list-text %class%"> %listtitle% </span> </li>';
+
+var collapsibleTeamElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo">Team</button><div id="demo" class="collapse in collapse1"></div>';
+
+var collapsibleSupporterElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo1">Supporters</button><div id="demo1" class="collapse collapse2"></div>';

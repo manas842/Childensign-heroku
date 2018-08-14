@@ -1633,23 +1633,29 @@ var displayElements = {
     team: [
         {
             imagesrc: '/res/backgrounds/virender.jpeg',
-            item: '<b>Dr Virender Kadyan</b><br>Project Lead<br>Chitkara University Punjab',
+            item: '<b style="font-size:20px;">Dr. Virender Kadyan</b><br>Project Lead<br>Chitkara University<br> Punjab',
         },
         {
             imagesrc: '/res/backgrounds/amitoj.jpg',
-            item: '<b>Dr Amitoj Singh</b><br>Assistant Professor<br>MRS PTU Bathinda',
+            item: '<b style="font-size:20px;">Dr. Amitoj Singh</b><br>Assistant Professor<br>MRS PTU <br>Punjab',
         },
         {
-            imagesrc: '/res/backgrounds/rp.jpg',
-            item: '<b>R P Singh</b><br>Group Capt. (Retd.)<br>All India Pingalwara Charitable Society',
-        },
-        {
-            imagesrc: '/res/backgrounds/ravi.png',
-            item: '<b>Ravi Jain</b><br>Developer<br>Chitkara University Punjab',
+            imagesrc: '/res/backgrounds/puneet.jpg',
+            item: '<b style="font-size:20px;">Puneet Bawa</b><br>Team Lead<br>Chitkara University <br>Punjab',
         },
         {
             imagesrc: '/res/backgrounds/vaibhav.jpg',
-            item: '<b>Vaibhav</b><br>Developer<br>Chitkara University Punjab',
+            item: '<b style="font-size:20px;">Vaibhav</b><br>Developer<br>Chitkara University <br>Punjab',
+        },
+    ],
+    supporters: [
+        {
+            imagesrc: '/res/backgrounds/rp.jpg',
+            item: '<b style="font-size:20px;">R P Singh</b><br>Group Capt. (Retd.)<br>All India Pingalwara Charitable Society',
+        },
+        {
+            imagesrc: '/res/backgrounds/ravi.png',
+            item: '<b style="font-size:20px;">Ravi Jain</b><br>Developer<br>Chitkara University <br>Punjab',
         },
     ],
 }
@@ -1870,6 +1876,21 @@ var numImages = {
 
 // console.log(Object.keys(numImages).length);
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
+
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.maxHeight){
+//       content.style.maxHeight = null;
+//     } else {
+//       content.style.maxHeight = content.scrollHeight + "px";
+//     } 
+//   });
+// }
 
 // function to called to clear the display WIndow next to avtar window
 cleardisplaywindow = function () {
@@ -2187,10 +2208,31 @@ $('.second-menu').mouseleave(function () {
 
 $('#button-team').click(function () {
     cleardisplaywindow();
+    $('.displayWindow').append(collapsibleTeamElem);
+    $('.displayWindow').append(collapsibleSupporterElem);
+    // var coll = document.getElementsByClassName("collapsible");
+    // var i;
+
+    // for (i = 0; i < coll.length; i++) {
+    //   coll[i].addEventListener("click", function() {
+    //     this.classList.toggle("active");
+    //     var content = this.nextElementSibling;
+    //     if (content.style.maxHeight){
+    //       content.style.maxHeight = null;
+    //     } else {
+    //       content.style.maxHeight = content.scrollHeight + "px";
+    //     } 
+    //   });
+    // }
     for (var i = 0; i < displayElements['team'].length; i++) {
         var formattedTeamElem = teamRound.replace('%imagesrc%', displayElements['team'][i].imagesrc);
         var formattedTeamElem = formattedTeamElem.replace('%data%', displayElements['team'][i].item);
-        $('.displayWindow').append(formattedTeamElem);
+        $('.collapse1').append(formattedTeamElem);
+    }
+    for (var i = 0; i < displayElements['supporters'].length; i++) {
+        var formattedTeamElem = teamRound.replace('%imagesrc%', displayElements['supporters'][i].imagesrc);
+        var formattedTeamElem = formattedTeamElem.replace('%data%', displayElements['supporters'][i].item);
+        $('.collapse2').append(formattedTeamElem);
     }
 });
 
