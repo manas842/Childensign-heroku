@@ -2,31 +2,31 @@
 var sidebar = {
     elements: [
         {
-            imagesrc: '/res/icons/sidebar/numbers.jpg',
+            imagesrc: '/res/icons/sidebar/numbers.png',
             listtext: 'ਨੰਬਰ',
             id: 'numbers',
             class: 'numbers_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/colors.jpg',
+            imagesrc: '/res/icons/sidebar/colors.png',
             listtext: 'ਰੰਗ',
             id: 'colors',
             class: 'colors_sidebar',
         },
         {            
-            imagesrc: '/res/icons/sidebar/fruits.jpg',
+            imagesrc: '/res/icons/sidebar/fruits.png',
             listtext: 'ਫਲ਼',
             id: 'fruits',
             class: 'fruits_sidebar',
         },
         {            
-            imagesrc: '/res/icons/sidebar/directions.jpg',
+            imagesrc: '/res/icons/sidebar/directions.svg',
             listtext: 'ਦਿਸ਼ਾਵਾਂ',
             id: 'directions',
             class: 'directions_sidebar',
         },
         {            
-            imagesrc: '/res/icons/sidebar/calender.jpg',
+            imagesrc: '/res/icons/sidebar/calendar.svg',
             listtext: 'ਹਫ਼ਤੇ ਦੇ ਦਿਨ',
             id: 'daysofweek',
             class: 'daysofweek_sidebar',
@@ -37,7 +37,7 @@ var sidebar = {
         //     id: 'months',
         // },
         {            
-            imagesrc: '/res/icons/sidebar/time.jpg',
+            imagesrc: '/res/icons/sidebar/time.svg',
             listtext: 'ਸਮਾਂ',
             id: 'time',
             class: 'time_sidebar',
@@ -1876,21 +1876,6 @@ var numImages = {
 
 // console.log(Object.keys(numImages).length);
 ///////////////////////////////////////////////////////////////////////////////////////////////
-
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
-
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.maxHeight){
-//       content.style.maxHeight = null;
-//     } else {
-//       content.style.maxHeight = content.scrollHeight + "px";
-//     } 
-//   });
-// }
 
 // function to called to clear the display WIndow next to avtar window
 cleardisplaywindow = function () {
