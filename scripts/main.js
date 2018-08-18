@@ -1655,7 +1655,7 @@ var displayElements = {
         },
         {
             imagesrc: '/res/backgrounds/ravi.png',
-            item: '<b style="font-size:20px;">Ravi Jain</b><br>Developer<br>Chitkara University <br>Punjab',
+            item: '<b style="font-size:20px;">Ravi Jain</b><br>Past Contributer<br>Chitkara University <br>Punjab',
         },
     ],
 }
@@ -2041,6 +2041,7 @@ $('.side-list-names').hover(function () {
 // function to fill the display window with selected category elements from sidebar
 $('.side-list').click(function () {
     a = $(this.children[0]);
+    $('#nameWindow').html("");
     // console.log(a[0].id );
     changeSidebarText(a[0]);
     a = a[0].id;
@@ -2107,6 +2108,7 @@ $('.side-list').click(function () {
 
 $('.side-list-names').click(function () {
     a = $(this.children[0]);
+    $('#nameWindow').html("");
     // console.log($(a[0]));
     changeSidebarNameText(a[0]);
     // $(a[0]).attr('style','color:#00cec9;font-size:25px;');
@@ -2231,13 +2233,13 @@ $('.displayWindow').on("swiperight", function (event) {
     
 });
 
-function changeBigImage(imageSRC) {
-    console.log(imageSRC);
-    var imageNumber = parseInt(imageSRC[imageSRC.length-5]);
-    // console.log(imageNumber);
-    imageSRC[imageSRC.length-5] = (imageNumber+1).toString();
-    $('.displayWindow-big-image').attr('src',imageSRC);
-}
+// function changeBigImage(imageSRC) {
+//     console.log(imageSRC);
+//     var imageNumber = parseInt(imageSRC[imageSRC.length-5]);
+//     // console.log(imageNumber);
+//     imageSRC[imageSRC.length-5] = (imageNumber+1).toString();
+//     $('.displayWindow-big-image').attr('src',imageSRC);
+// }
 
 // function to play the avtar just call startPlayer() and see it in action 
 function setSiGMLURL(sigmlURL) {
@@ -2301,6 +2303,51 @@ $('#cancel').click(function () {
 });
 
 $('#reload-sigml').click(function () {
+    cleardisplaywindow();
+    console.log(toBeBackElement);
+    for(var key in displayElements) {
+        for(var j=0;j<displayElements[key].length;j++) {
+            if(toBeBackElement.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
+                // console.log(elem.src);
+                $('#nameWindow').html(displayElements[key][j].item);
+                // $('#imageWindow').removeClass('flipInY');
+                // toBeBackElement = elem;
+                // categoryBackElement = key;
+                // sigmlReload = sigmlURL;
+                $('#reload-sigml').attr('style','height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;float: right;cursor: pointer;display: block;');
+                // $('.displayWindowImage').attr('style','max-height:200px;max-width:175px;');
+                
+                for(var k=0;k<numImages[displayElements[key][j].name];k++) {
+                    var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.jpg');
+                    formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', 'Step ' + (k+1));
+                    // var te = "\'".concat(displayElements[a][i].name).concat("\'");
+                    // console.log(te);
+                    // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+                    setTimeout(function () {
+                        $('.displayWindow').append(formatedDisplayWindowElem);
+                        $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
+                    },250);
+                    
+                }
+                // $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
+                $(toBeBackElement).parent().attr('style','background-color:white');
+                $(toBeBackElement).next().attr('style','color:#00cec9;');
+                setTimeout(function () {
+                    $('#imageWindow').addClass('flipInY');
+                    $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;cursor:pointer;');
+                },250);
+
+
+                // $('#imageWindow').addClass('flipInY');
+            }
+            // else {
+            //     // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
+            //     var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
+            //     x.next().attr('style','color:white;');
+            //     x.parent().attr('style','background-color:transparent');
+            // }
+        }
+    }
     sigmlURL = setSiGMLURL(sigmlReload);
     return CWASA.playSiGMLURL(sigmlURL);
 });
