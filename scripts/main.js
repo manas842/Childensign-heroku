@@ -2320,50 +2320,54 @@ $('#cancel').click(function () {
 $('#reload-sigml').click(function () {
     cleardisplaywindow();
     console.log(toBeBackElement);
-    for(var key in displayElements) {
-        for(var j=0;j<displayElements[key].length;j++) {
-            if(toBeBackElement.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
-                // console.log(elem.src);
-                $('#nameWindow').html(displayElements[key][j].item);
-                // $('#imageWindow').removeClass('flipInY');
-                // toBeBackElement = elem;
-                // categoryBackElement = key;
-                // sigmlReload = sigmlURL;
-                $('#reload-sigml').attr('style','height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;float: right;cursor: pointer;display: block;');
-                // $('.displayWindowImage').attr('style','max-height:200px;max-width:175px;');
-                
-                for(var k=0;k<numImages[displayElements[key][j].name];k++) {
-                    var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.jpg');
-                    formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', 'Step ' + (k+1));
-                    // var te = "\'".concat(displayElements[a][i].name).concat("\'");
-                    // console.log(te);
-                    // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
-                    setTimeout(function () {
+    setTimeout(function () {
+        for(var key in displayElements) {
+            for(var j=0;j<displayElements[key].length;j++) {
+                if(toBeBackElement.src.indexOf(displayElements[key][j].imagesrc)!=-1) {
+                    // console.log(elem.src);
+                    $('#nameWindow').html(displayElements[key][j].item);
+                    // $('#imageWindow').removeClass('flipInY');
+                    // toBeBackElement = elem;
+                    // categoryBackElement = key;
+                    // sigmlReload = sigmlURL;
+                    $('#reload-sigml').attr('style','height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;float: right;cursor: pointer;display: block;');
+                    // $('.displayWindowImage').attr('style','max-height:200px;max-width:175px;');
+                    
+                    for(var k=0;k<numImages[displayElements[key][j].name];k++) {
+                        var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.jpg');
+                        formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', 'Step ' + (k+1));
                         $('.displayWindow').append(formatedDisplayWindowElem);
                         $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
-                        $('.displayWindowImage').addClass('animated slideInLeft');
-                    },500);
-                    
+                        // var te = "\'".concat(displayElements[a][i].name).concat("\'");
+                        // console.log(te);
+                        // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
+                        // setTimeout(function () {
+                            
+                        //     //$('.displayWindowImage').addClass('animated slideInLeft');
+                        // },250);
+                        
+                    }
+                    // $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
+                    $(toBeBackElement).parent().attr('style','background-color:white');
+                    $(toBeBackElement).next().attr('style','color:#00cec9;');
+                    setTimeout(function () {
+                        $('#imageWindow').addClass('flipInY');
+                        $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;cursor:pointer;');
+                    },250);
+
+
+                    // $('#imageWindow').addClass('flipInY');
                 }
-                // $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
-                $(toBeBackElement).parent().attr('style','background-color:white');
-                $(toBeBackElement).next().attr('style','color:#00cec9;');
-                setTimeout(function () {
-                    $('#imageWindow').addClass('flipInY');
-                    $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;cursor:pointer;');
-                },250);
-
-
-                // $('#imageWindow').addClass('flipInY');
+                // else {
+                //     // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
+                //     var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
+                //     x.next().attr('style','color:white;');
+                //     x.parent().attr('style','background-color:transparent');
+                // }
             }
-            // else {
-            //     // console.log($("img[src$='" + displayElements[key][j].imagesrc + "']").next()attr('style','color:white;'));
-            //     var x = $("img[src$='" + displayElements[key][j].imagesrc + "']");
-            //     x.next().attr('style','color:white;');
-            //     x.parent().attr('style','background-color:transparent');
-            // }
         }
-    }
+    },250)
+    
     sigmlURL = setSiGMLURL(sigmlReload);
     return CWASA.playSiGMLURL(sigmlURL);
 });
