@@ -1872,6 +1872,15 @@ var numImages = {
     'whale': 3,
     'white': 3,
     'yellow': 3,
+    'coconut': 6,
+    'grapes': 6,
+    'owner': 4,
+    'tiger': 6,
+    'q': 4,
+    'wire': 5,
+    'with': 4,
+    'your': 6,
+    
 };
 
 // console.log(Object.keys(numImages).length);
@@ -2195,6 +2204,9 @@ $('.second-menu').mouseleave(function () {
 
 $('#button-team').click(function () {
     cleardisplaywindow();
+    $('#nameWindow').html("");
+    $('#cancel').attr('style','display:none');
+    $('#reload-sigml').attr('style','display:none');
     $('.displayWindow').append(collapsibleTeamElem);
     $('.displayWindow').append(collapsibleSupporterElem);
     // var coll = document.getElementsByClassName("collapsible");
@@ -2225,6 +2237,9 @@ $('#button-team').click(function () {
 
 $('#button-about').click(function () {
     cleardisplaywindow();
+    $('#nameWindow').html("");
+    $('#cancel').attr('style','display:none');
+    $('#reload-sigml').attr('style','display:none');
     $('.displayWindow').append("<p style='color:white;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;'>Sign Language is the most common way of communication used by the deaf communities all over the world. It is a gestural language which provides information using hands and other body parts. Sign Language contains symbolic encoded messages for communication among deaf people without any speech channel. It is the first language of many hearing impaired people. These people learn the local language of the region in which they are born as a second language. Sign languages are unique in many ways from other languages. They cannot be written like other spoken language, a special mechanism is required for transcribing the signs. Most of the deaf people prefer to communicate by using sign language only as they don’t have much knowledge about other spoken languages.  It is a matter of grieve concern that there are very few sources (schools, e-books, websites, mobile applications, online tutors etc) available for the education and communication of deaf people.  This lack of sources has resulted into poor communication, language and literacy skills among the deaf. There is a need to build automated systems that can overcome the problem of poor communication among the deaf.<br><br> The proposed project 'Child Ensign: An Assistive Pre-School Resource for Divyagjan' aims on building such an automated system that could be used for automatic generation of sign language. The system being build can be used by the deaf people along with their friends and family members for the sake of easy and better communication among them. Project mainly focuses at building of an application that converts images into its respective sign. The sign language application developed here aims in easing the life of deaf children (and their parents or society) upto age of 5 years.<br><b style='color: white;background-color:red;'><br><br>Note* </b> This website is only for research and development purpose. The project is contributed by Chitkara University Punjab In collobaration with MRS PTU Bathinda and All India Pingalwara Charitable Society. Any feedback are most welcome at (virender.kadyan@chitkara.edu.in). The avatar is contributed by University of Hamburg.</p>");
 });
 
@@ -2326,7 +2341,8 @@ $('#reload-sigml').click(function () {
                     setTimeout(function () {
                         $('.displayWindow').append(formatedDisplayWindowElem);
                         $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
-                    },250);
+                        $('.displayWindowImage').addClass('animated slideInLeft');
+                    },500);
                     
                 }
                 // $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
@@ -2378,6 +2394,7 @@ function startPlayer(sigmlURL , elem) {
                     // console.log(te);
                     // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
                     $('.displayWindow').append(formatedDisplayWindowElem);
+                    $('.displayWindowImage').addClass('animated slideInLeft');
                 }
                 $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
                 $(elem).parent().attr('style','background-color:white');
