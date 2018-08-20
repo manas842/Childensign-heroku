@@ -14,7 +14,7 @@ var sidebar = {
             class: 'colors_sidebar',
         },
         {            
-            imagesrc: '/res/icons/sidebar/fruits.svg.png',
+            imagesrc: '/res/icons/sidebar/fruits.png',
             listtext: 'ਫਲ਼',
             id: 'fruits',
             class: 'fruits_sidebar',
