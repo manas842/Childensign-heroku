@@ -14,7 +14,7 @@ var sidebar = {
             class: 'colors_sidebar',
         },
         {            
-            imagesrc: '/res/icons/sidebar/fruits.png',
+            imagesrc: '/res/icons/sidebar/fruits.svg.png',
             listtext: 'ਫਲ਼',
             id: 'fruits',
             class: 'fruits_sidebar',
@@ -43,7 +43,7 @@ var sidebar = {
             class: 'time_sidebar',
         },
         {            
-            imagesrc: '/res/icons/sidebar/education.jpg',
+            imagesrc: '/res/icons/sidebar/education.png',
             listtext: 'ਸਿੱਖਿਆ',
             id: 'education',
             class: 'education_sidebar',
@@ -55,31 +55,31 @@ var sidebar = {
             class: 'action_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/animals.jpg',
+            imagesrc: '/res/icons/sidebar/animals.svg',
             listtext: 'ਜਾਨਵਰ',
             id: 'animals',
             class: 'animals_sidebar',
         },
         {            
-            imagesrc: '/res/icons/sidebar/alphabets.jpg',
+            imagesrc: '/res/icons/sidebar/alphabets.png',
             listtext: 'ਵਰਣਮਾਲਾ',
             id: 'alphabets',
             class: 'alphabets_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/punjabialphabets.jpg',
+            imagesrc: '/res/icons/sidebar/punjabialphabets.png',
             listtext: 'ਪੰਜਾਬੀ ਵਰਣਮਾਲਾ',
             id: 'punjabiAlphabets',
             class: 'punjabiAlphabets_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/measurement.jpg',
+            imagesrc: '/res/icons/sidebar/measurement.png',
             listtext: 'ਮਾਪ',
             id: 'measurement',
             class: 'measurement_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/objects.jpg',
+            imagesrc: '/res/icons/sidebar/objects.svg',
             listtext: 'ਵਸਤੂਆਂ',
             id: 'objects',
             class: 'objects_sidebar',
@@ -91,19 +91,19 @@ var sidebar = {
             class: 'verbs_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/eatables.jpg',
+            imagesrc: '/res/icons/sidebar/eatables.png',
             listtext: 'ਖਾਣਯੋਗ',
             id: 'eatables',
             class: 'eatables_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/sensation.jpg',
+            imagesrc: '/res/icons/sidebar/sensations.png',
             listtext: 'ਸੰਵੇਦਨਾ',
             id: 'sensations',
             class: 'sensations_sidebar',
         },
         {
-            imagesrc: '/res/icons/sidebar/recognizations.jpg',
+            imagesrc: '/res/icons/sidebar/recognizations.png',
             listtext: 'ਪਛਾਣ',
             id: 'recognizations',
             class: 'recognizations_sidebar',
@@ -1880,7 +1880,8 @@ var numImages = {
     'wire': 5,
     'with': 4,
     'your': 6,
-    
+    'colors': 4,
+    'fruits': 5,
 };
 
 // console.log(Object.keys(numImages).length);
