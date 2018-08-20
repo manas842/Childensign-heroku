@@ -340,9 +340,9 @@ ul{
         font-size: 1.3rem;
     }
 
-    .app {
+    /*.app {
         flex-direction: column;
-    }
+    }*/
 
     .displayWindow {
         display: flex;
@@ -604,6 +604,7 @@ ul{
     #inner-footer {
         width: 70%;
     }
+
 }
 
 @media only screen and (max-height: 1200px) and (min-height: 1100px) {
@@ -628,12 +629,26 @@ ul{
     #avat {
         height: 91.5%;
     }
+    /*.app {
+         -webkit-transform: rotate(90deg); 
+        -moz-transform: rotate(90deg); 
+        -ms-transform: rotate(90deg); 
+        -o-transform: rotate(90deg); 
+        transform: rotate(90deg); 
+    }*/
 }
 
 @media only screen and (max-height: 699px) and (min-height: 550px) {
     #avat {
         height: 91%;
     }
+    /*.app {
+         -webkit-transform: rotate(90deg); 
+        -moz-transform: rotate(90deg); 
+        -ms-transform: rotate(90deg); 
+        -o-transform: rotate(90deg); 
+        transform: rotate(90deg); 
+    }*/
 }
 
 .img-responsive {
