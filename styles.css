@@ -671,7 +671,7 @@ ul{
     }
 }
 
-@media only screen and (max-height: 849px) and (min-height: 700px) {
+@media only screen and (max-width: 800px) and (min-width: 700px) {
     #avat {
         height: 76.5%;
         margin-top: -20px;
@@ -728,7 +728,7 @@ ul{
     }
 }
 
-@media only screen and (max-height: 699px) and (min-height: 550px) {
+@media only screen and (max-width: 699px) and (min-width: 300px) {
     #avat {
         height: 76%;
         margin-top: -30px;
