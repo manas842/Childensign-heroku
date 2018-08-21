@@ -1888,6 +1888,10 @@ var numImages = {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 // function to called to clear the display WIndow next to avtar window
+if(screen.height >=500 && screen.height <= 849) {
+    $('.second-menu').remove();
+}
+
 cleardisplaywindow = function () {
     $('.displayWindow').html("");
 }
@@ -2119,6 +2123,7 @@ $('.side-list').click(function () {
             // }
             // count++;
         }
+        $('.displayWindow').attr('style','flex-direction:column;');
         // $('#theCarousel').append(carouselInnerLeft);
         // $('#theCarousel').append(carouselInnerRight);
         // makeCarousel();
@@ -2195,6 +2200,7 @@ $('.side-list-names').click(function () {
             // }
             // count++;
         }
+        $('.displayWindow').attr('style','flex-direction:column;');
         // $('#theCarousel').append(carouselInnerLeft);
         // $('#theCarousel').append(carouselInnerRight);
         // makeCarousel();
@@ -2209,9 +2215,9 @@ $('.main-menu').hover(function () {
 });
 
 $('.second-menu').mouseleave(function () {
-    console.log(1);
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
+        $('.second-menu').remove();
     }
     // $('.side-list').attr('display','none');
     $('.second-menu').attr('style','display:none;');
@@ -2223,6 +2229,7 @@ $('#button-team').click(function () {
     cleardisplaywindow();
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
+        $('.second-menu').remove();
     }
     $('#nameWindow').html("");
     $('.cancel').attr('style','display:none');
@@ -2253,12 +2260,14 @@ $('#button-team').click(function () {
         var formattedTeamElem = formattedTeamElem.replace('%data%', displayElements['supporters'][i].item);
         $('.collapse2').append(formattedTeamElem);
     }
+    $('.displayWindow').attr('style','flex-direction:row;');
 });
 
 $('#button-about').click(function () {
     cleardisplaywindow();
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
+        $('.second-menu').remove();
     }
     $('#nameWindow').html("");
     $('.cancel').attr('style','display:none');
@@ -2296,6 +2305,7 @@ var sigmlReload = null;
 $('#cancel-div').click(function () {
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
+        $('.second-menu').remove();
     }
     cleardisplaywindow();
     $('#nameWindow').html("");
@@ -2347,6 +2357,7 @@ $('#reload-div').click(function () {
     cleardisplaywindow();
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
+        $('.second-menu').remove();
     }
     console.log(toBeBackElement);
     setTimeout(function () {
@@ -2406,6 +2417,7 @@ $('#reload-div').click(function () {
 $('.cancel').click(function () {
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
+        $('.second-menu').remove();
     }
     cleardisplaywindow();
     $('#nameWindow').html("");
@@ -2457,6 +2469,7 @@ $('#reload-sigml').click(function () {
     cleardisplaywindow();
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
+        $('.second-menu').remove();
     }
     console.log(toBeBackElement);
     setTimeout(function () {
@@ -2517,6 +2530,7 @@ function startPlayer(sigmlURL , elem) {
     // console.log(sigmlURL);
     // cleardisplaywindow();
     // console.log(elem);
+    console.log(sigmlURL);
     if(screen.height >=500 && screen.height <= 849) {
         $('.second-menu').hide();
     }
