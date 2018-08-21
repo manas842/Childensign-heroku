@@ -563,6 +563,49 @@ ul{
 .multi-item-carousel .carouse-control.right {
   background-image: none;
 }
+
+#lunaWindow {
+    float: right;
+    width: 33%;
+    height: 77vh;
+    border: 3px solid white;
+}
+
+#imageWindow {
+    margin-left: 90px;
+    margin-right: 15px;
+    border: 3px solid white;
+    overflow-y: scroll;
+    height: 77vh;
+    background-image: linear-gradient(to right top, #96bde1, #778ba7, #565d70, #33343d, #0f0f0f);
+    -webkit-animation-duration: 3s;
+}
+
+#reload-sigml {
+    height: 40px;
+    width: 40px;
+    margin-left: -65px;
+    margin-top: 5px;
+    z-index: 2;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+.cancel {
+    height: 40px;
+    width: 40px;
+    margin-left: -35px;
+    margin-top: 5px;
+    z-index: 2;
+    display: none;
+    float: left;
+}
+
+.changeSS {
+    max-height:350px;
+    max-width:290px;
+}
 /*body {
   background: #333;
   color: #ddd;
@@ -628,6 +671,17 @@ ul{
 @media only screen and (max-height: 849px) and (min-height: 700px) {
     #avat {
         height: 91.5%;
+        margin-top: -20px;
+    }
+    .second-menu {
+        display: none;
+    }
+    .changeSS {
+        max-height:100px;
+        max-width:100px;
+    }
+    #button-about, #button-team {
+        font-size: 20px;
     }
     /*.app {
          -webkit-transform: rotate(90deg); 
@@ -636,11 +690,39 @@ ul{
         -o-transform: rotate(90deg); 
         transform: rotate(90deg); 
     }*/
+    .app {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #imageWindow {
+        height: 40vh;
+        width: 90%;
+        overflow-y: initial;
+        overflow-x: scroll;
+        margin-left: 10px;
+    }
+    #lunaWindow {
+        height: 60vh;
+        width: 90%;
+    }
+    .displayWindow {
+        flex-direction: column;
+        overflow-y: initial;
+    }
+    #reload-sigml {
+        margin-top: -35px;
+    }
+    .cancel {
+        margin-left: 45px;
+        margin-top: -35px;
+    }
 }
 
 @media only screen and (max-height: 699px) and (min-height: 550px) {
     #avat {
         height: 91%;
+        margin-top: -30px;
     }
     /*.app {
          -webkit-transform: rotate(90deg); 
@@ -649,6 +731,55 @@ ul{
         -o-transform: rotate(90deg); 
         transform: rotate(90deg); 
     }*/
+    .second-menu {
+        display: none;
+    }
+    .changeSS {
+        max-height:100px;
+        max-width:100px;
+    }
+    #button-about, #button-team {
+        font-size: 20px;
+    }
+    /*.app {
+         -webkit-transform: rotate(90deg); 
+        -moz-transform: rotate(90deg); 
+        -ms-transform: rotate(90deg); 
+        -o-transform: rotate(90deg); 
+        transform: rotate(90deg); 
+    }*/
+    .app {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #imageWindow {
+        height: 40vh;
+        width: 90%;
+        overflow-y: initial;
+        overflow-x: scroll;
+        margin-left: 10px;
+    }
+    #lunaWindow {
+        height: 60vh;
+        width: 90%;
+    }
+    .displayWindow {
+        flex-direction: column;
+        overflow-y: initial;
+    }
+    #reload-sigml {
+        margin-top: -35px;
+        width: 30px;
+        height: 30px;
+    }
+    .cancel {
+        margin-left: 45px;
+        margin-top: -35px;
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .img-responsive {

@@ -1901,7 +1901,8 @@ function changeSidebarNameText(elem) {
     // $('#avat').fadeOut();
     // console.log(a);
     a = (a.split(" "))[1];
-    $('#cancel').attr('style','display:none');
+    $('.cancel').attr('style','display:none');
+    $('#reload-sigml').hide();
     $('.second-menu').attr('style','display:none;');
     // a = a.slice(0,a.length-8);
     // console.log(a);
@@ -1931,9 +1932,12 @@ function changeSidebarNameText(elem) {
 }
 
 function changeSidebarText(elem) {
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     var a = elem.id;
     var temp = a;
-    $('#cancel').attr('style','display:none');
+    $('.cancel').attr('style','display:none');
     $('.second-menu').attr('style','display:none;');
     // $('#'+a).attr('style','background-color:white;');
     a += '_sidebar';
@@ -2052,6 +2056,9 @@ $('.side-list-names').hover(function () {
 $('.side-list').click(function () {
     a = $(this.children[0]);
     $('#nameWindow').html("");
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     // console.log(a[0].id );
     changeSidebarText(a[0]);
     a = a[0].id;
@@ -2118,6 +2125,9 @@ $('.side-list').click(function () {
 
 $('.side-list-names').click(function () {
     a = $(this.children[0]);
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     $('#nameWindow').html("");
     // console.log($(a[0]));
     changeSidebarNameText(a[0]);
@@ -2197,6 +2207,9 @@ $('.main-menu').hover(function () {
 
 $('.second-menu').mouseleave(function () {
     console.log(1);
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     // $('.side-list').attr('display','none');
     $('.second-menu').attr('style','display:none;');
     // $('#avat').attr('style','margin-left:90px;');
@@ -2205,8 +2218,11 @@ $('.second-menu').mouseleave(function () {
 
 $('#button-team').click(function () {
     cleardisplaywindow();
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     $('#nameWindow').html("");
-    $('#cancel').attr('style','display:none');
+    $('.cancel').attr('style','display:none');
     $('#reload-sigml').attr('style','display:none');
     $('.displayWindow').append(collapsibleTeamElem);
     $('.displayWindow').append(collapsibleSupporterElem);
@@ -2238,8 +2254,11 @@ $('#button-team').click(function () {
 
 $('#button-about').click(function () {
     cleardisplaywindow();
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     $('#nameWindow').html("");
-    $('#cancel').attr('style','display:none');
+    $('.cancel').attr('style','display:none');
     $('#reload-sigml').attr('style','display:none');
     $('.displayWindow').append("<p style='color:white;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;'>Sign Language is the most common way of communication used by the deaf communities all over the world. It is a gestural language which provides information using hands and other body parts. Sign Language contains symbolic encoded messages for communication among deaf people without any speech channel. It is the first language of many hearing impaired people. These people learn the local language of the region in which they are born as a second language. Sign languages are unique in many ways from other languages. They cannot be written like other spoken language, a special mechanism is required for transcribing the signs. Most of the deaf people prefer to communicate by using sign language only as they don’t have much knowledge about other spoken languages.  It is a matter of grieve concern that there are very few sources (schools, e-books, websites, mobile applications, online tutors etc) available for the education and communication of deaf people.  This lack of sources has resulted into poor communication, language and literacy skills among the deaf. There is a need to build automated systems that can overcome the problem of poor communication among the deaf.<br><br> The proposed project 'Child Ensign: An Assistive Pre-School Resource for Divyagjan' aims on building such an automated system that could be used for automatic generation of sign language. The system being build can be used by the deaf people along with their friends and family members for the sake of easy and better communication among them. Project mainly focuses at building of an application that converts images into its respective sign. The sign language application developed here aims in easing the life of deaf children (and their parents or society) upto age of 5 years.<br><b style='color: white;background-color:red;'><br><br>Note* </b> This website is only for research and development purpose. The project is contributed by Chitkara University Punjab In collobaration with MRS PTU Bathinda and All India Pingalwara Charitable Society. Any feedback are most welcome at (virender.kadyan@chitkara.edu.in). The avatar is contributed by University of Hamburg.</p>");
 });
@@ -2271,7 +2290,10 @@ function setSiGMLURL(sigmlURL) {
 var toBeBackElement = null , categoryBackElement = null;
 var sigmlReload = null;
 
-$('#cancel').click(function () {
+$('.cancel').click(function () {
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     cleardisplaywindow();
     $('#nameWindow').html("");
     $('#reload-sigml').attr('style','display:none');
@@ -2298,7 +2320,7 @@ $('#cancel').click(function () {
             setTimeout(function () {
                 $('#imageWindow').addClass('flipInY');
                 // $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -55px;margin-top: 5px;z-index: 2;cursor:pointer;');
-                $('#cancel').attr('style','display:none');
+                $('.cancel').attr('style','display:none');
                 // $(toBeBackElement).parent().attr('style','background-color:white;display:none;');
                 // $(toBeBackElement).next().attr('style','color:#00cec9;');
                 
@@ -2320,6 +2342,9 @@ $('#cancel').click(function () {
 
 $('#reload-sigml').click(function () {
     cleardisplaywindow();
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     console.log(toBeBackElement);
     setTimeout(function () {
         for(var key in displayElements) {
@@ -2331,14 +2356,15 @@ $('#reload-sigml').click(function () {
                     // toBeBackElement = elem;
                     // categoryBackElement = key;
                     // sigmlReload = sigmlURL;
-                    $('#reload-sigml').attr('style','height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;float: right;cursor: pointer;display: block;');
+                    $('#reload-sigml').attr('style','display: block;');
+                    // $('#reload-sigml').attr('style','height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;float: right;cursor: pointer;display: block;');
                     // $('.displayWindowImage').attr('style','max-height:200px;max-width:175px;');
                     
                     for(var k=0;k<numImages[displayElements[key][j].name];k++) {
                         var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.jpg');
                         formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%data%', 'Step ' + (k+1));
                         $('.displayWindow').append(formatedDisplayWindowElem);
-                        $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
+                        $('.displayWindowImage').addClass('changeSS');
                         // var te = "\'".concat(displayElements[a][i].name).concat("\'");
                         // console.log(te);
                         // var formatedDisplayWindowElem = formatedDisplayWindowElem.replace('%sigmlurl%', te);
@@ -2353,7 +2379,8 @@ $('#reload-sigml').click(function () {
                     $(toBeBackElement).next().attr('style','color:#00cec9;');
                     setTimeout(function () {
                         $('#imageWindow').addClass('flipInY');
-                        $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;cursor:pointer;');
+                        $('.cancel').attr('style','display:block;');
+                        // $('.cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;cursor:pointer;');
                     },250);
 
 
@@ -2377,6 +2404,9 @@ function startPlayer(sigmlURL , elem) {
     // console.log(sigmlURL);
     // cleardisplaywindow();
     // console.log(elem);
+    if(screen.height >=500 && screen.height <= 849) {
+        $('.second-menu').hide();
+    }
     cleardisplaywindow();
     $('#imageWindow').removeClass('flipInY');
     // $(elem).parent().attr('style','background-color:white');
@@ -2390,7 +2420,8 @@ function startPlayer(sigmlURL , elem) {
                 toBeBackElement = elem;
                 categoryBackElement = key;
                 sigmlReload = sigmlURL;
-                $('#reload-sigml').attr('style','height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;float: right;cursor: pointer;display: block;');
+                $('#reload-sigml').attr('style','display:block');
+                //$('#reload-sigml').attr('style','height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;float: right;cursor: pointer;display: block;');
                 // $('.displayWindowImage').attr('style','max-height:200px;max-width:175px;');
                 for(var k=0;k<numImages[displayElements[key][j].name];k++) {
                     var formatedDisplayWindowElem = displayWindowElem.replace('%imagesrc%', '/res/screenshots/' + displayElements[key][j].name + '/s' + (k+1) + '.jpg');
@@ -2401,12 +2432,14 @@ function startPlayer(sigmlURL , elem) {
                     $('.displayWindow').append(formatedDisplayWindowElem);
                     $('.displayWindowImage').addClass('animated slideInLeft');
                 }
-                $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
+                // $('.displayWindowImage').attr('style','max-height:350px;max-width:290px;');
+                $('.displayWindowImage').addClass('changeSS');
                 $(elem).parent().attr('style','background-color:white');
                 $(elem).next().attr('style','color:#00cec9;');
                 setTimeout(function () {
                     $('#imageWindow').addClass('flipInY');
-                    $('#cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;cursor:pointer;');
+                    $('.cancel').attr('style','display:block;');
+                    // $('.cancel').attr('style','display:block;height: 40px;width: 40px;margin-left: -65px;margin-top: 5px;z-index: 2;cursor:pointer;');
                 },250);
 
 
