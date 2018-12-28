@@ -4,9 +4,11 @@ function playSigml(e) {
 $("#button-hindi").click(function() {
     $('.submenu').slideToggle();
     assignCategory("hindi");
-    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").attr("style", "opacity:0"), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक प्रेस्चोलर सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
+    $('.square_btn').html("श्रेणियाँ");
+    document.getElementsByClassName("search__input")[0].placeholder = "खोज";
+    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").attr("style", "opacity:0"), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक पूर्व शिक्षक सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
-    $('#nameImage').attr("style","opacity:0");;
+    $('#nameImage').attr("style","opacity:0");
     loadCategories("hindi");
     $('.side-list,.side-list-names,.cancel,#reload-sigml').unbind("click");
     $(".side-list").click(function() {
@@ -19,6 +21,20 @@ $("#button-hindi").click(function() {
         amount = '';
         scroll();
         console.log("Hindi");
+        var cat;
+        for(var elem in sidebar.elements) {
+            // console.log(sidebar.elements[elem].listtext_hindi);
+            if(sidebar.elements[elem].listtext_english == a) {
+                cat = sidebar.elements[elem];
+                break;
+            }
+        }
+        if(lan=="english") {
+            $('#category-text').html(cat.listtext_english);
+        }
+        else {
+            $('#category-text').html(cat.listtext_hindi);
+        }
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
@@ -37,6 +53,20 @@ $("#button-hindi").click(function() {
         $('#nameImage').attr("style","opacity:0;");
         console.log(a);
         amount = '';
+        var cat;
+        for(var elem in sidebar.elements) {
+            // console.log(sidebar.elements[elem].listtext_hindi);
+            if(sidebar.elements[elem].listtext_english == a) {
+                cat = sidebar.elements[elem];
+                break;
+            }
+        }
+        if(lan=="english") {
+            $('#category-text').html(cat.listtext_english);
+        }
+        else {
+            $('#category-text').html(cat.listtext_hindi);
+        }
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
@@ -76,6 +106,8 @@ $("#button-hindi").click(function() {
 $("#button-english").click(function() {
     $('.submenu').slideToggle();
     assignCategory("english");
+    $('.square_btn').html("Categories");
+    document.getElementsByClassName("search__input")[0].placeholder = "Search";
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").hide(), $("#title-name span").html("Child Ensign: A Preschooler assistive tool for Divyagjan"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
     $('#nameImage').attr("style","opacity:0");;
@@ -84,6 +116,17 @@ $("#button-english").click(function() {
     listClick("english");
     amount = '';
     scroll();
+    if(lan=="english") {
+            $('#category-text').html(a);
+        }
+        else {
+            for(var elem in sidebar.elements) {
+                // console.log(sidebar.elements[elem].listtext_hindi);
+                if(sidebar.elements[elem].listtext_english == a) {
+                    $('#category-text').html(sidebar.elements[elem].listtext_hindi);
+                }
+            }
+        }
     $(".cancel").click(function() {
         $('.cancel').hide();
         screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").attr("style", "opacity:0"), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");

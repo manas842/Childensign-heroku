@@ -5223,61 +5223,61 @@ var sidebar = {
         numbers: [{
             imagesrc: "./res/icons/numbers/0.png",
             item: "",
-            item_english: "",
+            item_english: "0",
             item_hindi: "",
             name: "0"
         }, {
             imagesrc: "./res/icons/numbers/1.png",
             item: "",
-            item_english: "",
+            item_english: "1",
             item_hindi: "",
             name: "1"
         }, {
             imagesrc: "./res/icons/numbers/2.png",
             item: "",
-            item_english: "",
+            item_english: "2",
             item_hindi: "",
             name: "2"
         }, {
             imagesrc: "./res/icons/numbers/3.png",
             item: "",
-            item_english: "",
+            item_english: "3",
             item_hindi: "",
             name: "3"
         }, {
             imagesrc: "./res/icons/numbers/4.png",
             item: "",
-            item_english: "",
+            item_english: "4",
             item_hindi: "",
             name: "4"
         }, {
             imagesrc: "./res/icons/numbers/5.png",
             item: "",
-            item_english: "",
+            item_english: "5",
             item_hindi: "",
             name: "5"
         }, {
             imagesrc: "./res/icons/numbers/6.png",
             item: "",
-            item_english: "",
+            item_english: "6",
             item_hindi: "",
             name: "6"
         }, {
             imagesrc: "./res/icons/numbers/7.png",
             item: "",
-            item_english: "",
+            item_english: "7",
             item_hindi: "",
             name: "7"
         }, {
             imagesrc: "./res/icons/numbers/8.png",
             item: "",
-            item_english: "",
+            item_english: "8",
             item_hindi: "",
             name: "8"
         }, {
             imagesrc: "./res/icons/numbers/9.png",
             item: "",
-            item_english: "",
+            item_english: "9",
             item_hindi: "",
             name: "9"
         }],
@@ -6401,157 +6401,157 @@ var sidebar = {
         alphabets: [{
             imagesrc: "./res/icons/alphabets/A.png",
             item: "",
-            item_english: "",
+            item_english: "A",
             item_hindi: "",
             name: "a"
         }, {
             imagesrc: "./res/icons/alphabets/B.png",
             item: "",
-            item_english: "",
+            item_english: "B",
             item_hindi: "",
             name: "b"
         }, {
             imagesrc: "./res/icons/alphabets/C.png",
             item: "",
-            item_english: "",
+            item_english: "C",
             item_hindi: "",
             name: "c"
         }, {
             imagesrc: "./res/icons/alphabets/D.png",
             item: "",
-            item_english: "",
+            item_english: "D",
             item_hindi: "",
             name: "d"
         }, {
             imagesrc: "./res/icons/alphabets/E.png",
             item: "",
-            item_english: "",
+            item_english: "E",
             item_hindi: "",
             name: "e"
         }, {
             imagesrc: "./res/icons/alphabets/F.png",
             item: "",
-            item_english: "",
+            item_english: "F",
             item_hindi: "",
             name: "f"
         }, {
             imagesrc: "./res/icons/alphabets/G.png",
             item: "",
-            item_english: "",
+            item_english: "G",
             item_hindi: "",
             name: "g"
         }, {
             imagesrc: "./res/icons/alphabets/H.png",
             item: "",
-            item_english: "",
+            item_english: "H",
             item_hindi: "",
             name: "h"
         }, {
             imagesrc: "./res/icons/alphabets/I.png",
             item: "",
-            item_english: "",
+            item_english: "I",
             item_hindi: "",
             name: "i"
         }, {
             imagesrc: "./res/icons/alphabets/J.png",
             item: "",
-            item_english: "",
+            item_english: "J",
             item_hindi: "",
             name: "j"
         }, {
             imagesrc: "./res/icons/alphabets/K.png",
             item: "",
-            item_english: "",
+            item_english: "K",
             item_hindi: "",
             name: "k"
         }, {
             imagesrc: "./res/icons/alphabets/L.png",
             item: "",
-            item_english: "",
+            item_english: "L",
             item_hindi: "",
             name: "l"
         }, {
             imagesrc: "./res/icons/alphabets/M.png",
             item: "",
-            item_english: "",
+            item_english: "M",
             item_hindi: "",
             name: "m"
         }, {
             imagesrc: "./res/icons/alphabets/N.png",
             item: "",
-            item_english: "",
+            item_english: "N",
             item_hindi: "",
             name: "n"
         }, {
             imagesrc: "./res/icons/alphabets/O.png",
             item: "",
-            item_english: "",
+            item_english: "O",
             item_hindi: "",
             name: "o"
         }, {
             imagesrc: "./res/icons/alphabets/P.png",
             item: "",
-            item_english: "",
+            item_english: "P",
             item_hindi: "",
             name: "p"
         }, {
             imagesrc: "./res/icons/alphabets/Q.png",
             item: "",
-            item_english: "",
+            item_english: "Q",
             item_hindi: "",
             name: "q"
         }, {
             imagesrc: "./res/icons/alphabets/R.png",
             item: "",
-            item_english: "",
+            item_english: "R",
             item_hindi: "",
             name: "r"
         }, {
             imagesrc: "./res/icons/alphabets/S.png",
             item: "",
-            item_english: "",
+            item_english: "S",
             item_hindi: "",
             name: "s"
         }, {
             imagesrc: "./res/icons/alphabets/T.png",
             item: "",
-            item_english: "",
+            item_english: "T",
             item_hindi: "",
             name: "t"
         }, {
             imagesrc: "./res/icons/alphabets/U.png",
             item: "",
-            item_english: "",
+            item_english: "U",
             item_hindi: "",
             name: "u"
         }, {
             imagesrc: "./res/icons/alphabets/V.png",
             item: "",
-            item_english: "",
+            item_english: "V",
             item_hindi: "",
             name: "v"
         }, {
             imagesrc: "./res/icons/alphabets/W.png",
             item: "",
-            item_english: "",
+            item_english: "W",
             item_hindi: "",
             name: "w"
         }, {
             imagesrc: "./res/icons/alphabets/X.png",
             item: "",
-            item_english: "",
+            item_english: "X",
             item_hindi: "",
             name: "x"
         }, {
             imagesrc: "./res/icons/alphabets/Y.png",
             item: "",
-            item_english: "",
+            item_english: "Y",
             item_hindi: "",
             name: "y"
         }, {
             imagesrc: "./res/icons/alphabets/Z.png",
             item: "",
-            item_english: "",
+            item_english: "Z",
             item_hindi: "",
             name: "z"
         }],
@@ -9672,6 +9672,20 @@ function listClick(lan){
         console.log(a);
         amount = '';
         scroll();
+        var cat;
+        for(var elem in sidebar.elements) {
+            // console.log(sidebar.elements[elem].listtext_hindi);
+            if(sidebar.elements[elem].listtext_english == a) {
+                cat = sidebar.elements[elem];
+                break;
+            }
+        }
+        if(lan=="english") {
+            $('#category-text').html(cat.listtext_english);
+        }
+        else {
+            $('#category-text').html(cat.listtext_hindi);
+        }
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             if(lan=="english"){
@@ -9697,6 +9711,20 @@ function listClick(lan){
         console.log(a);
         amount = '';
         scroll();
+        var cat;
+        for(var elem in sidebar.elements) {
+            // console.log(sidebar.elements[elem].listtext_hindi);
+            if(sidebar.elements[elem].listtext_english == a) {
+                cat = sidebar.elements[elem];
+                break;
+            }
+        }
+        if(lan=="english") {
+            $('#category-text').html(cat.listtext_english);
+        }
+        else {
+            $('#category-text').html(cat.listtext_hindi);
+        }
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             if(lan=="english"){
@@ -9912,6 +9940,7 @@ function assignCategory(lang) {
     $('.cancel,#reload-sigml').attr("style","opacity:0");
     $('.square_btn').click(function() {
         cleardisplaywindow();
+        $("#category-text").html("");
         $('#nameWindow').html("");
         $('#nameImage').attr("style","opacity:0");
         $('.cancel,#reload-sigml').attr("style","opacity:0");

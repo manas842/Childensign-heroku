@@ -182,7 +182,14 @@ background: #fff;
   font-family: 'eraser', cursive !important;
   font-size: 2vw !important;
   margin:0 !important;
+}
 
+#category-text {
+  font-family: 'eraser', cursive !important;
+  color: black;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: 10px;
 }
 
 .dimension {
