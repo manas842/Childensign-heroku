@@ -9634,6 +9634,10 @@ function hoverChangeSidebarText(e) {
 function cleardisplaywindow() {
     $('.displayWindow').html("");
 }
+
+$("#title-name span,#title-name img").click(function() {
+    window.location.reload()
+});
 // screen.height >= 400 && screen.height <= 749 && $(".second-menu").remove(), cleardisplaywindow = function() {
 //     $(".displayWindow").html("")
 // }, $("#title-name span,#title-name img").click(function() {
