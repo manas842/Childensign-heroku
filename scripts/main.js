@@ -5739,13 +5739,15 @@ var sidebar = {
             item_english: "Pumpkin",
             item_hindi: "कद्दू",
             name: "pumpkin"
-        }, {
-            imagesrc: "./res/icons/vegetables/ladyfinger.png",
-            item: "ਲੇਡੀਫਿੰਗਰ",
-            item_english: "Lady Finger",
-            item_hindi: "भिंडी",
-            name: "ladyfinger"
-        }, {
+        }, 
+        // {
+        //     imagesrc: "./res/icons/vegetables/ladyfinger.png",
+        //     item: "ਲੇਡੀਫਿੰਗਰ",
+        //     item_english: "Lady Finger",
+        //     item_hindi: "भिंडी",
+        //     name: "ladyfinger"
+        // },
+        {
             imagesrc: "./res/icons/vegetables/drumstick.png",
             item: "ਡ੍ਰਮਸਟਿਕ",
             item_english: "Drum Stick",
