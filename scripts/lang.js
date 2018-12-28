@@ -4,6 +4,7 @@ function playSigml(e) {
 $("#button-hindi").click(function() {
     $('.submenu').slideToggle();
     assignCategory("hindi");
+    $("#category-text").html("");
     $('.square_btn').html("श्रेणियाँ");
     document.getElementsByClassName("search__input")[0].placeholder = "खोज";
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").attr("style", "opacity:0"), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक पूर्व शिक्षक सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
@@ -24,17 +25,12 @@ $("#button-hindi").click(function() {
         var cat;
         for(var elem in sidebar.elements) {
             // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english == a) {
+            if(sidebar.elements[elem].listtext_english.toLowerCase() == a) {
                 cat = sidebar.elements[elem];
                 break;
             }
         }
-        if(lan=="english") {
-            $('#category-text').html(cat.listtext_english);
-        }
-        else {
-            $('#category-text').html(cat.listtext_hindi);
-        }
+        $('#category-text').html(cat.listtext_hindi);
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
@@ -56,17 +52,12 @@ $("#button-hindi").click(function() {
         var cat;
         for(var elem in sidebar.elements) {
             // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english == a) {
+            if(sidebar.elements[elem].listtext_english.toLowerCase() == a) {
                 cat = sidebar.elements[elem];
                 break;
             }
         }
-        if(lan=="english") {
-            $('#category-text').html(cat.listtext_english);
-        }
-        else {
-            $('#category-text').html(cat.listtext_hindi);
-        }
+        $('#category-text').html(cat.listtext_hindi);
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
@@ -106,6 +97,7 @@ $("#button-hindi").click(function() {
 $("#button-english").click(function() {
     $('.submenu').slideToggle();
     assignCategory("english");
+    $("#category-text").html("")''
     $('.square_btn').html("Categories");
     document.getElementsByClassName("search__input")[0].placeholder = "Search";
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").hide(), $("#title-name span").html("Child Ensign: A Preschooler assistive tool for Divyagjan"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
@@ -116,17 +108,12 @@ $("#button-english").click(function() {
     listClick("english");
     amount = '';
     scroll();
-    if(lan=="english") {
-            $('#category-text').html(a);
+    for(var elem in sidebar.elements) {
+        // console.log(sidebar.elements[elem].listtext_hindi);
+        if(sidebar.elements[elem].listtext_english == a) {
+            $('#category-text').html(sidebar.elements[elem].listtext_english);
         }
-        else {
-            for(var elem in sidebar.elements) {
-                // console.log(sidebar.elements[elem].listtext_hindi);
-                if(sidebar.elements[elem].listtext_english == a) {
-                    $('#category-text').html(sidebar.elements[elem].listtext_hindi);
-                }
-            }
-        }
+    }
     $(".cancel").click(function() {
         $('.cancel').hide();
         screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").attr("style", "opacity:0"), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");

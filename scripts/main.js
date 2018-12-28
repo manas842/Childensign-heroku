@@ -9574,6 +9574,7 @@ document.getElementsByClassName('search__input')[0].addEventListener('keypress',
     var searchedArr = [];
      if(e.keyCode == 13) {
         $("#history").html("");
+        $("#category-text").html("")
         console.log(this.value);
         if(this.value != "") {
             cleardisplaywindow();
@@ -9675,7 +9676,7 @@ function listClick(lan){
         var cat;
         for(var elem in sidebar.elements) {
             // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english == a) {
+            if(sidebar.elements[elem].listtext_english.toLowerCase() == a) {
                 cat = sidebar.elements[elem];
                 break;
             }
@@ -9713,12 +9714,13 @@ function listClick(lan){
         scroll();
         var cat;
         for(var elem in sidebar.elements) {
-            // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english == a) {
+            // console.log(sidebar.elements[elem]);
+            if(sidebar.elements[elem].listtext_english.toLowerCase() == a) {
                 cat = sidebar.elements[elem];
                 break;
             }
         }
+        console.log(cat);
         if(lan=="english") {
             $('#category-text').html(cat.listtext_english);
         }
