@@ -185,8 +185,9 @@ background: #fff;
 }
 
 .dimension {
-  /* max-height: 25vw; */
-  max-width: 12vw;
+   max-height: 35vw; 
+  max-width: 22vw;
+  margin: 20px;
 }
 
 .square_btn{

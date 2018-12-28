@@ -76,6 +76,13 @@ var sidebar = {
             listtext_hindi: "सप्ताह के दिन",
             id: "daysofweek",
             class: "daysofweek_sidebar"
+        },{
+            imagesrc: "./res/icons/sidebar/months.png",
+            listtext: "ਮਹੀਨੇ",
+            listtext_english: "Months",
+            listtext_hindi: "महीने",
+            id: "months",
+            class: "months_sidebar"
         }, {
             imagesrc: "./res/icons/sidebar/time.png",
             listtext: "ਸਮਾਂ",
@@ -90,7 +97,14 @@ var sidebar = {
             listtext_hindi: "वाहन",
             id: "Transport",
             class: "Transport_sidebar"
-        },  {
+        }, {
+            imagesrc: "./res/icons/sidebar/sports.png",
+            listtext: "ਖੇਡ",
+            listtext_english: "Sports",
+            listtext_hindi: "खेल",
+            id: "sports",
+            class: "sports_sidebar"
+        },{
             imagesrc: "./res/icons/sidebar/shapes.png",
             listtext: "ਆਕਾਰ",
             listtext_english: "Shapes",
@@ -308,20 +322,6 @@ var sidebar = {
             id: "games",
             class: "games_sidebar"
         }, {
-            imagesrc: "./res/icons/sidebar/months.png",
-            listtext: "ਮਹੀਨੇ",
-            listtext_english: "Months",
-            listtext_hindi: "महीने",
-            id: "months",
-            class: "months_sidebar"
-        }, {
-            imagesrc: "./res/icons/sidebar/sports.png",
-            listtext: "ਖੇਡ",
-            listtext_english: "Sports",
-            listtext_hindi: "खेल",
-            id: "sports",
-            class: "sports_sidebar"
-        }, {
             imagesrc: "./res/icons/sidebar/education.png",
             listtext: "ਸਿੱਖਿਆ",
             listtext_english: "Education",
@@ -370,14 +370,16 @@ var sidebar = {
             listtext_hindi: "मान्यताएं",
             id: "recognizations",
             class: "recognizations_sidebar"
-        }, {
-            imagesrc: "./res/icons/sidebar/xyz.png",
-            listtext: "xyz",
-            listtext_english: "xyz",
-            listtext_hindi: "xyz",
-            id: "xyz",
-            class: "xyz_sidebar"
-        }]
+        }
+        // , {
+        //     imagesrc: "./res/icons/sidebar/xyz.png",
+        //     listtext: "xyz",
+        //     listtext_english: "xyz",
+        //     listtext_hindi: "xyz",
+        //     id: "xyz",
+        //     class: "xyz_sidebar"
+        // }
+        ]
     },
     displayElements = {
         artandentertainment: [{
@@ -9710,7 +9712,7 @@ var toBeBackElement = null,
     categoryBackElement = null,
     sigmlReload = null;
 
-function startPlayer(e, i) {
+function startPlayerEnglish(e, i) {
     // console.log(i);
     // cleardisplaywindow();
     // $("#imageWindow").removeClass("flipInY");
@@ -9726,7 +9728,56 @@ function startPlayer(e, i) {
         for(var sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
                 $("#nameWindow").html(displayElements[elem][sample].item_english), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").attr("style", "opacity:1"), $('.cancel').attr("style","opacity:1");
-                $('#nameImage').attr("style","opacity:1");;
+                $('#nameImage').attr("style","opacity:1;display:block;");;
+                $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
+                elementClicked = displayElements[elem][sample];
+                histor.push(displayElements[elem][sample]);
+                for (var a = 0; a < numImages[displayElements[elem][sample].name]; a++) {
+                    var t = displayWindowElem.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].name + "/s" + (a + 1) + ".jpg");
+                    t = t.replace("%data%", "Step " + (a + 1));
+                    t = t.replace("%class%","dimension");
+                    // $(".displayWindow").append(t);
+                    // console.log(t);
+                    var x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;visibility:hidden;">' + t + '</div>';
+                    $('.displayWindow').append(x);
+                }
+                break;
+            }
+        }
+    }
+
+    loopCount = 1;
+    setInterval(function () {
+         if(loopCount-1 == numImages[elementClicked.name]) {
+            clearInterval(this);
+         }
+         else {
+            //console.log($($(".displayWindow").children()[0]).attr("style"));
+            $($(".displayWindow").children()[loopCount-1]).attr("style","visibility:visible");
+            loopCount++;
+         }
+    },600);
+    var r = window.location.href;
+    return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
+}
+
+function startPlayerHindi(e, i) {
+    // console.log(i);
+    // cleardisplaywindow();
+    // $("#imageWindow").removeClass("flipInY");
+    $("#Prog_Alert").append(ProgElem);
+    document.getElementById("avat").style.opacity="0.8";
+    clearGloss();
+    cleardisplaywindow();
+    var clickedSrc = $(i).attr('src');
+    $('#nameImage').attr("style","opacity:1");
+    var elementClicked;
+    document.getElementsByClassName('search__input')[0].value = "";
+    for(var elem in displayElements) {
+        for(var sample in displayElements[elem]) {
+            if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
+                $("#nameWindow").html(displayElements[elem][sample].item_hindi), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").attr("style", "opacity:1"), $('.cancel').attr("style","opacity:1");
+                $('#nameImage').attr("style","opacity:1,display:block;");;
                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
                 elementClicked = displayElements[elem][sample];
                 histor.push(displayElements[elem][sample]);
@@ -9763,71 +9814,72 @@ function AddYoutubeVideo() {
     $(".displayWindow").append('<iframe style="width: inherit;height: inherit;" src="https://www.youtube.com/embed/r_bV6hi2fdI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 }
 
-function startPlayerEnglish(e, i) {
-    console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY");
-    $("#Prog_Alert").append(ProgElem);
-    document.getElementById("avat").style.opacity="0.8";
-    clearGloss();
-    $('#nameImage').attr("style","opacity:1");
-    var clickedSrc = $(i).attr('src');
-    console.log(clickedSrc);
-    for(var elem in displayElements) {
-        for(var sample in displayElements[elem]) {
-            if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                $("#nameWindow").html(displayElements[elem][sample].item_english), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").attr("style", "opacity:1"), $('.cancel').attr("style","opacity:1");
-                $('#nameImage').attr("style","opacity:1");
-                $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
-                elementClicked = displayElements[elem][sample];
-                histor.push(displayElements[elem][sample]);
-                for (var a = 0; a < numImages[displayElements[elem][sample].name]; a++) {
-                    var t = displayWindowElem.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].name + "/s" + (a + 1) + ".jpg");
-                    t = t.replace("%data%", "Step " + (a + 1));
-                    t = t.replace("%class%","dimension");
-                    // $(".displayWindow").append(t);
-                    // console.log(t);
-                    var x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;visibility:visible;">' + t + '</div>';
-                    $('.displayWindow').append(x);
-                }
-                break;
-            }
-        }
-    }
-    var r = window.location.href;
-return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
-}
+// function startPlayerEnglish(e, i) {
+//     console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY");
+//     $("#Prog_Alert").append(ProgElem);
+//     document.getElementById("avat").style.opacity="0.8";
+//     clearGloss();
+//     $('#nameImage').attr("style","opacity:1");
+//     var clickedSrc = $(i).attr('src');
+//     console.log(clickedSrc);
+//     for(var elem in displayElements) {
+//         for(var sample in displayElements[elem]) {
+//             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
+//                 $("#nameWindow").html(displayElements[elem][sample].item_english), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").attr("style", "opacity:1"), $('.cancel').attr("style","opacity:1");
+//                 $('#nameImage').attr("style","opacity:1");
+//                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
+//                 elementClicked = displayElements[elem][sample];
+//                 histor.push(displayElements[elem][sample]);
+//                 for (var a = 0; a < numImages[displayElements[elem][sample].name]; a++) {
+//                     var t = displayWindowElem.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].name + "/s" + (a + 1) + ".jpg");
+//                     t = t.replace("%data%", "Step " + (a + 1));
+//                     t = t.replace("%class%","dimension");
+//                     // $(".displayWindow").append(t);
+//                     // console.log(t);
+//                     var x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;visibility:visible;">' + t + '</div>';
+//                     $('.displayWindow').append(x);
+//                 }
+//                 break;
+//             }
+//         }
+//     }
+//     var r = window.location.href;
+// return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
+// }
 
-function startPlayerHindi(e, i) {
-    console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY"), cleardisplaywindow();
-    var elementClicked;
-    $("#Prog_Alert").append(ProgElem);
-    document.getElementById("avat").style.opacity="0.8";
-    clearGloss();
-    $('#nameImage').attr("style","opacity:1");
-    var clickedSrc = $(i).attr('src');
-    for(var elem in displayElements) {
-        for(var sample in displayElements[elem]) {
-            if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                $("#nameWindow").html(displayElements[elem][sample].item_hindi), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").attr("style", "opacity:1"), $('.cancel').attr("style","opacity:1");
-                $('#nameImage').attr("style","opacity:1");;
-                $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
-                elementClicked = displayElements[elem][sample];
-                histor.push(displayElements[elem][sample]);
-                for (var a = 0; a < numImages[displayElements[elem][sample].name]; a++) {
-                    var t = displayWindowElemHindi.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].name + "/s" + (a + 1) + ".jpg");
-                    t = t.replace("%data%", "Step " + (a + 1));
-                    t = t.replace("%class%","dimension");
-                    // $(".displayWindow").append(t);
-                    // console.log(t);
-                    var x = '<div style="display:flex;flex-direction:row;padding:1.5vw 0 0.5vw 4vw;visibility:visible;">' + t + '</div>';
-                    $('.displayWindow').append(x);
-                }
-                break;
-            }
-        }
-    }
-    var r = window.location.href;
-    return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
-}
+// function startPlayerHindi(e, i) {
+//     console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY"), cleardisplaywindow();
+//     var elementClicked;
+//     $("#Prog_Alert").append(ProgElem);
+//     document.getElementById("avat").style.opacity="0.8";
+//     clearGloss();
+//     $('#nameImage').attr("style","opacity:1");
+//     var clickedSrc = $(i).attr('src');
+//     for(var elem in displayElements) {
+//         for(var sample in displayElements[elem]) {
+//             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
+//                 $("#nameWindow").html(displayElements[elem][sample].item_hindi), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").attr("style", "opacity:1"), $('.cancel').attr("style","opacity:1");
+//                 $('#nameImage').attr("style","opacity:1");;
+//                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
+//                 elementClicked = displayElements[elem][sample];
+//                 histor.push(displayElements[elem][sample]);
+//                 for (var a = 0; a < numImages[displayElements[elem][sample].name]; a++) {
+//                     var t = displayWindowElemHindi.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].name + "/s" + (a + 1) + ".jpg");
+//                     t = t.replace("%data%", "Step " + (a + 1));
+//                     t = t.replace("%class%","dimension");
+//                     // $(".displayWindow").append(t);
+//                     // console.log(t);
+//                     var x = '<div style="display:flex;flex-direction:row;padding:1.5vw 0 0.5vw 4vw;visibility:visible;">' + t + '</div>';
+//                     $('.displayWindow').append(x);
+//                 }
+//                 break;
+//             }
+//         }
+//     }
+//     var r = window.location.href;
+//     return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
+// }
+
 function assignCategory(lang) {
     $('.square_btn').unbind("click");
     $('#nameWindow').html("");
