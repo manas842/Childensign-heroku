@@ -143,14 +143,16 @@ var sidebar = {
             listtext_hindi: "इकाइयों",
             id: "units",
             class: "units_sidebar"
-        }, {
-            imagesrc: "./res/icons/sidebar/astronomy.png",
-            listtext: "ਸ਼੍ਰੇਣੀ ਖਗੋਲ ਵਿਗਿਆਨ",
-            listtext_english: "Category Astronomy",
-            listtext_hindi: "श्रेणी खगोल विज्ञान",
-            id: "astronomy",
-            class: "astronomy_sidebar"
-        }, {
+        },
+        // {
+        //     imagesrc: "./res/icons/sidebar/astronomy.png",
+        //     listtext: "ਸ਼੍ਰੇਣੀ ਖਗੋਲ ਵਿਗਿਆਨ",
+        //     listtext_english: "Category Astronomy",
+        //     listtext_hindi: "श्रेणी खगोल विज्ञान",
+        //     id: "astronomy",
+        //     class: "astronomy_sidebar"
+        // },
+        {
             imagesrc: "./res/icons/sidebar/wildanimals.png",
             listtext: "ਜੰਗਲੀ ਜਾਨਵਰ",
             listtext_english: "Wild Animals",
@@ -160,7 +162,7 @@ var sidebar = {
         }, {
             imagesrc: "./res/icons/sidebar/treesandflowers.png",
             listtext: "ਰੁੱਖ ਅਤੇ ਫੁੱਲ",
-            listtext_english: "Trees & Flowers",
+            listtext_english: "Trees And Flowers",
             listtext_hindi: "पेड़ और फूल",
             id: "treesandflowers",
             class: "treesandflowers_sidebar"
@@ -401,7 +403,7 @@ var sidebar = {
         }, {
             imagesrc: "./res/icons/artandentertainment/tabla.png",
             item: "ਤਬਲਾ",
-            item_english: "Tabala",
+            item_english: "Tabla",
             item_hindi: "तबला",
             name: "tabala"
         }, {
@@ -458,25 +460,27 @@ var sidebar = {
             item_english: "Magic 3",
             item_hindi: "जादू 3",
             name: "magic3"
-        }, {
-            imagesrc: "./res/icons/artandentertainment/harmonium.png",
-            item: "ਹਾਰਮੋਨਿਓਮ",
-            item_english: "Harmonium",
-            item_hindi: "हरमोनियम",
-            name: "harmonium"
-        }, {
-            imagesrc: "./res/icons/artandentertainment/guitar.png",
-            item: "ਗਿਟਾਰ",
-            item_english: "Guitar",
-            item_hindi: "गिटार",
-            name: "guitar"
-        }, {
-            imagesrc: "./res/icons/artandentertainment/flute.png",
-            item: "ਬੰਸਰੀ",
-            item_english: "Flute",
-            item_hindi: "बांसुरी",
-            name: "flute"
-        }, {
+        },
+        // {
+        //     imagesrc: "./res/icons/artandentertainment/harmonium.png",
+        //     item: "ਹਾਰਮੋਨਿਓਮ",
+        //     item_english: "Harmonium",
+        //     item_hindi: "हरमोनियम",
+        //     name: "harmonium"
+        // }, {
+        //     imagesrc: "./res/icons/artandentertainment/guitar.png",
+        //     item: "ਗਿਟਾਰ",
+        //     item_english: "Guitar",
+        //     item_hindi: "गिटार",
+        //     name: "guitar"
+        // }, {
+        //     imagesrc: "./res/icons/artandentertainment/flute.png",
+        //     item: "ਬੰਸਰੀ",
+        //     item_english: "Flute",
+        //     item_hindi: "बांसुरी",
+        //     name: "flute"
+        // }, 
+        {
             imagesrc: "./res/icons/artandentertainment/entertainment.png",
             item: "ਮਨੋਰੰਜਨ",
             item_english: "Entertainment",
@@ -1376,13 +1380,15 @@ var sidebar = {
             item_english: "Kelvin",
             item_hindi: "केल्विन",
             name: "kelvin"
-        }, {
-            imagesrc: "./res/icons/units/milligram.png",
-            item: "ਮਿਲੀਗ੍ਰਾਮ",
-            item_english: "Milligram",
-            item_hindi: "मिलीग्राम",
-            name: "milligram"
-        }, {
+        },
+        // {
+        //     imagesrc: "./res/icons/units/milligram.png",
+        //     item: "ਮਿਲੀਗ੍ਰਾਮ",
+        //     item_english: "Milligram",
+        //     item_hindi: "मिलीग्राम",
+        //     name: "milligram"
+        // },
+        {
             imagesrc: "./res/icons/units/lightyears.png",
             item: "ਲਾਈਟਯੀਅਰ",
             item_english: "Lightyear",
@@ -1817,25 +1823,29 @@ var sidebar = {
             item_english: "Asia",
             item_hindi: "एशिया",
             name: "asia"
-        }, {
-            imagesrc: "./res/icons/continentsandcountries/antartica.png",
-            item: "ਐਨਟਾਰਟਿਕਾ",
-            item_english: "Antartica",
-            item_hindi: "अंटार्कटिका",
-            name: "antartica"
-        }, {
+        }, 
+        // {
+        //     imagesrc: "./res/icons/continentsandcountries/antartica.png",
+        //     item: "ਐਨਟਾਰਟਿਕਾ",
+        //     item_english: "Antartica",
+        //     item_hindi: "अंटार्कटिका",
+        //     name: "antartica"
+        // },
+        {
             imagesrc: "./res/icons/continentsandcountries/africa.png",
             item: "ਅਫਰੀਕਾ",
             item_english: "Africa",
             item_hindi: "अफ्रीका",
             name: "africa"
-        }, {
-            imagesrc: "./res/icons/continentsandcountries/southamerica.png",
-            item: "ਦੱਖਣੀ ਅਮੈਰਿਕਾ",
-            item_english: "South America",
-            item_hindi: "दक्षिण अमेरिका",
-            name: "southamerica"
-        },{
+        },
+        // {
+        //     imagesrc: "./res/icons/continentsandcountries/southamerica.png",
+        //     item: "ਦੱਖਣੀ ਅਮੈਰਿਕਾ",
+        //     item_english: "South America",
+        //     item_hindi: "दक्षिण अमेरिका",
+        //     name: "southamerica"
+        // },
+        {
             imagesrc: "./res/icons/continentsandcountries/usa.png",
             item: "ਸੰਯੁਕਤ ਰਾਜ ਅਮਰੀਕਾ",
             item_english: "United States Of America",
@@ -2404,19 +2414,21 @@ var sidebar = {
             item_hindi: "बारह बजे",
             name: "12oclock"
         }],
-        thingsonearth: [{
-            imagesrc: "./res/icons/thingsonearth/wave.png",
-            item: "",
-            item_english: "Waves",
-            item_hindi: "लहर ",
-            name: "waves"
-        }, {
-            imagesrc: "./res/icons/thingsonearth/water.png",
-            item: "ਲਹਿਰਾਂ",
-            item_english: "Water",
-            item_hindi: "पानी",
-            name: "water"
-        }, {
+        thingsonearth: [
+        // {
+        //     imagesrc: "./res/icons/thingsonearth/wave.png",
+        //     item: "",
+        //     item_english: "Waves",
+        //     item_hindi: "लहर ",
+        //     name: "waves"
+        // }, {
+        //     imagesrc: "./res/icons/thingsonearth/water.png",
+        //     item: "ਲਹਿਰਾਂ",
+        //     item_english: "Water",
+        //     item_hindi: "पानी",
+        //     name: "water"
+        // }, 
+        {
             imagesrc: "./res/icons/thingsonearth/waterfall.png",
             item: "ਝਰਨਾ",
             item_english: "Waterfall",
@@ -2446,13 +2458,15 @@ var sidebar = {
             item_english: "Sea",
             item_hindi: "समुद्र",
             name: "sea"
-        }, {
-            imagesrc: "./res/icons/thingsonearth/sand.png",
-            item: "ਰੇਤ",
-            item_english: "Sand",
-            item_hindi: "रेत",
-            name: "sand"
-        }, {
+        }, 
+        // {
+        //     imagesrc: "./res/icons/thingsonearth/sand.png",
+        //     item: "ਰੇਤ",
+        //     item_english: "Sand",
+        //     item_hindi: "रेत",
+        //     name: "sand"
+        // },
+        {
             imagesrc: "./res/icons/thingsonearth/rock.png",
             item: "ਚੱਟਾਨ",
             item_english: "Rock",

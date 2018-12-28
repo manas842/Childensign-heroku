@@ -5,6 +5,7 @@ $("#button-hindi").click(function() {
     $('.submenu').slideToggle();
     assignCategory("hindi");
     $("#category-text").html("");
+    $('#button-about').html("हमारे बारे में");
     $('.square_btn').html("श्रेणियाँ");
     document.getElementsByClassName("search__input")[0].placeholder = "खोज";
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").attr("style", "opacity:0"), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक पूर्व शिक्षक सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
@@ -97,7 +98,8 @@ $("#button-hindi").click(function() {
 $("#button-english").click(function() {
     $('.submenu').slideToggle();
     assignCategory("english");
-    $("#category-text").html("")''
+    $("#category-text").html("");
+    $('#button-about').html("About Us");
     $('.square_btn').html("Categories");
     document.getElementsByClassName("search__input")[0].placeholder = "Search";
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").hide(), $("#title-name span").html("Child Ensign: A Preschooler assistive tool for Divyagjan"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
