@@ -25,7 +25,7 @@ $("#button-hindi").click(function() {
         var cat;
         for(var elem in sidebar.elements) {
             // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english.toLowerCase() == a) {
+            if(sidebar.elements[elem].listtext_english.replace(/ /g,'').toLowerCase() == a) {
                 cat = sidebar.elements[elem];
                 break;
             }
@@ -52,7 +52,7 @@ $("#button-hindi").click(function() {
         var cat;
         for(var elem in sidebar.elements) {
             // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english.toLowerCase() == a) {
+            if(sidebar.elements[elem].listtext_english.replace(/ /g,'').toLowerCase() == a.toLowerCase()) {
                 cat = sidebar.elements[elem];
                 break;
             }
@@ -110,7 +110,7 @@ $("#button-english").click(function() {
     scroll();
     for(var elem in sidebar.elements) {
         // console.log(sidebar.elements[elem].listtext_hindi);
-        if(sidebar.elements[elem].listtext_english == a) {
+        if(sidebar.elements[elem].listtext_english == a.toLowerCase()) {
             $('#category-text').html(sidebar.elements[elem].listtext_english);
         }
     }

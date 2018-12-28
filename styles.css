@@ -376,3 +376,23 @@ input {
 .swal2-popup{
 width:28vw !important; 
 }
+
+#button-about{
+    display: inline-block;
+    border-radius: 1vw;
+    z-index: 7;
+    position: relative;
+    transform: translateY(0.2vw);
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    background: #668ad8;
+    color: #FFF;
+    border-bottom: solid 5px #36528c;
+    border-right: solid 5px #5375bd;
+}
+
+#button-about:active {
+    border: none;
+    border-top: solid 5px #36528c;
+    border-left: solid 5px #5375bd;
+}
