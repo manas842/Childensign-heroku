@@ -1,37 +1,21 @@
 var sidebarelem = '<li class="side-list"> <img src="%imagesrc%" class="icons" id="%id%"> <span class="list-text"> %listtitle% </span> </li>';
-
-var displayWindowElem = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImage" onclick="startPlayer(%sigmlurl% ,this)"> <span class="displayWindowElemText">%data%</span> </div>';
-
+var displayWindowElem = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImage %class%" onclick="startPlayer(%sigmlurl% ,this)"> <span class="displayWindowElemText list-text">%data%</span> </div>';
 var displayWindowElemRound = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImageRound" onclick="startPlayer(%sigmlurl% ,this)"> <span class="displayWindowElemText">%data%</span> </div>';
-
+var displayWindowElemEnglish = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImage %class%" onclick="startPlayerEnglish(%sigmlurl% ,this)"> <span class="displayWindowElemText">%data%</span> </div>';
+var displayWindowElemRoundEnglish = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImageRound" onclick="startPlayerEnglish(%sigmlurl% ,this)"> <span class="displayWindowElemText">%data%</span> </div>';
+var displayWindowElemHindi = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImage %class%" onclick="startPlayerHindi(%sigmlurl% ,this)"> <span class="displayWindowElemText">%data%</span> </div>';
+var displayWindowElemRoundHindi = '<div class="displayWindowContainer"> <img src="%imagesrc%" class="displayWindowImageRound" onclick="startPlayerHindi(%sigmlurl% ,this)"> <span class="displayWindowElemText">%data%</span> </div>';
 var teamRound = '<div class="teamContainer"> <img src="%imagesrc%" class="teamImageRound"> <span style="font-size:16px;color:white;" class="teamElemText">%data%</span> </div>';
-
 var itemsHeading = '<h1 style="margin: 15px;font-size: 3em;">%heading%</h1>';
-
 var itemsColMd = '<div id="image-content" class="col-md-12"></div>';
-
-var carouselDiv = '<div class="carousel slide multi-item-carousel" id="theCarousel">';
-
-var carouselInner = '<div class="carousel-inner"></div>';
-
-var carouselActiveImage = '<div style="padding-left:60px;" class="item active"><div class="col-xs-4"><p><img src="%imagesrc%" class="img-responsive" onclick="startPlayer(%sigmlurl% , this.src)"><h3>%name%</h3></p></div></div>';
-
-var carouselImage = '<div style="padding-left:60px;" class="item"><div class="col-xs-4"><p><img src="%imagesrc%" class="img-responsive" onclick="startPlayer(%sigmlurl% , this.src)"><h3>%name%</h3></p></div></div>';
-
-var carouselInnerLeft = '<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i style="color:red;" class="glyphicon glyphicon-chevron-left"></i></a>';
-
-var carouselInnerRight = '<a class="right carousel-control" href="#theCarousel" data-slide="next"><i style="color:red;" class="glyphicon glyphicon-chevron-right"></i></a>';
-
-var displayWindowBigImage = '<img class="displayWindow-big-image" src="%imagesrc%" onclick="changeBigImage(this.src)">';
-
-var displayWindowInnerDiv = '<div class="displayWindow-inner-div" style="display: flex;flex-direction: column;"></div>';
-
-var displayWindowSmallImage = '<img class="displayWindow-small-image" src="%imagesrc%" src="%imagesrc%" onclick="changeBigImage(this.src)">';
-
-var mainSidebarElem = '<li class="side-list"> <img src="%imagesrc%" class="icons" id="%id%"></li>';
-
-var secondSidebarElem = '<li class="side-list-names"> <span class="list-text %class%"> %listtitle% </span> </li>';
-
-var collapsibleTeamElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo">Team</button><div id="demo" class="collapse in collapse1"></div>';
-
-var collapsibleSupporterElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo1">Supporters</button><div id="demo1" class="collapse collapse2"></div>';
+// var mainSidebarElem = '<li class="side-list"> <img src="%imagesrc%" class="icons" id="%id%"></li>';
+// var secondSidebarElem = '<li class="side-list-names"> <span class="list-text %class%"> %listtitle% </span> </li>';
+var mainSidebarElem = '<div class="side-list"> <img src="%imagesrc%" class="icons" id="%id%"></div>';
+var secondSidebarElem = '<div class="side-list-names"> <span class="list-text %class%"> %listtitle% </span> </div>';
+var collapsibleProjectElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo1">Principal Investigators</button><div id="demo1" class="collapse in collapse2"></div>';
+var collapsibleAvatarElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo3">Avatar Contributor</button><div id="demo3" class="collapse collapse3"></div>';
+var collapsibleSignElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo4">Sign Language Expert</button><div id="demo4" class="collapse collapse4"></div>';
+var collapsibleTeamElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo5">Technical Team</button><div id="demo5" class="collapse collapse5"></div>';
+var collapsibleSupporterElem = '<button type="button" class="btn btn-info collapseBtn" data-toggle="collapse" data-target="#demo6">Supporters</button><div id="demo6" class="collapse collapse6"></div>';
+var historyElem='<li id="%id%" class="%class%">%data%</li>';
+var ProgElem ='<p id="ProgElem" style="background: rgb(0,0,0,0.4);">Translating<br>Please Wait!</p>';

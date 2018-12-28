@@ -1,1 +1,31 @@
-<sigml>	<hns_sign gloss="$PROD:silver">		<hamnosys_nonmanual>		</hamnosys_nonmanual>		<hamnosys_manual>			<hampinch12/>			<hamextfingerur/>			<hampalmul/>			<hamshoulders/>			<hammoveur/>			<hamnodding/>		</hamnosys_manual>	</hns_sign></sigml>
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamteeth/>
+			<hammoveo/>
+			<hamsmallmod/>
+			<hamrepeatfromstart/>
+			<hamreplace/>
+			<hampinch12open/>
+			<hamfingerstraightmod/>
+			<hamindexfinger/>
+			<hammiddlefinger/>
+			<hamringfinger/>
+			<hampinky/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamshouldertop/>
+			<hammover/>
+			<hamsmallmod/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamrepeatfromstartseveral/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>
