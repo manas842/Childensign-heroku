@@ -1674,12 +1674,6 @@ var sidebar = {
             item_hindi: "वेस्टइंडीज",
             name: "westindies"
         }, {
-            imagesrc: "./res/icons/continentsandcountries/usa.png",
-            item: "ਸੰਯੁਕਤ ਰਾਜ ਅਮਰੀਕਾ",
-            item_english: "United States Of America",
-            item_hindi: "संयुक्त राज्य अमेरिका",
-            name: "usa"
-        }, {
             imagesrc: "./res/icons/continentsandcountries/srilanka.png",
             item: "ਸ਼੍ਰੀ ਲੰਕਾ",
             item_english: "Sri Lanka",
@@ -1841,6 +1835,12 @@ var sidebar = {
             item_english: "South America",
             item_hindi: "दक्षिण अमेरिका",
             name: "southamerica"
+        },{
+            imagesrc: "./res/icons/continentsandcountries/usa.png",
+            item: "ਸੰਯੁਕਤ ਰਾਜ ਅਮਰੀਕਾ",
+            item_english: "United States Of America",
+            item_hindi: "संयुक्त राज्य अमेरिका",
+            name: "usa"
         }],
         wildanimals: [{
             imagesrc: "./res/icons/wildanimals/tusksf.png",
@@ -9591,7 +9591,7 @@ document.getElementsByClassName('search__input')[0].addEventListener('keypress',
             }
             console.log(searchedArr);
             for(var elem in searchedArr) {
-                var i = (i = displayWindowElem.replace("%imagesrc%", searchedArr[elem].imagesrc)).replace("%data%", searchedArr[elem].item_english),
+                var i = (i = displayWindowElemEnglish.replace("%imagesrc%", searchedArr[elem].imagesrc)).replace("%data%", searchedArr[elem].item_english),
                 n = "'".concat(searchedArr[elem].name).concat("'");
                 i = i.replace("%sigmlurl%", n);
                 var x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + i + '</div>';
@@ -9671,6 +9671,7 @@ function listClick(lan){
         $('#nameImage').attr("style","opacity:0");;
         console.log(a);
         amount = '';
+        scroll();
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             if(lan=="english"){
@@ -9695,6 +9696,7 @@ function listClick(lan){
         $('#nameImage').attr("style","opacity:0");;
         console.log(a);
         amount = '';
+        scroll();
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
             if(lan=="english"){
@@ -9936,7 +9938,9 @@ $("#cancel-div").click(function() {
     $('.cancel').hide();
     screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").attr("style", "opacity:0"), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
     $('#nameImage').attr('src','');
-    $('#nameImage').attr("style","opacity:0");;
+    $('#nameImage').attr("style","opacity:0");
+    amount = '';
+    scroll();
     var backElem = $(toBeBackElement).attr("src");
     document.getElementsByClassName('search__input')[0].value = "";
     for (var e = categoryBackElement, i = 0; i < displayElements[e].length; i++) {

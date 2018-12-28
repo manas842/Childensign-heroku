@@ -17,6 +17,7 @@ $("#button-hindi").click(function() {
         var v = $(this.children[0]);v[0].item_hindi;
         console.log(a);
         amount = '';
+        scroll();
         console.log("Hindi");
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
@@ -81,6 +82,8 @@ $("#button-english").click(function() {
     loadCategories("english");
     $('.side-list,.side-list-names,.cancel,#reload-sigml').unbind("click");
     listClick("english");
+    amount = '';
+    scroll();
     $(".cancel").click(function() {
         $('.cancel').hide();
         screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").attr("style", "opacity:0"), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
