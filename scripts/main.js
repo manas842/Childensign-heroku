@@ -83,14 +83,16 @@ var sidebar = {
             listtext_hindi: "महीने",
             id: "months",
             class: "months_sidebar"
-        }, {
-            imagesrc: "./res/icons/sidebar/time.png",
-            listtext: "ਸਮਾਂ",
-            listtext_english: "Time",
-            listtext_hindi: "पहर",
-            id: "time",
-            class: "time_sidebar"
-        }, {
+        },
+        // {
+        //     imagesrc: "./res/icons/sidebar/time.png",
+        //     listtext: "ਸਮਾਂ",
+        //     listtext_english: "Time",
+        //     listtext_hindi: "पहर",
+        //     id: "time",
+        //     class: "time_sidebar"
+        // },
+        {
             imagesrc: "./res/icons/sidebar/Transport.png",
             listtext: "ਵਾਹਨ",
             listtext_english: "Transport",
@@ -104,14 +106,16 @@ var sidebar = {
             listtext_hindi: "आकृतियाँ",
             id: "shapes",
             class: "shapes_sidebar"
-        },{
-            imagesrc: "./res/icons/sidebar/directions.png",
-            listtext: "ਦਿਸ਼ਾਵਾਂ",
-            listtext_english: "Directions",
-            listtext_hindi: "दिशाओं",
-            id: "directions",
-            class: "directions_sidebar"
-        },{
+        },
+        // {
+        //     imagesrc: "./res/icons/sidebar/directions.png",
+        //     listtext: "ਦਿਸ਼ਾਵਾਂ",
+        //     listtext_english: "Directions",
+        //     listtext_hindi: "दिशाओं",
+        //     id: "directions",
+        //     class: "directions_sidebar"
+        // },
+        {
             imagesrc: "./res/icons/sidebar/measurement.png",
             listtext: "ਮਾਪ",
             listtext_english: "Measurement",
@@ -6324,13 +6328,15 @@ var sidebar = {
             item_english: "South",
             item_hindi: "दक्षिण",
             name: "south"
-        }, {
-            imagesrc: "./res/icons/directions/right.png",
-            item: "ਸੱਜੇ",
-            item_english: "Right",
-            item_hindi: "सही",
-            name: "right"
-        }, {
+        }, 
+        // {
+        //     imagesrc: "./res/icons/directions/right.png",
+        //     item: "ਸੱਜੇ",
+        //     item_english: "Right",
+        //     item_hindi: "सही",
+        //     name: "right"
+        // },
+        {
             imagesrc: "./res/icons/directions/north.png",
             item: "ਉੱਤਰ",
             item_english: "North",
@@ -9742,6 +9748,7 @@ function startPlayerEnglish(e, i) {
                     t = t.replace("%class%","dimension");
                     // $(".displayWindow").append(t);
                     // console.log(t);
+                    console.log(displayElements[elem][sample].name);
                     var x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;visibility:hidden;">' + t + '</div>';
                     $('.displayWindow').append(x);
                 }
