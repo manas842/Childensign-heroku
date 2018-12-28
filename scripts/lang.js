@@ -13,7 +13,7 @@ $("#button-hindi").click(function() {
         a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
-        $('#nameImage').attr("style","opacity:0");;
+        $('#nameImage').attr("style","opacity:0");
         var v = $(this.children[0]);v[0].item_hindi;
         console.log(a);
         amount = '';
@@ -33,7 +33,7 @@ $("#button-hindi").click(function() {
         a = $(this.children[0]), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#nameWindow").html(""), $("#reload-sigml").hide(), a = a[0].className, a = a.split(" ")[1], a = a.slice(0, a.length - 8), 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
-        $('#nameImage').attr("style","opacity:0");;
+        $('#nameImage').attr("style","opacity:0;");
         console.log(a);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";

@@ -5751,13 +5751,15 @@ var sidebar = {
             item_english: "Drum Stick",
             item_hindi: "ढोल का छड़ी",
             name: "drumstick"
-        }, {
-            imagesrc: "./res/icons/vegetables/chillie.png",
-            item: "ਮਿਰਚ",
-            item_english: "Chillie",
-            item_hindi: "मिर्च",
-            name: "chilli"
-        }, {
+        }, 
+        // {
+        //     imagesrc: "./res/icons/vegetables/chillie.png",
+        //     item: "ਮਿਰਚ",
+        //     item_english: "Chillie",
+        //     item_hindi: "मिर्च",
+        //     name: "chilli"
+        // },
+        {
             imagesrc: "./res/icons/vegetables/beans.png",
             item: "ਬੀਨਜ਼",
             item_english: "Beans",
@@ -9777,7 +9779,7 @@ function startPlayerHindi(e, i) {
         for(var sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
                 $("#nameWindow").html(displayElements[elem][sample].item_hindi), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").attr("style", "opacity:1"), $('.cancel').attr("style","opacity:1");
-                $('#nameImage').attr("style","opacity:1,display:block;");;
+                $('#nameImage').attr("style","opacity:1;display:block;");;
                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
                 elementClicked = displayElements[elem][sample];
                 histor.push(displayElements[elem][sample]);
