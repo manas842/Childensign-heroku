@@ -62,13 +62,13 @@ var sidebar = {
             listtext_hindi: "फूल",
             id: "flowers",
             class: "flowers_sidebar"
-        }, {
-            imagesrc: "./res/icons/sidebar/directions.png",
-            listtext: "ਦਿਸ਼ਾਵਾਂ",
-            listtext_english: "Directions",
-            listtext_hindi: "दिशाओं",
-            id: "directions",
-            class: "directions_sidebar"
+        },{
+            imagesrc: "./res/icons/sidebar/sports.png",
+            listtext: "ਖੇਡ",
+            listtext_english: "Sports",
+            listtext_hindi: "खेल",
+            id: "sports",
+            class: "sports_sidebar"
         }, {
             imagesrc: "./res/icons/sidebar/calendar.png",
             listtext: "ਹਫ਼ਤੇ ਦੇ ਦਿਨ",
@@ -98,20 +98,20 @@ var sidebar = {
             id: "Transport",
             class: "Transport_sidebar"
         }, {
-            imagesrc: "./res/icons/sidebar/sports.png",
-            listtext: "ਖੇਡ",
-            listtext_english: "Sports",
-            listtext_hindi: "खेल",
-            id: "sports",
-            class: "sports_sidebar"
-        },{
             imagesrc: "./res/icons/sidebar/shapes.png",
             listtext: "ਆਕਾਰ",
             listtext_english: "Shapes",
             listtext_hindi: "आकृतियाँ",
             id: "shapes",
             class: "shapes_sidebar"
-        }, {
+        },{
+            imagesrc: "./res/icons/sidebar/directions.png",
+            listtext: "ਦਿਸ਼ਾਵਾਂ",
+            listtext_english: "Directions",
+            listtext_hindi: "दिशाओं",
+            id: "directions",
+            class: "directions_sidebar"
+        },{
             imagesrc: "./res/icons/sidebar/measurement.png",
             listtext: "ਮਾਪ",
             listtext_english: "Measurement",
@@ -9916,7 +9916,7 @@ $("#cancel-div").click(function() {
     var backElem = $(toBeBackElement).attr("src");
     document.getElementsByClassName('search__input')[0].value = "";
     for (var e = categoryBackElement, i = 0; i < displayElements[e].length; i++) {
-        var n = displayWindowElem.replace("%imagesrc%", displayElements[e][i].imagesrc);
+        var n = displayWindowElemEnglish.replace("%imagesrc%", displayElements[e][i].imagesrc);
         n = n.replace("%data%", displayElements[e][i].item_english);
         var s, a = "'".concat(displayElements[e][i].name).concat("'");
         n = n.replace("%sigmlurl%", a), x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + n + '</div>', $(".displayWindow").append(x), -1 != toBeBackElement.src.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().attr("style", "background-color:white"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
