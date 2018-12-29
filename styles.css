@@ -223,11 +223,11 @@ background: #fff;
   width: 18vw;
   cursor: pointer;
   display: block;
-  padding: 15px 15px 15px 42px;
+  margin: 0 0 0 8vw;
+  padding: 10px 15px 15px 1vw;
   color: #4D4D4D;
   font-size: 14px;
   font-weight: 700;
-  border-bottom: 1px solid #CCC;
   position: relative;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -243,14 +243,13 @@ background: #fff;
     font-size: 14px;
 }
 
-.submenu li {border-bottom: 1px solid #4b4a5e;border-radius: 40px;background: #fff;margin: 0.5vw 0 0 5vw;width: 10vw;}
+.submenu li {border-bottom: 1px solid #4b4a5e;border-radius: 40px;background: #fff;margin: 0.5vw 0 0 8vw;text-align: center;width: 11vw;}
 
 .submenu a {
   display: block;
   text-decoration: none;
   color: black;
-  padding: 12px;
-  padding-left: 42px;
+  padding: 0.8vw;
   -webkit-transition: all 0.25s ease !important;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease !important;

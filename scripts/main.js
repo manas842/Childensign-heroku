@@ -9,7 +9,7 @@ var sidebar = {
         }, {
             imagesrc: "./res/icons/sidebar/alphabets.png",
             listtext: "ਵਰਣਮਾਲਾ",
-            listtext_english: " English Alphabets",
+            listtext_english: " Alphabets",
             listtext_hindi: "अक्षर",
             id: "alphabets",
             class: "alphabets_sidebar"
@@ -320,14 +320,16 @@ var sidebar = {
             listtext_hindi: "व्यंजन और मसालों",
             id: "dishes",
             class: "dishes_sidebar"
-        }, {
-            imagesrc: "./res/icons/sidebar/games.png",
-            listtext: "ਖੇਡਾਂ ਅਤੇ ਖੇਡਾਂ",
-            listtext_english: "Games And Sports",
-            listtext_hindi: "क्रीडा और खेल",
-            id: "games",
-            class: "games_sidebar"
-        }, {
+        },
+        // {
+        //     imagesrc: "./res/icons/sidebar/games.png",
+        //     listtext: "ਖੇਡਾਂ ਅਤੇ ਖੇਡਾਂ",
+        //     listtext_english: "Games And Sports",
+        //     listtext_hindi: "क्रीडा और खेल",
+        //     id: "games",
+        //     class: "games_sidebar"
+        // },
+        {
             imagesrc: "./res/icons/sidebar/education.png",
             listtext: "ਸਿੱਖਿਆ",
             listtext_english: "Education",
@@ -9992,13 +9994,13 @@ $("#cancel-div").click(function() {
         var n = displayWindowElemEnglish.replace("%imagesrc%", displayElements[e][i].imagesrc);
         n = n.replace("%data%", displayElements[e][i].item_english);
         var s, a = "'".concat(displayElements[e][i].name).concat("'");
-        n = n.replace("%sigmlurl%", a), x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + n + '</div>', $(".displayWindow").append(x), -1 != toBeBackElement.src.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().attr("style", "background-color:white"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
+        n = n.replace("%sigmlurl%", a), x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + n + '</div>', $(".displayWindow").append(x), -1 != toBeBackElement.src.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().attr("style", "background-color:grey"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
             $("#imageWindow").addClass("flipInY"), $(".cancel").attr("style", "opacity:0")
         }, 250)) : (console.log("other"), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:white;"), s.parent().attr("style", "background-color:transparent"))
     }
     console.log(backElem);
     var temp = $("img[src$='" + backElem + "']");
-    temp.parent().attr("style","background-color:white");
+    temp.parent().attr("style","background-color:grey");
     temp.next().attr("style","color:black;");
 }), $("#reload-sigml").click(function() {
     $("#Prog_Alert").append(ProgElem);
