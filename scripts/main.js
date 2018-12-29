@@ -204,7 +204,7 @@ var sidebar = {
         }, {
             imagesrc: "./res/icons/sidebar/railwayswaterwaysairways.png",
             listtext: "ਰੇਲਵੇ, ਵਾਟਰਵੇਜ਼ ਅਤੇ ਏਅਰਵੇਜ਼",
-            listtext_english: "Railways, Waterways And Airways",
+            listtext_english: "Railways Waterways Airways",
             listtext_hindi: "रेलवे, जलमार्ग और एयरवेज",
             id: "railwayswaterwaysairways",
             class: "railwayswaterwaysairways_sidebar"
@@ -218,7 +218,7 @@ var sidebar = {
         }, {
             imagesrc: "./res/icons/sidebar/prepositions.png",
             listtext: "ਤਿਆਰੀ ਅਤੇ ਐਡਵਰਕਸ",
-            listtext_english: "Prepositions And Adverbs",
+            listtext_english: "Prepositions",
             listtext_hindi: "तैयारी और क्रियाएँ",
             id: "prepositions",
             class: "prepositions_sidebar"
@@ -253,14 +253,14 @@ var sidebar = {
         }, {
             imagesrc: "./res/icons/sidebar/insectsandreptiles.png",
             listtext: "ਕੀੜੇ ਅਤੇ ਸੱਪ",
-            listtext_english: "Insects & Reptiles",
+            listtext_english: "Insects and Reptiles",
             listtext_hindi: "कीड़े और सरीसृप",
             id: "insectsandreptiles",
             class: "insectsandreptiles_sidebar"
         }, {
             imagesrc: "./res/icons/sidebar/indianstates.png",
             listtext: "ਭਾਰਤੀ ਰਾਜ ਅਤੇ ਕੇਂਦਰ ਸ਼ਾਸਤ ਪ੍ਰਦੇਸ਼",
-            listtext_english: "Indian States And Union Territories",
+            listtext_english: "Indian States",
             listtext_hindi: "भारतीय राज्यों और संघ शासित प्रदेशों",
             id: "indianstates",
             class: "indianstates_sidebar"
@@ -304,22 +304,24 @@ var sidebar = {
             listtext: "ਡਰੈਸਵੇਅਰ ਅਤੇ ਕਾਸਮੈਟਿਕਸ",
             listtext_english: "Dressware And Cosmetics",
             listtext_hindi: "ड्रेसवेयर और प्रसाधन सामग्री",
-            id: "dressware",
-            class: "dressware_sidebar"
-        }, {
+            id: "dresswareandcosmetics",
+            class: "dresswareandcosmetics_sidebar"
+        },
+        {
             imagesrc: "./res/icons/sidebar/domesticanimals.png",
             listtext: "ਘਰੇਲੂ ਪਸ਼ੂ ਅਤੇ ਪੰਛੀ",
             listtext_english: "Domestic Animals And Birds",
             listtext_hindi: "घरेलू पशु और पक्षी",
-            id: "domesticanimals",
-            class: "domesticanimals_sidebar"
-        }, {
+            id: "domesticanimalsandbirds",
+            class: "domesticanimalsandbirds_sidebar"
+        },
+        {
             imagesrc: "./res/icons/sidebar/dishes.png",
             listtext: "ਬਰਤਨ ਅਤੇ ਮਸਾਲਿਆਂ",
-            listtext_english: "Dishes & Spices",
+            listtext_english: "Dishes and Spices",
             listtext_hindi: "व्यंजन और मसालों",
-            id: "dishes",
-            class: "dishes_sidebar"
+            id: "dishesandspices",
+            class: "dishesandspices_sidebar"
         },
         // {
         //     imagesrc: "./res/icons/sidebar/games.png",
@@ -341,8 +343,8 @@ var sidebar = {
             listtext: "ਕਾਰਵਾਈ",
             listtext_english: "Actions",
             listtext_hindi: "क्रिया",
-            id: "action",
-            class: "action_sidebar"
+            id: "actions",
+            class: "actions_sidebar"
         }, {
             imagesrc: "./res/icons/sidebar/objects.png",
             listtext: "ਵਸਤੂਆਂ",
@@ -4434,7 +4436,7 @@ var sidebar = {
             item_hindi: "2 पूछो",
             name: "ask2"
         }],
-        dressware: [{
+        dresswareandcosmetics: [{
             imagesrc: "./res/icons/dressware/sweaterf.png",
             item: "ਸਵੈਟਰ",
             item_english: "Sweater",
@@ -4663,7 +4665,7 @@ var sidebar = {
             item_hindi: "पायल",
             name: "anklets"
         }],
-        domesticanimals: [{
+        domesticanimalsandbirds: [{
             imagesrc: "./res/icons/domesticanimals/whalef.png",
             item: "ਵ੍ਹੇਲ",
             item_english: "Whale",
@@ -4898,7 +4900,7 @@ var sidebar = {
             item_hindi: "छाल",
             name: "bark"
         }],
-        dishes: [{
+        dishesandspices: [{
             imagesrc: "./res/icons/dishes/vadaf.png",
             item: "ਵਦਾ",
             item_english: "Vada",
@@ -5909,7 +5911,7 @@ var sidebar = {
             item_hindi: "मालिक",
             name: "owner"
         }],
-        action: [{
+        actions: [{
             imagesrc: "./res/icons/action/acting.png",
             item: "ਅਦਾਕਾਰੀ",
             item_english: "Acting",
