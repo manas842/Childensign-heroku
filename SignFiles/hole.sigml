@@ -1,7 +1,11 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_head tag="TL"/>
+			<hnm_eyegaze tag="LD"/>
+			<hnm_eyelids tag="SB"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamparbegin/>

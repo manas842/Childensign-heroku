@@ -1,7 +1,10 @@
 <sigml>
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>
+			<hnm_head tag="SH"/>
+			<hnm_eyebrows tag="RB"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hampinchall/>
 			<hamfingerstraightmod/>

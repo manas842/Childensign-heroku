@@ -1,6 +1,7 @@
 <sigml>
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="Inf3:me_ISVn"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hampinchall/>

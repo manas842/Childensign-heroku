@@ -1,7 +1,12 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture                            picture="{bVt"/>
+			<hnm_shoulder tag="UB"/>
+			<hnm_eyegaze tag="AD"/>
+			<hnm_eyelids tag="BB"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamfingerstraightmod/>

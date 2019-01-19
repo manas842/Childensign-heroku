@@ -1,6 +1,7 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_head tag="SR"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamfist/>
@@ -9,7 +10,13 @@
 			<hampalml/>
 			<hamchin/>
 			<hamclose/>
-			<hamreplace/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
 			<hamflathand/>
 			<hamthumboutmod/>
 			<hamextfingerur/>

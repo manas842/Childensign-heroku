@@ -1,18 +1,8 @@
-<sigml>
-	<hns_sign gloss="">
-		<hamnosys_nonmanual>
+<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="r{t"/>
+			<hnm_shoulder tag="UR"/>
+			<hnm_eyegaze tag="AD"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="BB"/>
+			<hnm_nose tag="WI"/>
 		</hamnosys_nonmanual>
-		<hamnosys_manual>
-			<hamfinger2/>
-			<hamextfingerdo/>
-			<hampalml/>
-			<hamstomach/>
-			<hamlrat/>
-			<hammoveo/>
-			<hamwavy/>
-			<hammoveo/>
-			<hamwavy/>
-		</hamnosys_manual>
-	</hns_sign>
-
-</sigml>

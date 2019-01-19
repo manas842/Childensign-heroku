@@ -1,18 +1,1 @@
-<sigml>
-        <hns_sign gloss="">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
-		<hamnosys_manual>
-			<hamfinger2/>
-			<hamextfingeru/>
-			<hampalmu/>
-			<hamchin/>
-			<hamreplace/>
-			<hampinchall/>
-			<hamextfingeru/>
-			<hampalmu/>
-			<hamunderchin/>
-		</hamnosys_manual>
-	</hns_sign>
-
-</sigml>
+<sigml><hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag="NB"/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="AD"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamextfingeru/><hampalmu/><hamchin/><hamreplace/><hampinchall/><hamextfingeru/><hampalmu/><hamunderchin/></hamnosys_manual></hns_sign></sigml>

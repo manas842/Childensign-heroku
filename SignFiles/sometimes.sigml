@@ -1,6 +1,9 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="sVmta_Imz"/>
+			<hnm_eyegaze tag="NO"/>
+			<hnm_eyebrows tag="FU"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hampinchall/>

@@ -1,6 +1,7 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+<hnm_mouthpicture picture="w3:d"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamcee12/>

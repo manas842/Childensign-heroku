@@ -1,7 +1,10 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="a_U@selvz"/>
+			<hnm_eyebrows tag="RB"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamfinger2/>
 			<hamextfingeru/>

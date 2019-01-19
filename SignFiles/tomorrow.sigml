@@ -1,6 +1,6 @@
 <sigml>
 	<hns_sign gloss="$PROD">
-		<hamnosys_nonmanual>
+		<hamnosys_nonmanual>		<hnm_mouthpicture picture="tVmA:r@_U"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamfinger2/>

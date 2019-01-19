@@ -1,0 +1,50 @@
+<sigml>
+	<hns_sign gloss="">
+		
+		<hamnosys_nonmanual>
+			<hnm_head tag="SR"/>
+			<hnm_shoulder tag="UR"/>
+			<hnm_eyegaze tag="HD"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="SB"/>
+			<hnm_nose tag="TW"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_head tag="SH"/>
+			<hnm_eyegaze tag="HD"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_eyelids tag="SB"/>
+			<hnm_nose tag="TW"/>
+		</hamnosys_nonmanual>
+
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamlips/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hammoveil/>
+			<hamsmallmod/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hammoveil/>
+			<hamsmallmod/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamshouldertop/>
+			<hamcircled/>
+			<hamlargemod/>
+			<hamrepeatfromstart/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,7 +1,5 @@
 <sigml>
-	<hns_sign gloss="$PROD">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
+	<hns_sign gloss="$PROD"><hamnosys_nonmanual><hnm_mouthpicture picture="tre_In"/><hnm_eyegaze tag=""/><hnm_eyebrows tag="RB"/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamparbegin/>
 			<hamflathand/>

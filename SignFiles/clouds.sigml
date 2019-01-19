@@ -1,8 +1,6 @@
-<sigml>
-	<hns_sign gloss="">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
-		<hamnosys_manual>
+<sigml><hns_sign gloss=""><hamnosys_nonmanual><hnm_mouthpicture picture="kla_Udz"/><hnm_eyegaze tag="UP"/><hnm_eyebrows tag="RB"/><hnm_head tag="NB"/>
+
+<hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual>
 			<hamsymmlr/>
 			<hamparbegin/>
 			<hamfinger2345/>
@@ -29,6 +27,4 @@
 			<hammovel/>
 			<hamparend/>
 		</hamnosys_manual>
-	</hns_sign>
-
-</sigml>
+</hns_sign></sigml>

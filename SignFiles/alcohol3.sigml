@@ -1,0 +1,21 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual><hnm_body tag="TB"/><hnm_shoulder tag=""/><hnm_head tag="PB"/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="HD"/><hnm_eyebrows tag="RB"/><hnm_nose tag=""/><hnm_eyelids tag="SB"/></hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamlips/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hammoveil/>
+			<hamsmallmod/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hammoveil/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

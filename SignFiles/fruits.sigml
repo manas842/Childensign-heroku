@@ -1,7 +1,9 @@
 ﻿<sigml>
 <hns_sign gloss="fruit">
 	<hamnosys_nonmanual>
-	</hamnosys_nonmanual>
+			<hnm_mouthpicture picture="frutz"/>
+		</hamnosys_nonmanual>
+
 	<hamnosys_manual>
 		<hamfinger2345/>
 		<hamthumboutmod/>

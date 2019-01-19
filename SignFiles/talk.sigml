@@ -1,25 +1,41 @@
-﻿<sigml>
-<hns_sign gloss="talk">
-	<hamnosys_nonmanual>
-	</hamnosys_nonmanual>
-	<hamnosys_manual>
-		<hamsymmlr/>
-		<hamfingerstraightmod/>
-		<hamalternatingmotion/>
-		<hamfinger2/>
-		<hamthumbacrossmod/>
-		<hamextfingeru/>
-		<hampalmu/>
-		<hamlips/>
-		<hamlrat/>
-		<hamclose/>
-		<hamseqbegin/>
-		<hammoveo/>
-		<hamsmallmod/>
-		<hammovei/>
-		<hamsmallmod/>
-		<hamseqend/>
-		<hamrepeatfromstartseveral/>
-	</hamnosys_manual>
-</hns_sign>
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="AD"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamparbegin/>
+			<hamfinger2/>
+			<hamplus/>
+			<hamfinger2/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamplus/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamteeth/>
+			<hamplus/>
+			<hamteeth/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveo/>
+			<hammovei/>
+			<hammoveo/>
+			<hammovei/>
+			<hammoveo/>
+			<hammovei/>
+			<hamplus/>
+			<hammovei/>
+			<hammoveo/>
+			<hammovei/>
+			<hammoveo/>
+			<hammovei/>
+			<hammoveo/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
 </sigml>

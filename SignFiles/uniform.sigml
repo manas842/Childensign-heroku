@@ -1,7 +1,9 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="junVfO:rm"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamfingerstraightmod/>

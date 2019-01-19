@@ -1,6 +1,16 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+		<hnm_eyegaze tag="UP"/>
+			<hnm_eyebrows tag="RB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_eyebrows tag="FU"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamfinger23spread/>

@@ -1,17 +1,23 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="mV@rV@t@I"/>
+			<hnm_head tag="PF"/>
+			<hnm_eyegaze tag="AD"/>
+			<hnm_eyebrows tag="FU"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamfinger2/>
-			<hamextfingerui/>
+			<hamextfingeri/>
 			<hampalmd/>
-			<hamforehead/>
-			<hammoveo/>
+			<hamhead/>
+			<hammoveu/>
+			<hamsmallmod/>
 			<hamreplace/>
 			<hamfinger2/>
-			<hamextfingeru/>
+			<hamextfingero/>
 			<hampalmd/>
+			<hammoveo/>
 		</hamnosys_manual>
 	</hns_sign>
 

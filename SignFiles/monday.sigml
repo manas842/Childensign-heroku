@@ -1,6 +1,7 @@
 <sigml>
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>
+<hnm_eyelids tag="BB"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamfinger2345/>

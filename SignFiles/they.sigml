@@ -1,7 +1,9 @@
 <sigml>
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="De_I"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamflathand/>
 			<hamextfingero/>

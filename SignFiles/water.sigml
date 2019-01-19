@@ -1,6 +1,8 @@
 <sigml>
 	<hns_sign gloss="$PROD">
-		<hamnosys_nonmanual>
+		<hamnosys_nonmanual>					<hnm_mouthpicture picture="wO:t@r"/>
+			<hnm_head tag="SR"/>
+			<hnm_eyegaze tag="HD"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamflathand/>

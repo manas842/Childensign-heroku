@@ -1,6 +1,6 @@
 <sigml>
 	<hns_sign gloss="">
-		<hamnosys_nonmanual>
+		<hamnosys_nonmanual>			<hnm_mouthpicture picture="i:vnIN"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamparbegin/>

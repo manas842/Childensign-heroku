@@ -1,7 +1,6 @@
 <sigml>
 	<hns_sign gloss="">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
+		<hamnosys_nonmanual><hnm_mouthpicture picture="Tru"/><hnm_eyegaze tag="HD"/><hnm_eyebrows tag="RB"/><hnm_nose tag=""/><hnm_eyelids tag="WB"/></hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamparbegin/>

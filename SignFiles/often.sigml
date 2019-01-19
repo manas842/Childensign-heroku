@@ -1,6 +1,7 @@
 <sigml>
 	<hns_sign gloss="">
-		<hamnosys_nonmanual>
+		<hamnosys_nonmanual>			<hnm_mouthpicture picture="O:fVn"/>
+
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamfinger2/>

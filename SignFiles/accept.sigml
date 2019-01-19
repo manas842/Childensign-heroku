@@ -1,23 +1,19 @@
 <sigml>
 	<hns_sign gloss="">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
+		<hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag="HR"/><hnm_head tag="TR"/><hnm_mouthpicture picture="ACCEPT"/><hnm_eyegaze tag="HD"/><hnm_eyebrows tag="FU"/><hnm_nose tag=""/><hnm_eyelids tag="BB"/></hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamfinger2345/>
 			<hamthumboutmod/>
-			<hamextfingerl/>
-			<hampalml/>
+			<hamextfingerul/>
+			<hampalmdr/>
 			<hamchest/>
-			<hammovei/>
-			<hamparbegin/>
 			<hamreplace/>
-			<hamceeall/>
+			<hampinchall/>
 			<hamextfingerl/>
 			<hampalml/>
 			<hamchest/>
-			<hammovei/>
-			<hamparend/>
+			<hamtouch/>
 		</hamnosys_manual>
 	</hns_sign>
 

@@ -1,7 +1,10 @@
 <sigml>
 <hns_sign gloss="home">
 	<hamnosys_nonmanual>
-	</hamnosys_nonmanual>
+			<hnm_mouthpicture picture="h@_Um"/>
+			<hnm_eyegaze tag="AD"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
 	<hamnosys_manual>
 		<hamsymmlr/>
 		<hamflathand/>

@@ -1,15 +1,1 @@
-<sigml>
-	<hns_sign gloss="">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
-		<hamnosys_manual>
-			<hamflathand/>
-			<hamextfingerd/>
-			<hampalml/>
-			<hamshoulders/>
-			<hammoved/>
-			<hammoved/>
-		</hamnosys_manual>
-	</hns_sign>
-
-</sigml>
+<sigml><hns_sign gloss="southern hemisphere"><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag="NF"/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="DN"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag="SB"/></hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamextfingerd/><hampalml/><hamshoulders/><hammoved/><hammoved/></hamnosys_manual></hns_sign></sigml>

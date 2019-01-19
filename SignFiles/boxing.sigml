@@ -1,7 +1,14 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="bA:ksIN"/>
+			<hnm_body tag="TL"/>
+			<hnm_head tag="SL"/>
+			<hnm_shoulder tag="HL"/>
+			<hnm_eyegaze tag="HI"/>
+			<hnm_eyelids tag="BB"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamsymmpar/>
 			<hamfist/>

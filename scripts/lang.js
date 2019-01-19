@@ -1,77 +1,93 @@
+var language ="english";
 function playSigml(e) {
     CWASA.playSiGMLURL(e)
 }
-$("#button-hindi").click(function() {
-    $('.submenu').slideToggle();
+$(".cancel").attr("style","display:none");
+Hindi=function(){
+    allClick();$('.spanSpeed').html("");clearInterval(show);
+    var speed=speedBar.replace("%speed%",upperContent.Hindi[0].speed).replace("%reset%",upperContent.Hindi[0].reset),upper=upperDisplayElem.replace("%titlename%",upperContent.Hindi[0].titlename).replace("%search%",upperContent.Hindi[0].Search).replace("%id%",upperContent.Hindi[0].id).replace("%lang%",upperContent.Hindi[0].select).replace("%cat%",upperContent.Hindi[0].cat).replace("%dic%",upperContent.Hindi[0].dic).replace("%about%",upperContent.Hindi[0].about).replace("%langname%",upperContent.Hindi[0].lang);$("#upperContainer").append(upper);$(".spanSpeed").append(speed);
+    $('#title-name').attr("style","margin:0 0 0 23vw;");$('.title img').attr("style","margin-left:14vw;");Search();$('.overlay').hide();
+    document.getElementsByClassName('search__input')[0].value = "";
+    document.getElementById('display').scrollLeft = 0;
+    $("#elemName").val("");
+    language="hindi";
     assignCategory("hindi");
-    $("#category-text").html("");
-    $('#button-about').html("हमारे बारे में");
-    $('.square_btn').html("श्रेणियाँ");
-    document.getElementsByClassName("search__input")[0].placeholder = "खोज";
-    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").attr("style", "opacity:0"), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक पूर्व शिक्षक सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
+    $('.overlay').hide();
+    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,.cancel").hide(), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक प्रेस्चोलर सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
     $('#nameImage').attr("style","opacity:0");
-    loadCategories("hindi");
-    $('.side-list,.side-list-names,.cancel,#reload-sigml').unbind("click");
-    $(".side-list").click(function() {
-        a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
+    if(current_screen="search"&&search_value!=undefined && search_value.length!=0){
+    PerformDictionarySearch(search_value);$('.search__input').val(search_value);
+    }else if(current_screen!="category"&&current_screen!=undefined&&current_screen.length!=1){
+    $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide()
         cleardisplaywindow();
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");
-        var v = $(this.children[0]);v[0].item_hindi;
-        console.log(a);
+        console.log(current_screen);
+        $("#category").val(current_screen);
         amount = '';
-        scroll();
         console.log("Hindi");
-        var cat;
-        for(var elem in sidebar.elements) {
-            // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english.replace(/ /g,'').toLowerCase() == a) {
-                cat = sidebar.elements[elem];
-                break;
-            }
-        }
-        $('#category-text').html(cat.listtext_hindi);
         document.getElementsByClassName('search__input')[0].value = "";
-        for (var e = 0; e < displayElements[a].length; e++) {
-            var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
-                n = "'".concat(displayElements[a][e].name).concat("'");
-            i = i.replace("%sigmlurl%", n);
-            // $(".displayWindow").append(i);
-            var x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + i + '</div>';
+        for (var e = 0; e < displayElements[current_screen].length; e++) {
+            var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%imagesrc%", displayElements[current_screen][e].imagesrc)).replace("%data%", displayElements[current_screen][e].item_hindi),
+                n = "'".concat(displayElements[current_screen][e].name).concat("'");
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+            var x = '<div class="elements">' + i + '</div>';
             $('.displayWindow').append(x);
         }
-        $(".displayWindow").attr("style", "flex-direction:column;overflow:auto;")
-    });
-    $(".side-list-names").click(function() {
-        a = $(this.children[0]), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#nameWindow").html(""), $("#reload-sigml").hide(), a = a[0].className, a = a.split(" ")[1], a = a.slice(0, a.length - 8), 
+        document.getElementById('display').scrollLeft = 0;
+        $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;")
+    }else if(current_screen.length==1){
+    PerformDictionarySearch(current_screen);
+    $('.overlay').show();
+    $(document.getElementById(current_screen)).attr("style","color:#0bf;border-radius:2vw 2vw 1vw 1vw;background:#fff;")
+    $('.DictionaryElem').click(function(){dictionary(this);})
+    }else{loadCategories("hindi");
+    $('.side-list,.side-list-names,.cancel,#reload-sigml').unbind("click");
+    $(".side-list").click(function() {
+        v=$(this.children[0]),v=v[0].name, a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
-        $('#nameImage').attr("style","opacity:0;");
+        $('#nameImage').attr("style","opacity:0");
         console.log(a);
+        $("#category").val(v);
         amount = '';
-        var cat;
-        for(var elem in sidebar.elements) {
-            // console.log(sidebar.elements[elem].listtext_hindi);
-            if(sidebar.elements[elem].listtext_english.replace(/ /g,'').toLowerCase() == a.toLowerCase()) {
-                cat = sidebar.elements[elem];
-                break;
-            }
-        }
-        $('#category-text').html(cat.listtext_hindi);
+        console.log("Hindi");
         document.getElementsByClassName('search__input')[0].value = "";
         for (var e = 0; e < displayElements[a].length; e++) {
-            var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
+            var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
                 n = "'".concat(displayElements[a][e].name).concat("'");
-            i = i.replace("%sigmlurl%", n);
-            var x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + i + '</div>';
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+            var x = '<div class="elements">' + i + '</div>';
             $('.displayWindow').append(x);
         }
-        $(".displayWindow").attr("style", "flex-direction:column;overflow:auto;")
+        document.getElementById('display').scrollLeft = 0;
+        $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;")
     });
+    $(".side-list-names").click(function() {
+        v=$(this.children[0]),v=v[0].firstChild.data, a = $(this.children[0]), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#nameWindow").html(""), $("#reload-sigml").hide(), a = a[0].className, a = a.split(" ")[1], a = a.slice(0, a.length - 8), 
+        cleardisplaywindow();
+        $('#nameImage').attr('src','');
+        $('#nameImage').attr("style","opacity:0");
+        console.log(v);
+        $("#category").val(v);
+        amount = '';
+        document.getElementsByClassName('search__input')[0].value = "";
+        for (var e = 0; e < displayElements[a].length; e++) {
+            var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc)).replace("%data%", displayElements[a][e].item_hindi),
+                n = "'".concat(displayElements[a][e].name).concat("'");
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+            var x = '<div class="elements">' + i + '</div>';
+            $('.displayWindow').append(x);
+        }
+        document.getElementById('display').scrollLeft = 0;
+        $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;")
+    });}
     $(".cancel").click(function() {
+         clearInterval(show)
+        document.getElementById('display').scrollLeft = 0;
         $('.cancel').hide();
-        screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").attr("style", "opacity:0"), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
+        screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");;
         var backElem = $(toBeBackElement).attr("src");
@@ -80,13 +96,13 @@ $("#button-hindi").click(function() {
             var n = displayWindowElemHindi.replace("%imagesrc%", displayElements[e][i].imagesrc);
             n = n.replace("%data%", displayElements[e][i].item_hindi);
             var s, a = "'".concat(displayElements[e][i].name).concat("'");
-            n = n.replace("%sigmlurl%", a), x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + n + '</div>', $(".displayWindow").append(x), -1 != toBeBackElement.src.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().attr("style", "background-color:grey"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
+            n = n.replace("%sigmlurl%", a), x = '<div class="elements">' + n + '</div>', $(".displayWindow").append(x), -1 != backElem.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().parent().attr("style", "background-color:white"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
                 $("#imageWindow").addClass("flipInY"), $(".cancel").attr("style", "display:none")
             }, 250)) : (console.log("other"), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:white;"), s.parent().attr("style", "background-color:transparent"))
         }
         console.log(backElem);
         var temp = $("img[src$='" + backElem + "']");
-        temp.parent().attr("style","background-color:white");
+        temp.parent().parent().attr("style","background-color:white");
         temp.next().attr("style","color:black;");
 }), $("#reload-sigml").click(function() {
     $("#Prog_Alert").append(ProgElem);
@@ -94,31 +110,56 @@ $("#button-hindi").click(function() {
     clearGloss();
     sigmlURL = setSiGMLURL(sigmlReload), console.log("extra"), CWASA.playSiGMLURL(sigmlURL)
 }), $("#reload-sigml").dblclick(function() {});
-});
-$("#button-english").click(function() {
-    $('.submenu').slideToggle();
+$("#button-hindi").click(function() {$("#upperContainer").html("");Hindi();allClick();});
+$("#button-english").click(function() {$("#upperContainer").html("");English();allClick();});
+}
+English=function(){
+    allClick();$('.spanSpeed').html("");clearInterval(show);
+    var speed=speedBar.replace("%speed%",upperContent.English[0].speed).replace("%reset%",upperContent.English[0].reset),upper=upperDisplayElem.replace("%titlename%",upperContent.English[0].titlename).replace("%search%",upperContent.English[0].Search).replace("%id%",upperContent.English[0].id).replace("%lang%",upperContent.English[0].select).replace("%cat%",upperContent.English[0].cat).replace("%dic%",upperContent.English[0].dic).replace("%about%",upperContent.English[0].about).replace("%langname%",upperContent.English[0].lang);$("#upperContainer").append(upper);$('.spanSpeed').append(speed);
+    Search();$('.overlay').hide()
+    document.getElementById('display').scrollLeft = 0;
+    $("#category").val("");$("#elemName").val("");
+    language="english";
     assignCategory("english");
-    $("#category-text").html("");
-    $('#button-about').html("About Us");
-    $('.square_btn').html("Categories");
-    document.getElementsByClassName("search__input")[0].placeholder = "Search";
+    $('.overlay').hide();
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").hide(), $("#title-name span").html("Child Ensign: A Preschooler assistive tool for Divyagjan"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
-    $('#nameImage').attr("style","opacity:0");;
-    loadCategories("english");
+    $('#nameImage').attr("style","opacity:0");
+    if(current_screen="search" && search_value.length!=0){
+    PerformDictionarySearch(search_value);$('.search__input').val(search_value);
+    }else  if(current_screen!="category"&&current_screen!=undefined&&current_screen.length!=1){
+    document.getElementsByClassName('search__input')[0].value = "";
+    $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide()
+        cleardisplaywindow();
+        $('#nameImage').attr('src','');
+        $('#nameImage').attr("style","opacity:0");
+        console.log(current_screen);
+        $("#category").val(current_screen);
+        amount = '';
+        console.log("Hindi");
+        document.getElementsByClassName('search__input')[0].value = "";
+        for (var e = 0; e < displayElements[current_screen].length; e++) {
+            var i = (i = displayWindowElemHindi.replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%imagesrc%", displayElements[current_screen][e].imagesrc)).replace("%data%", displayElements[current_screen][e].item_english),
+                n = "'".concat(displayElements[current_screen][e].name).concat("'");
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+            var x = '<div class="elements">' + i + '</div>';
+            $('.displayWindow').append(x);
+        }
+        document.getElementById('display').scrollLeft = 0;
+        $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;")
+     }else if(current_screen.length==1){
+    PerformDictionarySearch(current_screen);
+    $('.overlay').show();
+    $(document.getElementById(current_screen)).attr("style","color:#0bf;border-radius:2vw 2vw 1vw 1vw;background:#fff;")
+    $('.DictionaryElem').click(function(){dictionary(this);})
+    }else{loadCategories("english");}
     $('.side-list,.side-list-names,.cancel,#reload-sigml').unbind("click");
     listClick("english");
-    amount = '';
-    scroll();
-    for(var elem in sidebar.elements) {
-        // console.log(sidebar.elements[elem].listtext_hindi);
-        if(sidebar.elements[elem].listtext_english == a.toLowerCase()) {
-            $('#category-text').html(sidebar.elements[elem].listtext_english);
-        }
-    }
     $(".cancel").click(function() {
+         clearInterval(show)
+        document.getElementById('display').scrollLeft = 0;
         $('.cancel').hide();
-        screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").attr("style", "opacity:0"), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
+        screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");;
         var backElem = $(toBeBackElement).attr("src");
@@ -127,13 +168,13 @@ $("#button-english").click(function() {
             var n = displayWindowElemEnglish.replace("%imagesrc%", displayElements[e][i].imagesrc);
             n = n.replace("%data%", displayElements[e][i].item_english);
             var s, a = "'".concat(displayElements[e][i].name).concat("'");
-            n = n.replace("%sigmlurl%", a), x = '<div style="display:flex;flex-direction:row;padding:2.5vw 0 1vw 4.7vw;">' + n + '</div>', $(".displayWindow").append(x), -1 != toBeBackElement.src.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().attr("style", "background-color:grey"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
+            n = n.replace("%sigmlurl%", a), x = '<div class="elements">' + n + '</div>', $(".displayWindow").append(x), -1 != backElem.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().parent().attr("style", "background-color:white"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
                 $("#imageWindow").addClass("flipInY"), $(".cancel").attr("style", "display:none")
             }, 250)) : (console.log("other"), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:white;"), s.parent().attr("style", "background-color:transparent"))
         }
         console.log(backElem);
         var temp = $("img[src$='" + backElem + "']");
-        temp.parent().attr("style","background-color:grey");
+        temp.parent().parent().attr("style","background-color:white");
         temp.next().attr("style","color:black;");
 }), $("#reload-sigml").click(function() {
     $("#Prog_Alert").append(ProgElem);
@@ -141,4 +182,8 @@ $("#button-english").click(function() {
     clearGloss();
     sigmlURL = setSiGMLURL(sigmlReload), console.log("extra"), CWASA.playSiGMLURL(sigmlURL)
 }), $("#reload-sigml").dblclick(function() {});
-});
+$("#button-hindi").click(function() {$("#upperContainer").html("");Hindi();allClick();});
+$("#button-english").click(function() {$("#upperContainer").html("");English();allClick();});
+}
+$("#button-hindi").click(function() {$("#upperContainer").html("");Hindi();allClick();});
+$("#button-english").click(function() {$("#upperContainer").html("");English();allClick();});

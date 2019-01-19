@@ -1,17 +1,1 @@
-<sigml>
-	<hns_sign gloss="">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
-		<hamnosys_manual>
-			<hamfist/>
-			<hamextfingerol/>
-			<hampalmd/>
-			<hamlips/>
-			<hamlrat/>
-			<hammoveo/>
-			<hamsmallmod/>
-			<hammovedr/>
-		</hamnosys_manual>
-	</hns_sign>
-
-</sigml>
+<sigml><hns_sign gloss="chicken pox"><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfingerstraightmod/><hamlargemod/><hamparbegin/><hamfinger2/><hamfingerbendmod/><hamplus/><hamfinger2345/><hamparend/><hamparbegin/><hamextfingeru/><hampalmd/><hamplus/><hamextfingerd/><hampalmr/><hamparend/><hamparbegin/><hamhead/><hamplus/><hamlrat/><hambelowstomach/><hamparend/><hamparbegin/><hamnodding/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign><hns_sign gloss="chicken pox"><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfinger2345/><hamthumboutmod/><hamparbegin/><hamextfingerur/><hampalml/><hamplus/><hamextfingerul/><hampalmr/><hamparend/><hamparbegin/><hamshouldertop/><hamlrbeside/><hamplus/><hamlrbeside/><hamshouldertop/><hamparend/><hamparbegin/><hamnodding/><hamplus/><hamnodding/><hamparend/></hamnosys_manual></hns_sign><hns_sign gloss="chicken"><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="III"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamparbegin/><hamfinger2/><hamfingerbendmod/><hamplus/><hamfinger2345/><hamparend/><hamparbegin/><hamextfingeruo/><hampalmdl/><hamplus/><hamextfingerd/><hampalmr/><hamparend/><hamparbegin/><hamhead/><hambetween/><hamshouldertop/><hamplus/><hamlrat/><hambelowstomach/><hamparend/><hamparbegin/><hammoveir/><hammoveol/><hammoveir/><hammoveol/><hammoveir/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign></sigml>

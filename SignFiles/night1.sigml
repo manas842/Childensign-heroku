@@ -1,6 +1,7 @@
 <sigml>
 	<hns_sign gloss="">
-		<hamnosys_nonmanual>
+		<hamnosys_nonmanual>			<hnm_mouthpicture picture="na_It"/>
+			<hnm_head tag="PF"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>

@@ -1,7 +1,10 @@
 <sigml>
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>
+			<hnm_head tag="TL"/>
+			<hnm_eyebrows tag="FU"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamfinger23spread/>

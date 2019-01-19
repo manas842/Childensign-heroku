@@ -1,6 +1,7 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_eyebrows tag="RB"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamceeall/>
@@ -10,11 +11,6 @@
 			<hammovel/>
 			<hamlargemod/>
 			<hamarcu/>
-			<hamlargemod/>
-			<hamreplace/>
-			<hamceeall/>
-			<hamextfingerl/>
-			<hampalmd/>
 		</hamnosys_manual>
 	</hns_sign>
 

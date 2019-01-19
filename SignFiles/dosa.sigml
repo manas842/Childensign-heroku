@@ -1,7 +1,10 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_shoulder tag="UB"/>
+			<hnm_eyebrows tag="FU"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamfingerstraightmod/>

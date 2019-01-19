@@ -1,48 +1,59 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="nI_@r"/>
+			<hnm_head tag="TR"/>
+			<hnm_eyegaze tag="DN"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_eyelids tag="SB"/>
 		</hamnosys_nonmanual>
+
+
 		<hamnosys_manual>
 			<hamsymmlr/>
 			<hamparbegin/>
-			<hamflathand/>
+			<hampinchall/>
 			<hamplus/>
-			<hamflathand/>
+			<hampinchall/>
 			<hamparend/>
 			<hamparbegin/>
-			<hamextfingero/>
+			<hamextfingerl/>
 			<hampalmu/>
 			<hamplus/>
-			<hamextfingero/>
+			<hamextfingerr/>
 			<hampalmu/>
 			<hamparend/>
 			<hamparbegin/>
-			<hamstomach/>
-			<hamplus/>
-			<hamstomach/>
-			<hamparend/>
-			<hamparbegin/>
-			<hamnomotion/>
-			<hamplus/>
-			<hamnomotion/>
-			<hamparend/>
-			<hamparbegin/>
-			<hamreplace/>
-			<hamflathand/>
-			<hamextfingero/>
-			<hampalmu/>
 			<hamchest/>
-			<hammover/>
 			<hamplus/>
-			<hamnomotion/>
+			<hamlrat/>
+			<hamchest/>
+			<hamtouch/>
 			<hamparend/>
 			<hamparbegin/>
 			<hamreplace/>
-			<hamflathand/>
-			<hamextfingero/>
+			<hampinchall/>
+			<hamplus/>
+			<hamreplace/>
+			<hampinchall/>
+			<hamparend/>
+			<hamreplace/>
+			<hamparbegin/>
+			<hamextfingerl/>
 			<hampalmu/>
-			<hamstomach/>
-			<hamlrbeside/>
+			<hamplus/>
+			<hamextfingerr/>
+			<hampalmu/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamchest/>
+			<hamplus/>
+			<hamlrat/>
+			<hamchest/>
+			<hamtouch/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveor/>
 			<hamplus/>
 			<hamnomotion/>
 			<hamparend/>

@@ -1,6 +1,9 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_body tag="TR"/>
+			<hnm_head tag="TR"/>
+			<hnm_shoulder tag="UL"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>

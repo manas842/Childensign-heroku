@@ -1,18 +1,36 @@
 <sigml>
-	<hns_sign gloss="">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
+	<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag="RL"/><hnm_shoulder tag=""/><hnm_head tag="SR"/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="RI"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual>
 		<hamnosys_manual>
-			<hamflathand/>
-			<hamextfingerl/>
-			<hampalml/>
-			<hamshoulders/>
+			<hamfinger2/>
+			<hamextfingerur/>
+			<hampalmu/>
+			<hamchest/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamextfingerur/>
+			<hampalmu/>
+			<hamforehead/>
 			<hamreplace/>
 			<hamfist/>
-			<hamextfingeru/>
-			<hampalmd/>
-			<hamchest/>
-			<hamlrbeside/>
+			<hamextfingerr/>
+			<hampalmu/>
+			<hamforehead/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hammover/>
+			<hamsmallmod/>
+			<hammovedl/>
+			<hamsmallmod/>
+			<hammoveur/>
+			<hamsmallmod/>
+			<hammoveul/>
+			<hamsmallmod/>
+			<hammoveu/>
+			<hamsmallmod/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hammover/>
+			<hamsmallmod/>
 		</hamnosys_manual>
 	</hns_sign>
 

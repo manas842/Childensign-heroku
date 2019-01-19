@@ -1,7 +1,9 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="mem@rIz"/>
 		</hamnosys_nonmanual>
+
 		<hamnosys_manual>
 			<hamflathand/>
 			<hamfingerstraightmod/>

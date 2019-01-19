@@ -1,6 +1,9 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+	<hnm_head tag="NF"/>
+			<hnm_eyegaze tag="DN"/>
+			<hnm_eyelids tag="SB"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>

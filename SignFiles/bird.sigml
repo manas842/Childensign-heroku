@@ -1,6 +1,8 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+<hnm_mouthpicture picture="b3:d"/>
+			<hnm_eyegaze tag="HD"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>

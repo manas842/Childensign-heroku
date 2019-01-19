@@ -1,6 +1,7 @@
 <sigml>
-	<hns_sign gloss="$PROD">
+	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_head tag="SR"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>

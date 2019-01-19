@@ -1,0 +1,37 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="mVel@"/>
+			<hnm_head tag="NF"/>
+			<hnm_eyegaze tag="AD"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hampinch12/>
+			<hamextfingerl/>
+			<hampalmd/>
+			<hamnostrils/>
+			<hamlrbeside/>
+			<hammoved/>
+			<hamfast/>
+			<hammoved/>
+			<hamfast/>
+			<hamreplace/>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamextfingerl/>
+			<hampalmd/>
+			<hamreplace/>
+			<hampinch12/>
+			<hamextfingerl/>
+			<hampalmd/>
+			<hamfast/>
+			<hamreplace/>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamextfingerl/>
+			<hampalmd/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,1 +1,1 @@
-<sigml>	<hns_sign gloss="$PROD:APPLE">		<hamnosys_nonmanual>		</hamnosys_nonmanual>		<hamnosys_manual>			<hamflathand/>			<hamfingerbendmod/>			<hamextfingero/>			<hampalmu/>			<hamneck/>			<hamcirclei/>			<hamcirclei/>		</hamnosys_manual>	</hns_sign></sigml>
+<sigml>	<hns_sign gloss="$PROD:APPLE">		<hamnosys_nonmanual> <hnm_mouthpicture picture="{pl"/> </hamnosys_nonmanual> <hamnosys_manual>			<hamflathand/>			<hamfingerbendmod/>			<hamextfingero/>			<hampalmu/>			<hamneck/>			<hamcirclei/>			<hamcirclei/>		</hamnosys_manual>	</hns_sign></sigml>

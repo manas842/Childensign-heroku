@@ -1,45 +1,16 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_head tag="NF"/>
+			<hnm_eyelids tag="SB"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>
-			<hamparbegin/>
-			<hamfist/>
-			<hamthumboutmod/>
-			<hamplus/>
-			<hamfist/>
-			<hamparend/>
-			<hamparbegin/>
-			<hamextfingeru/>
-			<hampalml/>
-			<hamplus/>
-			<hamextfingerd/>
-			<hampalmr/>
-			<hamparend/>
-			<hamparbegin/>
-			<hamlips/>
-			<hamplus/>
-			<hamlrat/>
-			<hambelowstomach/>
-			<hamparend/>
-			<hamparbegin/>
-			<hammoved/>
-			<hamplus/>
-			<hamnomotion/>
-			<hamparend/>
-			<hamparbegin/>
-			<hamreplace/>
+			<hamfingerstraightmod/>
+			<hamlargemod/>
 			<hamfinger2/>
 			<hamfingerbendmod/>
 			<hamthumboutmod/>
-			<hamplus/>
-			<hamreplace/>
-			<hamfinger2/>
-			<hamfingerbendmod/>
-			<hamthumboutmod/>
-			<hamparend/>
-			<hamreplace/>
 			<hamparbegin/>
 			<hamextfingero/>
 			<hampalmd/>

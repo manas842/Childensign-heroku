@@ -1,6 +1,10 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_body tag="TR"/>
+			<hnm_head tag="SL"/>
+			<hnm_shoulder tag="UL"/>
+			<hnm_eyebrows tag="RB"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>

@@ -189343,4 +189343,4 @@ this.getCWAEnv().add(Ham4Parser, "Ham4Parser");
 		stopSiGML: stopSiGML
 	};
 }).call(this);
-$(window).on("load", CWASA.init(initCfg));
+CWASA.init(initCfg);

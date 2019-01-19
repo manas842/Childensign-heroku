@@ -1,21 +1,2 @@
-<sigml>
-	<hns_sign gloss="$PROD">
-		<hamnosys_nonmanual>
-		</hamnosys_nonmanual>
-		<hamnosys_manual>
-			<hamflathand/>
-			<hamthumbacrossmod/>
-			<hamringfinger/>
-			<hamfingerhookmod/>
-			<hampinky/>
-			<hamfingerhookmod/>
-			<hamextfingerul/>
-			<hampalml/>
-			<hamshoulders/>
-			<hamclose/>
-			<hammoved/>
-			<hamzigzag/>
-		</hamnosys_manual>
-	</hns_sign>
-
-</sigml>
+<sigml><hns_sign gloss="bhangada
+"><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag="SH"/><hnm_mouthpicture picture="A:rt"/><hnm_eyegaze tag="HD"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag="SB"/></hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamthumbacrossmod/><hamringfinger/><hamfingerhookmod/><hampinky/><hamfingerhookmod/><hamextfingerul/><hampalml/><hamshoulders/><hamclose/><hammoved/><hamzigzag/></hamnosys_manual></hns_sign></sigml>
