@@ -4,8 +4,9 @@ function playSigml(e) {
 }
 $(".cancel").attr("style","display:none");
 Hindi=function(){
-    allClick();$('.spanSpeed').html("");clearInterval(show);
-    var speed=speedBar.replace("%speed%",upperContent.Hindi[0].speed).replace("%reset%",upperContent.Hindi[0].reset),upper=upperDisplayElem.replace("%titlename%",upperContent.Hindi[0].titlename).replace("%search%",upperContent.Hindi[0].Search).replace("%id%",upperContent.Hindi[0].id).replace("%lang%",upperContent.Hindi[0].select).replace("%cat%",upperContent.Hindi[0].cat).replace("%dic%",upperContent.Hindi[0].dic).replace("%about%",upperContent.Hindi[0].about).replace("%langname%",upperContent.Hindi[0].lang);$("#upperContainer").append(upper);$(".spanSpeed").append(speed);
+    allClick();clearInterval(show);
+    $('.speedtxt').html(upperContent.Hindi[0].speed);$('.bttnSpeedReset').html(upperContent.Hindi[0].reset);
+    var upper=upperDisplayElem.replace("%titlename%",upperContent.Hindi[0].titlename).replace("%search%",upperContent.Hindi[0].Search).replace("%id%",upperContent.Hindi[0].id).replace("%lang%",upperContent.Hindi[0].select).replace("%cat%",upperContent.Hindi[0].cat).replace("%dic%",upperContent.Hindi[0].dic).replace("%about%",upperContent.Hindi[0].about).replace("%langname%",upperContent.Hindi[0].lang);$("#upperContainer").append(upper);
     $('#title-name').attr("style","margin:0 0 0 23vw;");$('.title img').attr("style","margin-left:14vw;");Search();$('.overlay').hide();
     document.getElementsByClassName('search__input')[0].value = "";
     document.getElementById('display').scrollLeft = 0;
@@ -16,9 +17,7 @@ Hindi=function(){
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,.cancel").hide(), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक प्रेस्चोलर सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
     $('#nameImage').attr("style","opacity:0");
-    if(current_screen="search"&&search_value!=undefined && search_value.length!=0){
-    PerformDictionarySearch(search_value);$('.search__input').val(search_value);
-    }else if(current_screen!="category"&&current_screen!=undefined&&current_screen.length!=1){
+    if(current_screen!="category"&&current_screen!=undefined&&current_screen.length!=1){
     $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide()
         cleardisplaywindow();
         $('#nameImage').attr('src','');
@@ -114,8 +113,9 @@ $("#button-hindi").click(function() {$("#upperContainer").html("");Hindi();allCl
 $("#button-english").click(function() {$("#upperContainer").html("");English();allClick();});
 }
 English=function(){
-    allClick();$('.spanSpeed').html("");clearInterval(show);
-    var speed=speedBar.replace("%speed%",upperContent.English[0].speed).replace("%reset%",upperContent.English[0].reset),upper=upperDisplayElem.replace("%titlename%",upperContent.English[0].titlename).replace("%search%",upperContent.English[0].Search).replace("%id%",upperContent.English[0].id).replace("%lang%",upperContent.English[0].select).replace("%cat%",upperContent.English[0].cat).replace("%dic%",upperContent.English[0].dic).replace("%about%",upperContent.English[0].about).replace("%langname%",upperContent.English[0].lang);$("#upperContainer").append(upper);$('.spanSpeed').append(speed);
+    allClick();clearInterval(show);
+    $('.speedtxt').html(upperContent.English[0].speed);$('.bttnSpeedReset').html(upperContent.English[0].reset);
+    var upper=upperDisplayElem.replace("%titlename%",upperContent.English[0].titlename).replace("%search%",upperContent.English[0].Search).replace("%id%",upperContent.English[0].id).replace("%lang%",upperContent.English[0].select).replace("%cat%",upperContent.English[0].cat).replace("%dic%",upperContent.English[0].dic).replace("%about%",upperContent.English[0].about).replace("%langname%",upperContent.English[0].lang);$("#upperContainer").append(upper);
     Search();$('.overlay').hide()
     document.getElementById('display').scrollLeft = 0;
     $("#category").val("");$("#elemName").val("");
@@ -125,9 +125,7 @@ English=function(){
     $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,#reload-div,#cancel-div,.cancel").hide(), $("#title-name span").html("Child Ensign: A Preschooler assistive tool for Divyagjan"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
     $('#nameImage').attr("style","opacity:0");
-    if(current_screen="search" && search_value.length!=0){
-    PerformDictionarySearch(search_value);$('.search__input').val(search_value);
-    }else  if(current_screen!="category"&&current_screen!=undefined&&current_screen.length!=1){
+    if(current_screen!="category"&&current_screen!=undefined&&current_screen.length!=1){
     document.getElementsByClassName('search__input')[0].value = "";
     $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide()
         cleardisplaywindow();

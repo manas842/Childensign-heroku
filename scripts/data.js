@@ -316,23 +316,23 @@ var sidebar = {
             name: "z"
         }],
         animals: [{
-            imagesrc: "./res/icons/animals/crab.png",
-            item: "ਕੇਕੜਾ",
-            item_english: "Crab",
-            item_hindi: "केकड़ा",
-            name: "crab"
+            imagesrc: "./res/icons/animals/dog.png",
+            item: "ਕੁੱਤਾ",
+            item_english: "Dog",
+            item_hindi: "कुत्ता",
+            name: "dog"
+        }, {
+            imagesrc: "./res/icons/animals/frog.png",
+            item: "ਡੱਡੂ",
+            item_english: "Frog",
+            item_hindi: "मेंढक",
+            name: "frog"
         }, {
             imagesrc: "./res/icons/animals/tiger.png",
             item: "ਬਾਘ",
             item_english: "Tiger",
             item_hindi: "बाघ",
             name: "tiger"
-        }, {
-            imagesrc: "./res/icons/animals/whale.png",
-            item: "ਵ੍ਹੇਲ ਮੱਛੀ",
-            item_english: "Whale",
-            item_hindi: "व्हेल",
-            name: "whale"
         }, {
             imagesrc: "./res/icons/animals/cow.svg",
             item: "ਗਊ",
@@ -388,18 +388,6 @@ var sidebar = {
             item_hindi: "मगरमच्छ",
             name: "crocodile"
         }, {
-            imagesrc: "./res/icons/animals/dog.png",
-            item: "ਕੁੱਤਾ",
-            item_english: "Dog",
-            item_hindi: "कुत्ता",
-            name: "dog"
-        }, {
-            imagesrc: "./res/icons/animals/frog.png",
-            item: "ਡੱਡੂ",
-            item_english: "Frog",
-            item_hindi: "मेंढक",
-            name: "frog"
-        }, {
             imagesrc: "./res/icons/animals/horse.png",
             item: "ਘੋੜਾ",
             item_english: "Horse",
@@ -423,6 +411,18 @@ var sidebar = {
             item_english: "Kangaroo",
             item_hindi: "कंगारू",
             name: "kangaroo"
+        }, {
+            imagesrc: "./res/icons/animals/crab.png",
+            item: "ਕੇਕੜਾ",
+            item_english: "Crab",
+            item_hindi: "केकड़ा",
+            name: "crab"
+        }, {
+            imagesrc: "./res/icons/animals/whale.png",
+            item: "ਵ੍ਹੇਲ ਮੱਛੀ",
+            item_english: "Whale",
+            item_hindi: "व्हेल",
+            name: "whale"
         }],
         punjabiAlphabets: [{
             imagesrc: "./res/icons/punjabiAlphabets/Oorhaa.png",
@@ -9437,14 +9437,14 @@ var sidebar = {
     };
 var upperContent={
     English:[{
-        titlename:"Child Ensign: An Assistive Pre-School Resource for Physically Impaired",
+        titlename:"Child Ensign: An Assistive Pre-School Resource for Physically Impaired Person",
         about:"About Us",
         dic:"Dictionary",
         select:"Change Language",
         Search:"search",
         cat:"categories",
         lang:"हिंदी",
-        speed:"speed",
+        speed:"speed:",
         reset:"Reset speed",
         id:"button-hindi"
     }],
@@ -9456,7 +9456,7 @@ var upperContent={
         Search:"खोजें",
         cat:"श्रेणी",
         lang:"English",
-        speed:"गति",
+        speed:"गति:",
         reset:"सामान्य  गति",
         id:"button-english"
     }]
