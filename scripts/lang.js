@@ -113,6 +113,7 @@ $("#button-hindi").click(function() {$("#upperContainer").html("");Hindi();allCl
 $("#button-english").click(function() {$("#upperContainer").html("");English();allClick();});
 }
 English=function(){
+    document.getElementsByClassName('search__input')[0].value = "";
     allClick();clearInterval(show);
     $('.speedtxt').html(upperContent.English[0].speed);$('.bttnSpeedReset').html(upperContent.English[0].reset);
     var upper=upperDisplayElem.replace("%titlename%",upperContent.English[0].titlename).replace("%search%",upperContent.English[0].Search).replace("%id%",upperContent.English[0].id).replace("%lang%",upperContent.English[0].select).replace("%cat%",upperContent.English[0].cat).replace("%dic%",upperContent.English[0].dic).replace("%about%",upperContent.English[0].about).replace("%langname%",upperContent.English[0].lang);$("#upperContainer").append(upper);
