@@ -56,7 +56,7 @@ $('#prev-btn').hover(function() {
     amount = '';
 });
 function Search(){
-document.getElementsByClassName('search__input')[0].onblur=function(){check=1;setTimeout(function(){$("#history").html("");$("#history").attr("style","border: none;"); }, 200);}
+document.getElementsByClassName('search__input')[0].onblur=function(){check=1;setTimeout(function(){$("#history").html("");$("#history").attr("style","border: none;"); }, 400);}
 document.getElementsByClassName('search__input')[0].onfocus=function(){$("#history").html("");let historyElememt=Array.from(histor);
 if(check==1){for(let c=0,i=historyElememt.length;i>=0&&c<6;i--,c++){if(historyElememt[i]!=undefined){console.log(historyElememt[i].item_english);$("#history").attr("style","border: solid 0.1vw #4285f4;");let list=historyElem.replace("%data%",historyElememt[i].item_english).replace("%class%","history-list").replace("%id%",historyElememt[i].item_english);
 $("#history").append(list);}}}console.log(historyElememt);check=2;
@@ -68,6 +68,7 @@ $("#history").html("");
 })}
 PerformDictionarySearch=function(k){
     clearInterval(show);
+    console.log(k+" is Searched")
         let searchedArr=[];
         $("#history").html("");
         console.log(k);
@@ -119,7 +120,6 @@ function listClick(lan){
         $('#nameImage').attr("style","opacity:0");
         console.log(a);
         current_screen=a;
-        console.log(current_screen);
         $("#category").html(v);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";

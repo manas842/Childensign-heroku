@@ -18,10 +18,10 @@ var sidebar = {
                     imagesrc:"./res/icons/colors/brown.jpg",
                     item_english: "brown"
                     },{
-                    imagesrc:"./res/icons/colors/colors.png",
+                    imagesrc:"./res/icons/colors/color1.png",
                     item_english: "color1"
                     },{
-                    imagesrc:"./res/icons/colors/colors.png",
+                    imagesrc:"./res/icons/colors/color2.png",
                     item_english: "color2"
                     },{
                     imagesrc:"./res/icons/colors/green.jpg",
