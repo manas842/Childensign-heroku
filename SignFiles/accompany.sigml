@@ -1,18 +1,1 @@
-<sigml>
-	<hns_sign gloss="">
-		<hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="JOIN"/><hnm_eyegaze tag="HD"/><hnm_eyebrows tag="FU"/><hnm_nose tag=""/><hnm_eyelids tag="BB"/></hamnosys_nonmanual>
-		<hamnosys_manual>
-			<hamsymmlr/>
-			<hamfist/>
-			<hamthumbacrossmod/>
-			<hamextfingero/>
-			<hampalml/>
-			<hamchest/>
-			<hammovel/>
-			<hamtouch/>
-			<hammoveo/>
-			<hamlargemod/>
-		</hamnosys_manual>
-	</hns_sign>
-
-</sigml>
+<sigml><hns_sign gloss="accident"><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="VkVmpVni"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfist/><hamextfingero/><hampalml/><hamchest/><hamparbegin/><hamnomotion/><hamplus/><hammover/><hamparend/><hammoveo/></hamnosys_manual></hns_sign></sigml>

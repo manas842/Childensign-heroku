@@ -1,8 +1,11 @@
-<sigml>	<hns_sign gloss="$PROD:green">		<hamnosys_nonmanual>
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
 			<hnm_mouthpicture picture="gri:n"/>
 			<hnm_head tag="SR"/>
-			<hnm_eyegaze tag="HD"/>
-			<hnm_eyebrows tag="FU"/>
-			<hnm_eyelids tag="BB"/>
+			<hnm_eyebrows tag="RB"/>
 		</hamnosys_nonmanual>
-		<hamnosys_manual>			<hamfinger2345/>			<hamextfingerul/>			<hampalmdl/>			<hamshoulders/>			<hamnodding/>		</hamnosys_manual>	</hns_sign></sigml>
+		<hamnosys_manual><hamfinger2345/><hamthumboutmod/><hamextfingerul/><hampalml/><hamchest/><hamtouch/><hammoveo/><hamsmallmod/><hamnodding/></hamnosys_manual>
+	</hns_sign>
+
+</sigml>

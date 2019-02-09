@@ -2,33 +2,47 @@
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
 			<hnm_mouthpicture picture="bra_Un"/>
-			<hnm_head tag="LI"/>
-			<hnm_eyegaze tag="HD"/>
-			<hnm_eyebrows tag="FU"/>
-			<hnm_eyelids tag="SB"/>
+			<hnm_head tag="NO"/>
+			<hnm_eyebrows tag="RB"/>
 		</hamnosys_nonmanual>
-
 		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfingerstraightmod/>
+			<hamlargemod/>
 			<hamparbegin/>
 			<hamfinger2/>
+			<hamthumbacrossmod/>
 			<hamplus/>
 			<hamfist/>
+			<hamthumbacrossmod/>
 			<hamparend/>
 			<hamparbegin/>
 			<hamextfingerol/>
 			<hampalmd/>
 			<hamplus/>
-			<hamextfingero/>
+			<hamextfingeror/>
 			<hampalmd/>
 			<hamparend/>
 			<hamparbegin/>
 			<hamshouldertop/>
-			<hamlrat/>
+			<hambetween/>
+			<hamshoulders/>
 			<hamplus/>
+			<hamlrat/>
 			<hamshoulders/>
 			<hamparend/>
-			<hammovei/>
-			<hamrepeatfromstartseveral/>
+			<hamparbegin/>
+			<hammoveil/>
+			<hamsmallmod/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hammoveil/>
+			<hamsmallmod/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
 		</hamnosys_manual>
 	</hns_sign>
 

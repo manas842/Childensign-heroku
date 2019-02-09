@@ -1,54 +1,40 @@
 <sigml>
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>
+			<hnm_body tag="TR"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
-			<hamsymmpar/>
-			<hamparbegin/>
-			<hamfinger2/>
-			<hamfingerbendmod/>
-			<hamplus/>
-			<hamnondominant/>
-			<hamparend/>
-			<hamparbegin/>
-			<hamextfingeru/>
-			<hampalmu/>
-			<hamplus/>
-			<hamextfingerd/>
-			<hampalmd/>
-			<hamparend/>
-			<hamparbegin/>
-			<hamteeth/>
-			<hamplus/>
-			<hambelowstomach/>
-			<hamparend/>
-			<hamreplace/>
 			<hamfist/>
-			<hamparbegin/>
-			<hamextfingerl/>
-			<hampalmd/>
-			<hamplus/>
-			<hamextfingerr/>
-			<hampalmd/>
-			<hamparend/>
-			<hamshoulders/>
-			<hamparbegin/>
+			<hamthumbacrossmod/>
+			<hamextfingerd/>
+			<hampalml/>
+			<hambelowstomach/>
+			<hamlrbeside/>
 			<hammoveu/>
-			<hamarcd/>
-			<hammoved/>
-			<hamarcu/>
-			<hamplus/>
-			<hammoved/>
-			<hamarcu/>
-			<hammoveu/>
-			<hamarcd/>
-			<hamparend/>
-			<hamparbegin/>
-			<hammovei/>
 			<hamlargemod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfingerstraightmod/>
+			<hamlargemod/>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamparbegin/>
+			<hamshoulders/>
+			<hamlrbeside/>
 			<hamplus/>
-			<hammoveo/>
+			<hamlrbeside/>
+			<hamshoulders/>
 			<hamparend/>
+			<hamnodding/>
+			<hamsmallmod/>
 		</hamnosys_manual>
 	</hns_sign>
 

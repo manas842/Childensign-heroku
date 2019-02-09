@@ -1,7 +1,0 @@
-<sigml>
-
-<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="AD"/><hnm_eyebrows tag="RB"/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamextfingerd/><hampalmd/><hamhead/><hammoved/><hamfast/><hammoved/><hamfast/><hammoved/><hamfast/><hammoved/><hamfast/></hamnosys_manual></hns_sign>
-
-<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="AD"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamparbegin/><hamfinger2345/><hamplus/><hamfinger2345/><hamparend/><hamparbegin/><hamextfingerol/><hampalmul/><hamplus/><hamextfingeror/><hampalmur/><hamparend/><hamparbegin/><hamchest/><hamplus/><hamchest/><hamparend/><hamparbegin/><hammoveul/><hamcirclei/><hamcirclei/><hamplus/><hammoveur/><hamcirclei/><hamcirclei/><hamparend/></hamnosys_manual></hns_sign>
-
-</sigml>
