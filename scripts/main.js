@@ -60,7 +60,7 @@ document.getElementsByClassName('search__input')[0].onblur=function(){check=1;se
 document.getElementsByClassName('search__input')[0].onfocus=function(){$("#history").html("");let historyElememt=Array.from(histor);
 if(check==1){for(let c=0,i=historyElememt.length;i>=0&&c<6;i--,c++){if(historyElememt[i]!=undefined){console.log(historyElememt[i].item_english);$("#history").attr("style","border: solid 0.1vw #4285f4;");let list=historyElem.replace("%data%",historyElememt[i].item_english).replace("%class%","history-list").replace("%id%",historyElememt[i].item_english);
 $("#history").append(list);}}}console.log(historyElememt);check=2;
-$(".history-list").click(function(){$("#nameWindow").html("");$("#category").html("");check=1;
+$(".history-list").click(function(){$(".elemName").html("");$("#category").html("");check=1;
 v = $(this.children[0]);v=v[0].id;
 $(".search__input").val(v);
 PerformDictionarySearch(v);
@@ -87,7 +87,7 @@ PerformDictionarySearch=function(k){
         }
         if(searchedArr.length!=0){
                cleardisplaywindow();
-               $('#nameWindow').html("");
+               $('.elemName').html("");
                $('#nameImage').attr("style","opacity:0");
                $('.cancel,#reload-sigml').hide();
                for(let elem in searchedArr) {
@@ -114,7 +114,7 @@ Search();
 function listClick(lan){
     $(".side-list").click(function() {
         console.log(lan);
-        v=$(this.children[0]),v=$(v[0]).attr("name");a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
+        v=$(this.children[0]),v=$(v[0]).attr("name");a = $(this.children[0]), $(".elemName").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");
@@ -141,7 +141,7 @@ function listClick(lan){
     });
     $(".side-list-names").click(function() {
         v=$(this.children[0]),v=$(v[0]).attr("name");
-        a = $(this.children[0]), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#nameWindow").html(""), $("#reload-sigml").hide(), a = a[0].className, a = a.split(" ")[1], a = a.slice(0, a.length - 8), 
+        a = $(this.children[0]), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $(".elemName").html(""), $("#reload-sigml").hide(), a = a[0].className, a = a.split(" ")[1], a = a.slice(0, a.length - 8), 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");;
@@ -180,7 +180,7 @@ function startPlayerDictionary(e, i) {
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                if(language=='hindi'){$("#nameWindow").html(displayElements[elem][sample].item_hindi)}else{$("#nameWindow").html(displayElements[elem][sample].item_english)}
+                if(language=='hindi'){$(".elemName").html(displayElements[elem][sample].item_hindi)}else{$(".elemName").html(displayElements[elem][sample].item_english)}
                 toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show();
                 elementClicked = displayElements[elem][sample];
                 histor.add(displayElements[elem][sample]);
@@ -205,7 +205,7 @@ function startPlayerEnglish(e, i) {
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                $("#nameWindow").html(displayElements[elem][sample].item_english), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
+                $(".elemName").html(displayElements[elem][sample].item_english), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
                 $('#nameImage').attr("style","opacity:1");
                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
                 elementClicked = displayElements[elem][sample];
@@ -250,7 +250,7 @@ function startPlayerHindi(e, i) {
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                $("#nameWindow").html(displayElements[elem][sample].item_hindi), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
+                $(".elemName").html(displayElements[elem][sample].item_hindi), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
                 $('#nameImage').attr("style","opacity:1");;
                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
                 elementClicked = displayElements[elem][sample];
@@ -285,7 +285,7 @@ function startPlayerHindi(e, i) {
 }
 function assignCategory(lang) {
     $('.square_btn').unbind("click");
-    $('#nameWindow').html("");
+    $('.elemName').html("");
     $('.cancel,#reload-sigml').hide();
     $('.square_btn').click(function() {
         current_screen="category";
@@ -294,7 +294,7 @@ function assignCategory(lang) {
         $("#category").html("");
         document.getElementById('display').scrollLeft = 0;
         cleardisplaywindow();
-        $('#nameWindow').html("");
+        $('.elemName').html("");
         $('#nameImage').attr("style","opacity:0");
         $('.cancel,#reload-sigml').hide();
         document.getElementsByClassName('search__input')[0].value = "";
@@ -306,7 +306,7 @@ assignCategory("english");
 $(".cancel").click(function() {
     clearInterval(show)
     document.getElementById('display').scrollLeft = 0;
-    cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
+    cleardisplaywindow(), $(".elemName").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
     $('#nameImage').attr('src','');
     $('#nameImage').attr("style","opacity:0");
     let backElem = $(toBeBackElement).attr("src");
@@ -364,7 +364,7 @@ $(".cancel").click(function() {
     current_screen="category";
     document.getElementsByClassName('search__input')[0].value = "";
     clearInterval(show);
-    $('#nameWindow').html("");
+    $('.elemName').html("");
     $('#nameImage').attr("style","opacity:0");
     $('.cancel,#reload-sigml').hide();
     $("#category").html("");
@@ -392,7 +392,7 @@ $(".cancel").click(function() {
         current_screen="Dictionary";
         clearInterval(show);
         $("#category").html("");
-        $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $('.cancel,#reload-sigml').hide();
+        $(".elemName").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $('.cancel,#reload-sigml').hide();
         cleardisplaywindow();
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");
