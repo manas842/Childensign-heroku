@@ -41,12 +41,12 @@ Hindi=function(){
     }else if(current_screen.length==1){
     PerformDictionarySearch(current_screen);
     $('.overlay').show();
-    $(document.getElementById(current_screen)).attr("style","color: #00f;border-radius: 6vw 6vw 5vw 5vw;background: #fffd;")
+    $(document.getElementById(current_screen)).attr("style","color: #00f;border-radius: 1vw 1vw 2vw 2vw;background: #fff;height: 2.5vw;line-height: 2.34vw;")
     $('.DictionaryElem').click(function(){dictionary(this);})
     }else{loadCategories("hindi");
     $('.side-list,.side-list-names,.cancel,#reload-sigml').unbind("click");
     $(".side-list").click(function() {
-        v=$(this.children[0]),v=v[0].item_english, a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
+        v=$(this.children[0]),v=$(v[0]).attr("name"), a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");

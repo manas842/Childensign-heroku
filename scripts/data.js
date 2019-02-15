@@ -6,51 +6,255 @@ var sidebar = {
             listtext_hindi: "रंग",
             id: "colors",
             class: "colors_sidebar"
+        },{
+            imagesrc: "./res/icons/sidebar/countries.png",
+            listtext_english: "Countries, States and Cities",
+            listtext_hindi: "",
+            id: "countries",
+            class: "countries_sidebar"
         }]
     },
     displayElements = {
-       colors:[{ imagesrc:"./res/icons/colors/black.jpg",
+       colors:[{ imagesrc:"./res/icons/colors/black.png",
                     item_english: "black"
                     },{
-                    imagesrc:"./res/icons/colors/blue.jpg",
+                    imagesrc:"./res/icons/colors/blue.png",
                     item_english: "blue"
                     },{
-                    imagesrc:"./res/icons/colors/brown.jpg",
+                    imagesrc:"./res/icons/colors/brown.png",
                     item_english: "brown"
                     },{
-                    imagesrc:"./res/icons/colors/color1.png",
-                    item_english: "color1"
+                    imagesrc:"./res/icons/colors/color(1).png",
+                    item_english: "color(1)"
                     },{
-                    imagesrc:"./res/icons/colors/color2.png",
-                    item_english: "color2"
+                    imagesrc:"./res/icons/colors/color(2).png",
+                    item_english: "color(2)"
                     },{
-                    imagesrc:"./res/icons/colors/green.jpg",
+                    imagesrc:"./res/icons/colors/green.png",
                     item_english: "green"
                     },{
-                    imagesrc:"./res/icons/colors/grey.jpg",
+                    imagesrc:"./res/icons/colors/grey.png",
                     item_english: "grey"
                     },{
-                    imagesrc:"./res/icons/colors/orange.jpg",
+                    imagesrc:"./res/icons/colors/orange.png",
                     item_english: "orange"
                     },{
-                    imagesrc:"./res/icons/colors/pink.jpg",
-                    item_english: "pink"
+                    imagesrc:"./res/icons/colors/pink(1).png",
+                    item_english: "pink(1)"
                     },{
-                    imagesrc:"./res/icons/colors/pink.jpg",
-                    item_english: "pink2"
+                    imagesrc:"./res/icons/colors/pink(2).png",
+                    item_english: "pink(2)"
                     },{
-                    imagesrc:"./res/icons/colors/purple.jpg",
+                    imagesrc:"./res/icons/colors/purple.png",
                     item_english: "purple"
                     },{
-                    imagesrc:"./res/icons/colors/red.jpg",
+                    imagesrc:"./res/icons/colors/red.png",
                     item_english: "red"
                     },{
-                    imagesrc:"./res/icons/colors/white.jpg",
+                    imagesrc:"./res/icons/colors/white.png",
                     item_english: "white",
                     },{
-                    imagesrc:"./res/icons/colors/yellow.jpg",
+                    imagesrc:"./res/icons/colors/yellow.png",
                     item_english: "yellow"},
         ],
+       countries:[{
+                            imagesrc:"./res/icons/countries/africa.png",
+                            item_english:"africa"
+                            },{
+                            imagesrc:"./res/icons/countries/agra(1).png",
+                            item_english:"agra(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/agra(2).png",
+                            item_english:"agra(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/ahemdabad.png",
+                            item_english:"ahemdabad"
+                            },{
+                            imagesrc:"./res/icons/countries/andhrapradesh.png",
+                            item_english:"andhra pradesh"
+                            },{
+                            imagesrc:"./res/icons/countries/arunachalpardesh(1).png",
+                            item_english:"arunachal pardesh(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/arunachalpardesh(2).png",
+                            item_english:"arunachal pardesh(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/asia.png",
+                            item_english:"asia"
+                            },{
+                            imagesrc:"./res/icons/countries/assam.png",
+                            item_english:"assam"
+                            },{
+                            imagesrc:"./res/icons/countries/australia.png",
+                            item_english:"australia"
+                            },{
+                            imagesrc:"./res/icons/countries/bangalore.png",
+                            item_english:"bangalore"
+                            },{
+                            imagesrc:"./res/icons/countries/capital.png",
+                            item_english:"capital"
+                            },{
+                            imagesrc:"./res/icons/countries/dubai.png",
+                            item_english:"Dubai"
+                            },{
+                            imagesrc:"./res/icons/countries/england.png",
+                            item_english:"England"
+                            },{
+                            imagesrc:"./res/icons/countries/europe.png",
+                            item_english:"Europe"
+                            },{
+                            imagesrc:"./res/icons/countries/france.png",
+                            item_english:"France"
+                            },{
+                            imagesrc:"./res/icons/countries/gangtok.png",
+                            item_english:"Gangtok"
+                            },{
+                            imagesrc:"./res/icons/countries/germany.png",
+                            item_english:"Germany"
+                            },{
+                            imagesrc:"./res/icons/countries/goa(1).png",
+                            item_english:"Goa(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/goa(2).png",
+                            item_english:"Goa(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/gujarat(1).png",
+                            item_english:"Gujarat(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/gujarat(2).png",
+                            item_english:"Gujarat(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/gujarat(3).png",
+                            item_english:"Gujarat(3)"
+                            },{
+                            imagesrc:"./res/icons/countries/haryana.png",
+                            item_english:"Haryana"
+                            },{
+                            imagesrc:"./res/icons/countries/israel.png",
+                            item_english:"Israel"
+                            },{
+                            imagesrc:"./res/icons/countries/jammukashmir.png",
+                            item_english:"Jammu and Kashimr"
+                            },{
+                            imagesrc:"./res/icons/countries/Jharkhand.png",
+                            item_english:"Jharkhand"
+                            },{
+                            imagesrc:"./res/icons/countries/karnataka.png",
+                            item_english:"karnataka"
+                            },{
+                            imagesrc:"./res/icons/countries/kohima.png",
+                            item_english:"kohima"
+                            },{
+                            imagesrc:"./res/icons/countries/kolkata.png",
+                            item_english:"kolkata"
+                            },{
+                            imagesrc:"./res/icons/countries/lucknow.png",
+                            item_english:"lucknow"
+                            },{
+                            imagesrc:"./res/icons/countries/madhyapradesh.png",
+                            item_english:"madhya pradesh"
+                            },{
+                            imagesrc:"./res/icons/countries/maharashtra.png",
+                            item_english:"maharashtra"
+                            },{
+                            imagesrc:"./res/icons/countries/manipur(1).png",
+                            item_english:"manipur(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/manipur(2).png",
+                            item_english:"manipur(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/meghalaya(1).png",
+                            item_english:"meghalaya(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/meghalaya(2).png",
+                            item_english:"meghalaya(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/mizoram(1).png",
+                            item_english:"mizoram(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/mizoram(2).png",
+                            item_english:"mizoram(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/mizoram(3).png",
+                            item_english:"mizoram(3)"
+                            },{
+                            imagesrc:"./res/icons/countries/mumbai.png",
+                            item_english:"mumbai"
+                            },{
+                            imagesrc:"./res/icons/countries/mysore.png",
+                            item_english:"mysore"
+                            },{
+                            imagesrc:"./res/icons/countries/nagaland.png",
+                            item_english:"nagaland"
+                            },{
+                            imagesrc:"./res/icons/countries/nagpur.png",
+                            item_english:"nagpur"
+                            },{
+                            imagesrc:"./res/icons/countries/nepal.png",
+                            item_english:"nepal"
+                            },{
+                            imagesrc:"./res/icons/countries/delhi.png",
+                            item_english:"new delhi"
+                            },{
+                            imagesrc:"./res/icons/countries/odisha.png",
+                            item_english:"odisha"
+                            },{
+                            imagesrc:"./res/icons/countries/ooty.png",
+                            item_english:"ooty"
+                            },{
+                            imagesrc:"./res/icons/countries/place.png",
+                            item_english:"place"
+                            },{
+                            imagesrc:"./res/icons/countries/puducherry.png",
+                            item_english:"puducherry"
+                            },{
+                            imagesrc:"./res/icons/countries/punjab.png",
+                            item_english:"punjab"
+                            },{
+                            imagesrc:"./res/icons/countries/raipur.png",
+                            item_english:"raipur"
+                            },{
+                            imagesrc:"./res/icons/countries/rajasthan(1).png",
+                            item_english:"Rajasthan(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/rajasthan(2).png",
+                            item_english:"Rajasthan(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/ranchi.png",
+                            item_english:"ranchi"
+                            },{
+                            imagesrc:"./res/icons/countries/shillong.png",
+                            item_english:"shillong"
+                            },{
+                            imagesrc:"./res/icons/countries/shimla.png",
+                            item_english:"shimla"
+                            },{
+                            imagesrc:"./res/icons/countries/sikkim.png",
+                            item_english:"sikkim"
+                            },{
+                            imagesrc:"./res/icons/countries/states.png",
+                            item_english:"states"
+                            },{
+                            imagesrc:"./res/icons/countries/tamilnadu.png",
+                            item_english:"tamilnadu"
+                            },{
+                            imagesrc:"./res/icons/countries/telugu.png",
+                            item_english:"telugu"
+                            },{
+                            imagesrc:"./res/icons/countries/thiruvananthapuram.png",
+                            item_english:"thiruvananthapuram"
+                            },{
+                            imagesrc:"./res/icons/countries/tripura(1).png",
+                            item_english:"tripura(1)"
+                            },{
+                            imagesrc:"./res/icons/countries/tripura(2).png",
+                            item_english:"tripura(2)"
+                            },{
+                            imagesrc:"./res/icons/countries/uttarpradesh.png",
+                            item_english:"uttarpradesh"
+                            },{
+                            imagesrc:"./res/icons/countries/westbengal.png",
+                            item_english:"westbengal"} ],
        Dictionary:   [ { 
                                 item_english: "3g"
                                 },{

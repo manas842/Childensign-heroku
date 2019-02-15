@@ -114,7 +114,7 @@ Search();
 function listClick(lan){
     $(".side-list").click(function() {
         console.log(lan);
-        v=$(this.children[0]),v=v[0].item_english;a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
+        v=$(this.children[0]),v=$(v[0]).attr("name");a = $(this.children[0]), $("#nameWindow").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
         $('#nameImage').attr("style","opacity:0");
@@ -173,7 +173,7 @@ var toBeBackElement = null,
     sigmlReload = null;
 function startPlayerDictionary(e, i) { 
     console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#imageWindow").removeClass("flipInY");
-    $("#Prog_Alert").append(ProgElem);
+    $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
     let clickedSrc = $(i).attr('src');
@@ -196,7 +196,7 @@ function startPlayerEnglish(e, i) {
     $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;");
     document.getElementsByClassName('search__input')[0].value = "";
     console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY");
-    $("#Prog_Alert").append(ProgElem);
+    $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
     $('#nameImage').attr("style","opacity:1");
@@ -242,7 +242,7 @@ function startPlayerHindi(e, i) {
     document.getElementsByClassName('search__input')[0].value = "";
     console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY"), cleardisplaywindow();
     let elementClicked;
-    $("#Prog_Alert").append(ProgElem);
+    $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
     $('#nameImage').attr("style","opacity:1");
@@ -325,7 +325,7 @@ $(".cancel").click(function() {
     temp.next().attr("style","color:black;");
     $(".cancel").attr("style","display:none");
 }), $("#reload-sigml").click(function() {
-    $("#Prog_Alert").append(ProgElem);
+    $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
     sigmlURL = setSiGMLURL(sigmlReload), console.log("extra"), CWASA.playSiGMLURL(sigmlURL)
@@ -409,7 +409,7 @@ $(".cancel").click(function() {
             current_screen=a;
             $('.overlay').html("");
             $('.overlay').append(DictionaryElem);
-            $(document.getElementById(a)).attr("style","color: #00f;border-radius: 2vw 2vw 1vw 1vw;background: #fffd;height: 2.8vw;")
+            $(document.getElementById(a)).attr("style","color: #00f;border-radius: 1vw 1vw 2vw 2vw;background: #fff;height: 2.5vw;line-height: 2.34vw;")
             cleardisplaywindow();
             $('.displayWindow').attr("style","flex-direction:column;overflow:hidden;padding: 1.5vw 0 0 0;height: 37.6vw;");
             PerformDictionarySearch(a);
