@@ -12,6 +12,12 @@ var sidebar = {
             listtext_hindi: "",
             id: "countries",
             class: "countries_sidebar"
+        },{
+            imagesrc: "./res/icons/sidebar/animals.png",
+            listtext_english: "Animals,birds and insects",
+            listtext_hindi: "",
+            id: "animals",
+            class: "animals_sidebar"
         }]
     },
     displayElements = {
@@ -95,49 +101,49 @@ var sidebar = {
                             item_english:"capital"
                             },{
                             imagesrc:"./res/icons/countries/dubai.png",
-                            item_english:"Dubai"
+                            item_english:"dubai"
                             },{
                             imagesrc:"./res/icons/countries/england.png",
-                            item_english:"England"
+                            item_english:"england"
                             },{
                             imagesrc:"./res/icons/countries/europe.png",
-                            item_english:"Europe"
+                            item_english:"europe"
                             },{
                             imagesrc:"./res/icons/countries/france.png",
-                            item_english:"France"
+                            item_english:"france"
                             },{
                             imagesrc:"./res/icons/countries/gangtok.png",
-                            item_english:"Gangtok"
+                            item_english:"gangtok"
                             },{
                             imagesrc:"./res/icons/countries/germany.png",
-                            item_english:"Germany"
+                            item_english:"germany"
                             },{
                             imagesrc:"./res/icons/countries/goa(1).png",
-                            item_english:"Goa(1)"
+                            item_english:"goa(1)"
                             },{
                             imagesrc:"./res/icons/countries/goa(2).png",
-                            item_english:"Goa(2)"
+                            item_english:"goa(2)"
                             },{
                             imagesrc:"./res/icons/countries/gujarat(1).png",
-                            item_english:"Gujarat(1)"
+                            item_english:"gujarat(1)"
                             },{
                             imagesrc:"./res/icons/countries/gujarat(2).png",
-                            item_english:"Gujarat(2)"
+                            item_english:"gujarat(2)"
                             },{
                             imagesrc:"./res/icons/countries/gujarat(3).png",
-                            item_english:"Gujarat(3)"
+                            item_english:"gujarat(3)"
                             },{
                             imagesrc:"./res/icons/countries/haryana.png",
-                            item_english:"Haryana"
+                            item_english:"haryana"
                             },{
                             imagesrc:"./res/icons/countries/israel.png",
-                            item_english:"Israel"
+                            item_english:"israel"
                             },{
                             imagesrc:"./res/icons/countries/jammukashmir.png",
-                            item_english:"Jammu and Kashimr"
+                            item_english:"jammu and kashimr"
                             },{
                             imagesrc:"./res/icons/countries/Jharkhand.png",
-                            item_english:"Jharkhand"
+                            item_english:"jharkhand"
                             },{
                             imagesrc:"./res/icons/countries/karnataka.png",
                             item_english:"karnataka"
@@ -255,6 +261,120 @@ var sidebar = {
                             },{
                             imagesrc:"./res/icons/countries/westbengal.png",
                             item_english:"westbengal"} ],
+        animals:[{  imagesrc:"./res/icons/animals/ant.png",
+                            item_english:"ant"
+                            },{
+                            imagesrc:"./res/icons/animals/bear.png",
+                            item_english:"bear"
+                            },{
+                            imagesrc:"./res/icons/animals/bird(1).png",
+                            item_english:"bird(1)"
+                            },{
+                            imagesrc:"./res/icons/animals/bird(2).png",
+                            item_english:"bird(2)"
+                            },{
+                            imagesrc:"./res/icons/animals/bufallo(1).png",
+                            item_english:"bufallo(1)"
+                            },{
+                            imagesrc:"./res/icons/animals/bufallo(2).png",
+                            item_english:"buffalo(2)"
+                            },{
+                            imagesrc:"./res/icons/animals/bull.png",
+                            item_english:"bull"
+                            },{
+                            imagesrc:"./res/icons/animals/cat.png",
+                            item_english:"cat"
+                            },{
+                            imagesrc:"./res/icons/animals/cow(1).png",
+                            item_english:"cow(1)"
+                            },{
+                            imagesrc:"./res/icons/animals/cow(2).png",
+                            item_english:"cow(2)"
+                            },{
+                            imagesrc:"./res/icons/animals/crocodile.png",
+                            item_english:"crocodile"
+                            },{
+                            imagesrc:"./res/icons/animals/crow.png",
+                            item_english:"crow"
+                            },{
+                            imagesrc:"./res/icons/animals/dog(2).png",
+                            item_english:"dog(2)"
+                            },{
+                            imagesrc:"./res/icons/animals/dog(1).png",
+                            item_english:"dog(1)"
+                            },{
+                            imagesrc:"./res/icons/animals/donkey.png",
+                            item_english:"donkey"
+                            },{
+                            imagesrc:"./res/icons/animals/eagle.png",
+                            item_english:"eagle"
+                            },{
+                            imagesrc:"./res/icons/animals/elephant.png",
+                            item_english:"elephant"
+                            },{
+                            imagesrc:"./res/icons/animals/fish(1).png",
+                            item_english:"fish(1)"
+                            },{
+                            imagesrc:"./res/icons/animals/fish(2).png",
+                            item_english:"fish(2)"
+                            },{
+                            imagesrc:"./res/icons/animals/insect.png",
+                            item_english:"insect"
+                            },{
+                            imagesrc:"./res/icons/animals/kangaroo.png",
+                            item_english:"kangaroo"
+                            },{
+                            imagesrc:"./res/icons/animals/lizard.png",
+                            item_english:"lizard"
+                            },{
+                            imagesrc:"./res/icons/animals/monkey.png",
+                            item_english:"monkey"
+                            },{
+                            imagesrc:"./res/icons/animals/fox.png",
+                            item_english:"fox"
+                            },{
+                            imagesrc:"./res/icons/animals/parrot.png",
+                            item_english:"parrot"
+                            },{
+                            imagesrc:"./res/icons/animals/peacock(3).png",
+                            item_english:"peacock(3)"
+                            },{
+                            imagesrc:"./res/icons/animals/peacock(4).png",
+                            item_english:"peacock(4)"
+                            },{
+                            imagesrc:"./res/icons/animals/peacock(1).png",
+                            item_english:"peacock(1)"
+                            },{
+                            imagesrc:"./res/icons/animals/peacock(2).png",
+                            item_english:"peacock(2)"
+                            },{
+                            imagesrc:"./res/icons/animals/python.png",
+                            item_english:"python"
+                            },{
+                            imagesrc:"./res/icons/animals/rabbit.png",
+                            item_english:"rabbit"
+                            },{
+                            imagesrc:"./res/icons/animals/rat.png",
+                            item_english:"rat,mouse"
+                            },{
+                            imagesrc:"./res/icons/animals/snake.png",
+                            item_english:"snake"
+                            },{
+                            imagesrc:"./res/icons/animals/sparrow.png",
+                            item_english:"sparrow"
+                            },{
+                            imagesrc:"./res/icons/animals/spider(2).png",
+                            item_english:"spider(2)"
+                            },{
+                            imagesrc:"./res/icons/animals/spider(1).png",
+                            item_english:"spider(1)"
+                            },{
+                            imagesrc:"./res/icons/animals/woodpecker.png",
+                            item_english:"woodpecker"
+                            },{
+                            imagesrc:"./res/icons/animals/zebra.png",
+                            item_english:"zebra"
+                            }],
        Dictionary:   [ { 
                                 item_english: "3g"
                                 },{
@@ -268,9 +388,9 @@ var sidebar = {
                                 },{
                                 item_english: "abstract"
                                 },{
-                                item_english: "abuse_1"
+                                item_english: "abuse(1)"
                                 },{
-                                item_english: "abuse_2"
+                                item_english: "abuse(2)"
                                 },{
                                 item_english: "accept"
                                 },{
@@ -278,21 +398,21 @@ var sidebar = {
                                 },{
                                 item_english: "accident"
                                 },{
-                                item_english: "accompany"
+                                item_english: "accompany(1)"
                                 },{
-                                item_english: "accompany_2"
+                                item_english: "accompany(2)"
                                 },{
                                 item_english: "action"
                                 },{
                                 item_english: "active"
                                 },{
-                                item_english: "actor_2"
+                                item_english: "actor"
                                 },{
-                                item_english: "actress_2"
+                                item_english: "actress"
                                 },{
-                                item_english: "add"
+                                item_english: "add(1)"
                                 },{
-                                item_english: "add_2"
+                                item_english: "add(2)"
                                 },{
                                 item_english: "address"
                                 },{
@@ -302,9 +422,9 @@ var sidebar = {
                                 },{
                                 item_english: "advertisement"
                                 },{
-                                item_english: "advise"
+                                item_english: "advise(1)"
                                 },{
-                                item_english: "advise2"
+                                item_english: "advise(2)"
                                 },{
                                 item_english: "aeroplane"
                                 },{
@@ -322,31 +442,31 @@ var sidebar = {
                                 },{
                                 item_english: "aim"
                                 },{
-                                item_english: "airpollution2"
+                                item_english: "airpollution(2)"
                                 },{
                                 item_english: "alcohol,drunk"
                                 },{
-                                item_english: "alcohol4"
+                                item_english: "alcohol(4)"
                                 },{
-                                item_english: "alert"
+                                item_english: "alert(1)"
                                 },{
-                                item_english: "alert2"
+                                item_english: "alert(2)"
                                 },{
                                 item_english: "alive"
                                 },{
-                                item_english: "all"
+                                item_english: "all(1)"
                                 },{
-                                item_english: "all_2"
+                                item_english: "all(2)"
                                 },{
                                 item_english: "allow"
                                 },{
-                                item_english: "almond"
+                                item_english: "almond(1)"
                                 },{
-                                item_english: "almond2"
+                                item_english: "almond(2)"
                                 },{
-                                item_english: "alnoe2"
+                                item_english: "alone(2)"
                                 },{
-                                item_english: "alone"
+                                item_english: "alone(1)"
                                 },{
                                 item_english: "alphabet"
                                 },{
@@ -378,17 +498,17 @@ var sidebar = {
                                 },{
                                 item_english: "apply"
                                 },{
-                                item_english: "appointment1"
+                                item_english: "appointment(1)"
                                 },{
-                                item_english: "appointment2"
+                                item_english: "appointment(2)"
                                 },{
-                                item_english: "approximate1"
+                                item_english: "approximate(1)"
                                 },{
-                                item_english: "approximate2"
+                                item_english: "approximate(2)"
                                 },{
-                                item_english: "area1"
+                                item_english: "area(1)"
                                 },{
-                                item_english: "area2"
+                                item_english: "area(2)"
                                 },{
                                 item_english: "argue"
                                 },{
@@ -396,9 +516,9 @@ var sidebar = {
                                 },{
                                 item_english: "arogant"
                                 },{
-                                item_english: "around1"
+                                item_english: "around(1)"
                                 },{
-                                item_english: "around2"
+                                item_english: "around(2)"
                                 },{
                                 item_english: "arrest"
                                 },{
@@ -414,9 +534,9 @@ var sidebar = {
                                 },{
                                 item_english: "assume"
                                 },{
-                                item_english: "attitude1"
+                                item_english: "attitude(1)"
                                 },{
-                                item_english: "attitude2"
+                                item_english: "attitude(2)"
                                 },{
                                 item_english: "audiology"
                                 },{
@@ -440,19 +560,19 @@ var sidebar = {
                                 },{
                                 item_english: "background"
                                 },{
-                                item_english: "backsign1"
+                                item_english: "backsign(1)"
                                 },{
-                                item_english: "backsign2"
+                                item_english: "backsign(2)"
                                 },{
-                                item_english: "backsign4"
+                                item_english: "backsign(4)"
                                 },{
-                                item_english: "badmintonsign1"
+                                item_english: "badmintonsign(1)"
                                 },{
-                                item_english: "badmintonsign2"
+                                item_english: "badmintonsign(2)"
                                 },{
-                                item_english: "badsign1"
+                                item_english: "badsign(1)"
                                 },{
-                                item_english: "badsign2"
+                                item_english: "badsign(2)"
                                 },{
                                 item_english: "bag"
                                 },{
@@ -464,7 +584,7 @@ var sidebar = {
                                 },{
                                 item_english: "balloon"
                                 },{
-                                item_english: "bansign1"
+                                item_english: "bansign(1)"
                                 },{
                                 item_english: "difficult"
                                 },{
@@ -476,9 +596,9 @@ var sidebar = {
                                 },{
                                 item_english: "garbage"
                                 },{
-                                item_english: "garden1"
+                                item_english: "garden(1)"
                                 },{
-                                item_english: "garden2"
+                                item_english: "garden(2)"
                                 },{
                                 item_english: "garlic"
                                 },{
@@ -504,7 +624,7 @@ var sidebar = {
                                 },{
                                 item_english: "glass"
                                 },{
-                                item_english: "gloves2"
+                                item_english: "gloves(2)"
                                 },{
                                 item_english: "glue"
                                 },{
@@ -518,9 +638,9 @@ var sidebar = {
                                 },{
                                 item_english: "grammar"
                                 },{
-                                item_english: "greedy1"
+                                item_english: "greedy(1)"
                                 },{
-                                item_english: "greeedy2"
+                                item_english: "greeedy(2)"
                                 },{
                                 item_english: "guess"
                                 },{
@@ -530,9 +650,9 @@ var sidebar = {
                                 },{
                                 item_english: "gun"
                                 },{
-                                item_english: "gurudwara"
+                                item_english: "gurudwara(1)"
                                 },{
-                                item_english: "gurudwara2"
+                                item_english: "gurudwara(2)"
                                 },{
                                 item_english: "habit"
                                 },{
@@ -552,9 +672,9 @@ var sidebar = {
                                 },{
                                 item_english: "happy"
                                 },{
-                                item_english: "hard2"
+                                item_english: "hard(2)"
                                 },{
-                                item_english: "hard1"
+                                item_english: "hard(1)"
                                 },{
                                 item_english: "harddisk"
                                 },{
@@ -572,19 +692,19 @@ var sidebar = {
                                 },{
                                 item_english: "health"
                                 },{
-                                item_english: "hear"
+                                item_english: "hear(1)"
                                 },{
-                                item_english: "hear1"
+                                item_english: "hear(2)"
                                 },{
-                                item_english: "hear2"
+                                item_english: "hear(3)"
                                 },{
                                 item_english: "hearing"
                                 },{
                                 item_english: "hearingaid"
                                 },{
-                                item_english: "heart1"
+                                item_english: "heart(1)"
                                 },{
-                                item_english: "heart2"
+                                item_english: "heart(2)"
                                 },{
                                 item_english: "heavy"
                                 },{
@@ -602,9 +722,9 @@ var sidebar = {
                                 },{
                                 item_english: "hobby"
                                 },{
-                                item_english: "holiday1"
+                                item_english: "holiday(1)"
                                 },{
-                                item_english: "holiday2"
+                                item_english: "holiday(2)"
                                 },{
                                 item_english: "jacket"
                                 },{
@@ -616,9 +736,9 @@ var sidebar = {
                                 },{
                                 item_english: "job"
                                 },{
-                                item_english: "join1"
+                                item_english: "join(1)"
                                 },{
-                                item_english: "join2"
+                                item_english: "join(2)"
                                 },{
                                 item_english: "joke"
                                 },{
@@ -630,9 +750,9 @@ var sidebar = {
                                 },{
                                 item_english: "label"
                                 },{
-                                item_english: "labelsign1"
+                                item_english: "labelsign(1)"
                                 },{
-                                item_english: "labelsign2"
+                                item_english: "labelsign(2)"
                                 },{
                                 item_english: "lack"
                                 },{
@@ -648,9 +768,9 @@ var sidebar = {
                                 },{
                                 item_english: "laptop"
                                 },{
-                                item_english: "lassisign1"
+                                item_english: "lassisign(1)"
                                 },{
-                                item_english: "lassisign2"
+                                item_english: "lassisign(2)"
                                 },{
                                 item_english: "lastmonth"
                                 },{
@@ -658,9 +778,9 @@ var sidebar = {
                                 },{
                                 item_english: "lead"
                                 },{
-                                item_english: "listen1"
+                                item_english: "listen(1)"
                                 },{
-                                item_english: "listen2"
+                                item_english: "listen(2)"
                                 },{
                                 item_english: "ooty"
                                 },{
@@ -694,7 +814,7 @@ var sidebar = {
                                 },{
                                 item_english: "rupee"
                                 },{
-                                item_english: "safe2"
+                                item_english: "safe(2)"
                                 },{
                                 item_english: "school uniform"
                                 },{
@@ -710,7 +830,7 @@ var sidebar = {
                                 },{
                                 item_english: "Shower"
                                 },{
-                                item_english: "shy1"
+                                item_english: "shy(1)"
                                 },{
                                 item_english: "silk"
                                 },{
@@ -718,7 +838,7 @@ var sidebar = {
                                 },{
                                 item_english: "situation"
                                 },{
-                                item_english: "size3"
+                                item_english: "size(3)"
                                 },{
                                 item_english: "sleep"
                                 },{
@@ -728,7 +848,7 @@ var sidebar = {
                                 },{
                                 item_english: "snake"
                                 },{
-                                item_english: "snow2"
+                                item_english: "snow(2)"
                                 },{
                                 item_english: "socks"
                                 },{
@@ -736,13 +856,13 @@ var sidebar = {
                                 },{
                                 item_english: "some"
                                 },{
-                                item_english: "sorry1"
+                                item_english: "sorry(1)"
                                 },{
-                                item_english: "sorry2"
+                                item_english: "sorry(2)"
                                 },{
-                                item_english: "special1"
+                                item_english: "special(1)"
                                 },{
-                                item_english: "special2"
+                                item_english: "special(2)"
                                 },{
                                 item_english: "spectacles"
                                 },{
@@ -760,9 +880,9 @@ var sidebar = {
                                 },{
                                 item_english: "stupid"
                                 },{
-                                item_english: "style1"
+                                item_english: "style(3)"
                                 },{
-                                item_english: "style2"
+                                item_english: "style(2)"
                                 },{
                                 item_english: "subtitles"
                                 },{
@@ -778,11 +898,11 @@ var sidebar = {
                                 },{
                                 item_english: "take"
                                 },{
-                                item_english: "tea"
+                                item_english: "tea(1)"
                                 },{
-                                item_english: "tea1"
+                                item_english: "tea(2)"
                                 },{
-                                item_english: "tea2"
+                                item_english: "tea(3)"
                                 },{
                                 item_english: "teach"
                                 },{
@@ -790,7 +910,7 @@ var sidebar = {
                                 },{
                                 item_english: "temple"
                                 },{
-                                item_english: "thankyou1"
+                                item_english: "thankyou(1)"
                                 },{
                                 item_english: "theirs"
                                 },{
@@ -798,7 +918,7 @@ var sidebar = {
                                 },{
                                 item_english: "they"
                                 },{
-                                item_english: "thief2"
+                                item_english: "thief(2)"
                                 },{
                                 item_english: "thin"
                                 },{
@@ -818,7 +938,7 @@ var sidebar = {
                                 },{
                                 item_english: "tied up"
                                 },{
-                                item_english: "tight1"
+                                item_english: "tight(1)"
                                 },{
                                 item_english: "timid"
                                 },{
@@ -848,7 +968,7 @@ var sidebar = {
                                 },{
                                 item_english: "towel"
                                 },{
-                                item_english: "truck2"
+                                item_english: "truck(2)"
                                 },{
                                 item_english: "true"
                                 },{
@@ -870,7 +990,7 @@ var sidebar = {
                                 },{
                                 item_english: "variation"
                                 },{
-                                item_english: "victory 2"
+                                item_english: "victory(2)"
                                 },{
                                 item_english: "voice"
                                 },{
@@ -884,9 +1004,9 @@ var sidebar = {
                                 },{
                                 item_english: "young"
                                 },{
-                                item_english: "zip"
+                                item_english: "zip(1)"
                                 },{
-                                item_english: "zip2"
+                                item_english: "zip(2)"
                                 }],
         collectivenouns: [{}],
         

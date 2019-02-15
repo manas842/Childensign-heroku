@@ -43,14 +43,14 @@ function scroll() {
 }
 $('#next-btn').hover(function() {
     clearInterval(autoscroll);
-    amount = '+=50';
+    amount = '+=100';
     scroll();
 }, function() {
     amount = '';
 });
 $('#prev-btn').hover(function() {
     clearInterval(autoscroll);
-    amount = '-=50';
+    amount = '-=100';
     scroll();
 }, function() {
     amount = '';
