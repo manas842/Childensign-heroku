@@ -108,6 +108,7 @@ function setSiGMLURL(e) {
 var i = window.location.href,
     n = i.substring(0, i.lastIndexOf("/"));
     console.log(e);
+    $(".elemName").html(e)
     return console.log("SiGML: " + e), console.log("Location Dir: " + n), e = n + "/SignFiles/" + e + ".sigml", console.log("URL " + e), e
 }
 Search();
@@ -172,7 +173,7 @@ var toBeBackElement = null,
     categoryBackElement = null,
     sigmlReload = null;
 function startPlayerDictionary(e, i) { 
-    console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#imageWindow").removeClass("flipInY");
+    console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide()
     $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
@@ -184,13 +185,12 @@ function startPlayerDictionary(e, i) {
                 toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show();
                 elementClicked = displayElements[elem][sample];
                 histor.add(displayElements[elem][sample]);
-                console.log(numImages[displayElements[elem][sample].item_english]);
                 break;
             }
         }
     }
     let r = window.location.href;
-    return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
+    return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e),$(".overlapNameWindow").html("");
 }
 function startPlayerEnglish(e, i) {
     $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;");
@@ -205,7 +205,7 @@ function startPlayerEnglish(e, i) {
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                $(".elemName").html(displayElements[elem][sample].item_english), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
+                toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
                 $('#nameImage').attr("style","opacity:1");
                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
                 elementClicked = displayElements[elem][sample];
