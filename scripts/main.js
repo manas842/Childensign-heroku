@@ -153,7 +153,7 @@ function listClick(lan){
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
             if(lan=="english"){
-            var i =  displayWindowElemEnglish.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_english),
+            var i =  displayWindowElemEnglish.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%id%", displayElements[a][e].item_english).replace("%data%", displayElements[a][e].item_english),
                 n = "'".concat(displayElements[a][e].item_english).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
         }else{
@@ -309,7 +309,7 @@ $(".cancel").click(function() {
     cleardisplaywindow(), $(".elemName").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
     $('#nameImage').attr('src','');
     $('#nameImage').attr("style","opacity:0");
-    let backElem = $(toBeBackElement).attr("src");
+    let backElem = $(toBeBackElement).id;
     document.getElementsByClassName('search__input')[0].value = "";
     for (let e = categoryBackElement, i = 0; i < displayElements[e].length; i++) {
         let n = displayWindowElemEnglish.replace("%imagesrc%", displayElements[e][i].imagesrc).replace("%imagesrc%", displayElements[e][i].imagesrc);
