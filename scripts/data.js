@@ -493,10 +493,10 @@ var sidebar = {
                             item_english:"bhabhi indore"
                             },{
                             imagesrc:"./res/icons/family/.png",
-                            item_english:"boy"
+                            item_english:"boy(1)"
                             },{
                             imagesrc:"./res/icons/family/.png",
-                            item_english:"boy_2"
+                            item_english:"boy(2)"
                             },{
                             imagesrc:"./res/icons/family/.png",
                             item_english:"boyfriend"
@@ -563,16 +563,16 @@ var sidebar = {
                             item_english:"budhapurnima"
                             },{
                             imagesrc:"./res/icons/festival/.png",
-                            item_english:"christmas"
+                            item_english:"christmas(1)"
                             },{
                             imagesrc:"./res/icons/festival/.png",
-                            item_english:"christmas2"
+                            item_english:"christmas(2)"
+                            },{
+                            imagesrc:"./res/icons/festival/diwali(2).png",
+                            item_english:"diwali(2)"
                             },{
                             imagesrc:"./res/icons/festival/.png",
-                            item_english:"diwali2(2)"
-                            },{
-                            imagesrc:"./res/icons/festival/.png",
-                            item_english:"diwali2"
+                            item_english:"diwali(1)"
                             },{
                             imagesrc:"./res/icons/festival/.png",
                             item_english:"gandhi jayanti"
