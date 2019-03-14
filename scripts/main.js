@@ -108,7 +108,7 @@ function setSiGMLURL(e) {
 var i = window.location.href,
     n = i.substring(0, i.lastIndexOf("/"));
     console.log(e);
-    $(".elemName").html(e)
+    $(".elemName").html(e);e.toLowerCase();
     return console.log("SiGML: " + e), console.log("Location Dir: " + n), e = n + "/SignFiles/" + e + ".sigml", console.log("URL " + e), e
 }
 Search();
