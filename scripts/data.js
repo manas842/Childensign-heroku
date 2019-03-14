@@ -764,1118 +764,1906 @@ var sidebar = {
                             imagesrc:"./res/icons/vegetables/tomato.png",
                             item_english:"tomato"
                             }],
-       Dictionary: [{ 
-                            item_english: "3g",
-                            item_hindi:"3जी"
+       Dictionary: [{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"3g"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"4g"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Above"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Absent"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Abstract"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Abuse"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"accept"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"accessible"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"accident"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"accompany"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"action"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"active"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"actor"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"actress"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"add"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"address"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"adult"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"advantage"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"advertisement"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"advise"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"aeroplane"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"afraid"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"africa"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"after"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"afternoon"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"again"
                             },{
-                            item_english: "4g",
-                            item_hindi:"4जी"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"age"
                             },{
-                            item_english: "a",
-                            item_hindi:"ए"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"agra"
                             },{
-                            item_english: "above",
-                            item_hindi:"ऊपर"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"agree"
                             },{
-                            item_english: "absent",
-                            item_hindi:"अनुपस्थित"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ahmedabad"
                             },{
-                            item_english: "abstract",
-                            item_hindi:"सार"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"aim"
                             },{
-                            item_english: "abuse(1)",
-                            item_hindi:"दुरुपयोग (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"airpollution"
                             },{
-                            item_english: "abuse(2)",
-                            item_hindi:"दुरुपयोग (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"alcohol,drunk"
                             },{
-                            item_english: "accept",
-                            item_hindi:"लेना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"alert"
                             },{
-                            item_english: "accessible",
-                            item_hindi:"सुलभ"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"alive"
                             },{
-                            item_english: "accident",
-                            item_hindi:"दुर्घटना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"all"
                             },{
-                            item_english: "accompany(1)",
-                            item_hindi:"साथ (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"allow"
                             },{
-                            item_english: "accompany(2)",
-                            item_hindi:"साथ (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"almond"
                             },{
-                            item_english: "action",
-                            item_hindi:"कार्य"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"alone"
                             },{
-                            item_english: "active",
-                            item_hindi:"सक्रिय"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"alphabet"
                             },{
-                            item_english: "actor",
-                            item_hindi:"अभिनेता"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"alternative"
                             },{
-                            item_english: "actress",
-                            item_hindi:"अभिनेत्री"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"aluminium"
                             },{
-                            item_english: "add(1)",
-                            item_hindi:"जोड़ना (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"always"
                             },{
-                            item_english: "add(2)",
-                            item_hindi:"जोड़ना (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ambulance"
                             },{
-                            item_english: "address",
-                            item_hindi:"पता"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"amritsar"
                             },{
-                            item_english: "adult",
-                            item_hindi:"बालिग"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"andhrapardesh"
                             },{
-                            item_english: "advantage",
-                            item_hindi:"फायदा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"angry"
                             },{
-                            item_english: "advertisement",
-                            item_hindi:"विज्ञापन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"annual"
                             },{
-                            item_english: "advise(1)",
-                            item_hindi:"सलाह (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"annualprogramme"
                             },{
-                            item_english: "advise(2)",
-                            item_hindi:"सलाह (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"app"
                             },{
-                            item_english: "aeroplane",
-                            item_hindi:"विमान"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"appear"
                             },{
-                            item_english: "afraid",
-                            item_hindi:"भयभीत"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"applause"
                             },{
-                            item_english: "after",
-                            item_hindi:"बाद"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"applicant"
                             },{
-                            item_english: "afternoon",
-                            item_hindi:"दोपहर"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"application"
                             },{
-                            item_english: "again",
-                            item_hindi:"फिर"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"apply"
                             },{
-                            item_english: "age",
-                            item_hindi:"आयु"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"appointment"
                             },{
-                            item_english: "agree",
-                            item_hindi:"सहमत होना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"approximate"
                             },{
-                            item_english: "aim",
-                            item_hindi:"लक्ष्य"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"area"
                             },{
-                            item_english: "airpollution(2)",
-                            item_hindi:"वायु प्रदूषण (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"argue"
                             },{
-                            item_english: "alcohol (1)",
-                            item_hindi:"शराब (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"army"
                             },{
-                            item_english: "alcohol(2)",
-                            item_hindi:"शराब (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"arogant"
                             },{
-                            item_english: "alert(1)",
-                            item_hindi:"चेतावनी (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"around"
                             },{
-                            item_english: "alert(2)",
-                            item_hindi:"चेतावनी (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Arrest"
                             },{
-                            item_english: "alive",
-                            item_hindi:"ज़िंदा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Art"
                             },{
-                            item_english: "all(1)",
-                            item_hindi:"सब (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"arunachalpardesh"
                             },{
-                            item_english: "all(2)",
-                            item_hindi:"सब (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ashamed"
                             },{
-                            item_english: "allow",
-                            item_hindi:"अनुमति देना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"asia"
                             },{
-                            item_english: "almond(1)",
-                            item_hindi:"बादाम (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Ask"
                             },{
-                            item_english: "almond(2)",
-                            item_hindi:"बादाम (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"assam"
                             },{
-                            item_english: "alone(2)",
-                            item_hindi:"अकेले (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"assess"
                             },{
-                            item_english: "alone(1)",
-                            item_hindi:"अकेले (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Association"
                             },{
-                            item_english: "alphabet",
-                            item_hindi:"वर्णमाला"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Assume"
                             },{
-                            item_english: "alternative",
-                            item_hindi:"विकल्प"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"attitude"
                             },{
-                            item_english: "aluminium",
-                            item_hindi:"अल्युमीनियम"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Audiology"
                             },{
-                            item_english: "always",
-                            item_hindi:"हमेशा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"aunt"
                             },{
-                            item_english: "ambulance",
-                            item_hindi:"रोगी-वाहन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"australia"
                             },{
-                            item_english: "angry",
-                            item_hindi:"गुस्सा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"authentic"
                             },{
-                            item_english: "annual",
-                            item_hindi:"वार्षिक"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"autorickshaw"
                             },{
-                            item_english: "annualprogramme",
-                            item_hindi:"वार्षिक कार्यक्रम"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"available"
                             },{
-                            item_english: "ant",
-                            item_hindi:"चींटी"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Avalanche"
                             },{
-                            item_english: "app",
-                            item_hindi:"एप्लिकेशन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"average"
                             },{
-                            item_english: "appear",
-                            item_hindi:"दिखाई"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"award"
                             },{
-                            item_english: "applause",
-                            item_hindi:"ताली"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Away"
                             },{
-                            item_english: "applicant",
-                            item_hindi:"आवेदक"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Axe"
                             },{
-                            item_english: "application",
-                            item_hindi:"आवेदन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"baby"
                             },{
-                            item_english: "apply",
-                            item_hindi:"लगाना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"back"
                             },{
-                            item_english: "appointment(1)",
-                            item_hindi:"नियुक्ति (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"background"
                             },{
-                            item_english: "appointment(2)",
-                            item_hindi:"नियुक्ति (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bad"
                             },{
-                            item_english: "approximate(1)",
-                            item_hindi:"अनुमानित (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"badmintonsign"
                             },{
-                            item_english: "approximate(2)",
-                            item_hindi:"अनुमानित (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bag"
                             },{
-                            item_english: "area(1)",
-                            item_hindi:"क्षेत्र (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bake"
                             },{
-                            item_english: "area(2)",
-                            item_hindi:"क्षेत्र (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"balance"
                             },{
-                            item_english: "argue",
-                            item_hindi:"वाद करना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ball"
                             },{
-                            item_english: "army",
-                            item_hindi:"सेना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"balloon"
                             },{
-                            item_english: "arrogant",
-                            item_hindi:"अभिमानी"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bangalore"
                             },{
-                            item_english: "around(1)",
-                            item_hindi:"चारों ओर (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bangladesh"
                             },{
-                            item_english: "around(2)",
-                            item_hindi:"चारों ओर (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bansign1"
                             },{
-                            item_english: "arrest",
-                            item_hindi:"गिरफ्तारी"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bear"
                             },{
-                            item_english: "art",
-                            item_hindi:"कला"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bhabhi indore"
                             },{
-                            item_english: "ashamed",
-                            item_hindi:"शर्मिंदा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bhubaneswar"
                             },{
-                            item_english: "ask",
-                            item_hindi:"पूछना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bihar"
                             },{
-                            item_english: "assess",
-                            item_hindi:"आकलन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bike"
                             },{
-                            item_english: "association",
-                            item_hindi:"संघ"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"blackboard"
                             },{
-                            item_english: "assume",
-                            item_hindi:"मान लेना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"book"
                             },{
-                            item_english: "attitude(1)",
-                            item_hindi:"रवैया (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"boy"
                             },{
-                            item_english: "attitude(2)",
-                            item_hindi:"रवैया (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"boyfriend"
                             },{
-                            item_english: "audiology",
-                            item_hindi:"ऑडियोलॉजी"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"brother"
                             },{
-                            item_english: "authentic",
-                            item_hindi:"प्रामाणिक"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"brother-in-law"
                             },{
-                            item_english: "autorickshaw",
-                            item_hindi:"ऑटो रिक्शा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bua indore"
                             },{
-                            item_english: "available",
-                            item_hindi:"उपलब्ध"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"budhapurnima"
                             },{
-                            item_english: "avalanche",
-                            item_hindi:"हिमस्खलन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"bull"
                             },{
-                            item_english: "average",
-                            item_hindi:"औसत"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"capital"
                             },{
-                            item_english: "award",
-                            item_hindi:"पुरस्कार"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"car"
                             },{
-                            item_english: "away",
-                            item_hindi:"दूर"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"chalk"
                             },{
-                            item_english: "axe",
-                            item_hindi:"कुल्हाड़ी"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"chandigarh"
                             },{
-                            item_english: "baby",
-                            item_hindi:"बच्चा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"chennai"
                             },{
-                            item_english: "background",
-                            item_hindi:"पृष्ठभूमि"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"chhattisgarh"
                             },{
-                            item_english: "back(1)",
-                            item_hindi:"वापस (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"china"
                             },{
-                            item_english: "back(2)",
-                            item_hindi:"वापस (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"christmas"
                             },{
-                            item_english: "back(3))",
-                            item_hindi:"वापस (3)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"circle"
                             },{
-                            item_english: "badminton(1)",
-                            item_hindi:"बैडमिंटन (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"coimbatore"
                             },{
-                            item_english: "badminton(2)",
-                            item_hindi:"बैडमिंटन (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"cone"
                             },{
-                            item_english: "bad(1)",
-                            item_hindi:"बुरा (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"cousins"
                             },{
-                            item_english: "bad(2)",
-                            item_hindi:"बुरा (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"crore"
                             },{
-                            item_english: "bag",
-                            item_hindi:"बैग"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"crow"
                             },{
-                            item_english: "bake",
-                            item_hindi:"पकाना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"cube"
                             },{
-                            item_english: "balance",
-                            item_hindi:"संतुलन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Cycle"
                             },{
-                            item_english: "ball",
-                            item_hindi:"गेंद"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"cylinder"
                             },{
-                            item_english: "balloon",
-                            item_hindi:"गुब्बारा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"daughter"
                             },{
-                            item_english: "ban",
-                            item_hindi:"प्रतिबंध"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"daughter-in-law"
                             },{
-                            item_english: "difficult",
-                            item_hindi:"कठिन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"day"
                             },{
-                            item_english: "funny",
-                            item_hindi:"मजेदार"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"dehradun"
                             },{
-                            item_english: "game",
-                            item_hindi:"खेल"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"delhi"
                             },{
-                            item_english: "garage",
-                            item_hindi:"गेराज"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"desk"
                             },{
-                            item_english: "garbage",
-                            item_hindi:"कूड़ा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"dhaddaa1"
                             },{
-                            item_english: "garden(1)",
-                            item_hindi:"उद्यान (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"difficult"
                             },{
-                            item_english: "garden(2)",
-                            item_hindi:"उद्यान (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"divorce"
                             },{
-                            item_english: "garlic",
-                            item_hindi:"लहसुन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"diwali"
                             },{
-                            item_english: "gender",
-                            item_hindi:"लिंग"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"dog"
                             },{
-                            item_english: "general",
-                            item_hindi:"सामान्य"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Donkey"
                             },{
-                            item_english: "genius",
-                            item_hindi:"प्रतिभा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"dubai"
                             },{
-                            item_english: "gentle",
-                            item_hindi:"सज्जन"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"duster"
                             },{
-                            item_english: "genuine",
-                            item_hindi:"वास्तविक"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Eagle"
                             },{
-                            item_english: "geography",
-                            item_hindi:"भूगोल"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"east"
                             },{
-                            item_english: "get",
-                            item_hindi:"प्राप्त"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"eighteen"
                             },{
-                            item_english: "getup",
-                            item_hindi:"बनावट"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"eighty "
                             },{
-                            item_english: "gift",
-                            item_hindi:"उपहार"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"elder sister"
                             },{
-                            item_english: "give",
-                            item_hindi:"देना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"elder,older"
                             },{
-                            item_english: "glass",
-                            item_hindi:"कांच"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"eleven"
                             },{
-                            item_english: "gloves",
-                            item_hindi:"दस्ताने"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"England"
                             },{
-                            item_english: "glue",
-                            item_hindi:"गोंद"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"eraser"
                             },{
-                            item_english: "go",
-                            item_hindi:"जाना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Europe"
                             },{
-                            item_english: "gold",
-                            item_hindi:"सोना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"family"
                             },{
-                            item_english: "good",
-                            item_hindi:"अच्छा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"fifteen"
                             },{
-                            item_english: "government",
-                            item_hindi:"सरकार"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"fifty"
                             },{
-                            item_english: "grammar",
-                            item_hindi:"व्याकरण"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"file"
                             },{
-                            item_english: "greedy(1)",
-                            item_hindi:"लालची (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"forty"
                             },{
-                            item_english: "greeedy(2)",
-                            item_hindi:"लालची (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"fourteen"
                             },{
-                            item_english: "guess",
-                            item_hindi:"अनुमान"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"France"
                             },{
-                            item_english: "guide",
-                            item_hindi:"मार्गदर्शक"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"friend"
                             },{
-                            item_english: "guilt",
-                            item_hindi:"अपराध"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"funny"
                             },{
-                            item_english: "gun",
-                            item_hindi:"बंदूक"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"game"
                             },{
-                            item_english: "gurudwara(1)",
-                            item_hindi:"गुरुद्वारा (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gandhi jayanti"
                             },{
-                            item_english: "gurudwara(2)",
-                            item_hindi:"गुरुद्वारा (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Gangtok"
                             },{
-                            item_english: "habit",
-                            item_hindi:"आदत"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"garage"
                             },{
-                            item_english: "hail",
-                            item_hindi:"ओला"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"garbage"
                             },{
-                            item_english: "hairclip",
-                            item_hindi:"हेयर क्लिप"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"garden"
                             },{
-                            item_english: "half",
-                            item_hindi:"आधा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gender"
                             },{
-                            item_english: "halfanhour",
-                            item_hindi:"आधा घंटा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"general"
                             },{
-                            item_english: "hammer",
-                            item_hindi:"हथौड़ा"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"genius"
                             },{
-                            item_english: "hands",
-                            item_hindi:"हाथ"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gentle"
                             },{
-                            item_english: "happen",
-                            item_hindi:"होना"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"genuine"
                             },{
-                            item_english: "happy",
-                            item_hindi:"खुश"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"geography"
                             },{
-                            item_english: "hard(2)",
-                            item_hindi:"कठिन (2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Germany"
                             },{
-                            item_english: "hard(1)",
-                            item_hindi:"कठिन (1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"get"
                             },{
-                            item_english: "harddisk",
-                            item_hindi:"हार्ड डिस्क"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"getup"
                             },{
-                            item_english: "harddrive",
-                            item_hindi:"हार्ड ड्राइव"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gift"
                             },{
-                            item_english: "hardofhearing",
-                            item_hindi:"सुनने में दिक्कत"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"girl"
                             },{
-                            item_english: "hate",
-                            item_hindi:"नफ़रत"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"girlfriend"
                             },{
-                            item_english: "have",
-                            item_hindi:"है"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"give"
                             },{
-                            item_english: "haze",
-                            item_hindi:"धुन्ध"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"glass"
                             },{
-                            
-                            item_hindi:"सरदर्द",
-                            item_english: "headache"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gloves2"
                             },{
-                            
-                            item_hindi:"स्वास्थ्य",
-                            item_english: "health"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"glue"
                             },{
-                            
-                            item_hindi:"सुन (1)",
-                            item_english: "hear(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"go"
                             },{
-                            
-                            item_hindi:"सुन (2)",
-                            item_english: "hear(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Goa"
                             },{
-                            
-                            item_hindi:"सुन (3)",
-                            item_english: "hear(3)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gold"
                             },{
-                            
-                            item_hindi:"सुनवाई",
-                            item_english: "hearing"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Good Afternoon"
                             },{
-                            
-                            item_hindi:"श्रवण - संबंधी उपकरण",
-                            item_english: "hearingaid"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Good Evening"
                             },{
-                            
-                            item_hindi:"दिल (1)",
-                            item_english: "heart(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"good friday"
                             },{
-                            
-                            item_hindi:"दिल (2)",
-                            item_english: "heart(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Good Morning"
                             },{
-                            
-                            item_hindi:"भारी",
-                            item_english: "heavy"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"good night"
                             },{
-                            
-                            item_hindi:"हेलीकॉप्टर",
-                            item_english: "helicopter"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"good"
                             },{
-                            
-                            item_hindi:"हेलो",
-                            item_english: "hello"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"government"
                             },{
-                            
-                            item_hindi:"मदद",
-                            item_english: "help"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"grammar"
                             },{
-                            
-                            item_hindi:"नायक",
-                            item_english: "hero"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"grandfather"
                             },{
-                            
-                            item_hindi:"हिन्दू धर्म",
-                            item_english: "hinduism"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"grandmother"
                             },{
-                            
-                            item_hindi:"सफल",
-                            item_english: "hit"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"greedy"
                             },{
-                            
-                            item_hindi:"रुचि",    
-                            item_english: "hobby"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"guess"
                             },{
-                            
-                            item_hindi:"छुट्टी (1)",
-                            item_english: "holiday(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"guide"
                             },{
-                            
-                            item_hindi:"छुट्टी (2)",
-                            item_english: "holiday(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"guilt"
                             },{
-                            
-                            item_hindi:"जैकेट",
-                            item_english: "jacket"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Gujarat"
                             },{
-                            
-                            item_hindi:"जेल",
-                            item_english: "jail"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gun"
                             },{
-                            
-                            item_hindi:"पीलिया",
-                            item_english: "jaundice"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"gurudwara"
                             },{
-                            
-                            item_hindi:"ईर्ष्या",
-                            item_english: "jealous"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"habit"
                             },{
-                            
-                            item_hindi:"काम",
-                            item_english: "job"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hail"
                             },{
-                            
-                            item_hindi:"शामिल हों (1)",
-                            item_english: "join(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hairclip"
                             },{
-                            
-                            item_hindi:"शामिल हों (2)",
-                            item_english: "join(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"half"
                             },{
-                            
-                            item_hindi:"मज़ाक",
-                            item_english: "joke"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"halfanhour"
                             },{
-                            
-                            item_hindi:"यहूदी धर्म",
-                            item_english: "Judaism"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hammer"
                             },{
-                            
-                            item_hindi:"रस",
-                            item_english: "juice"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hands"
                             },{
-                            
-                            item_hindi:"छलांग",
-                            item_english: "jump"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"happen"
                             },{
-                            
-                            item_hindi:"लेबल (1)",
-                            item_english: "label"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"happy"
                             },{
-                            
-                            item_hindi:"लेबल (2)",
-                            item_english: "labelsign(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hard"
                             },{
-                            
-                            item_hindi:"लेबल (3)",
-                            item_english: "labelsign(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"harddisk"
                             },{
-                            
-                            item_hindi:"कमी",
-                            item_english: "lack"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"harddrive"
                             },{
-                            
-                            item_hindi:"सीढ़ी",
-                            item_english: "ladder"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hardofhearing"
                             },{
-                            
-                            item_hindi:"लाख",
-                            item_english: "lakh"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Haryana"
                             },{
-                            
-                            item_hindi:"दीपक",
-                            item_english: "lamp"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hate+"
                             },{
-                            
-                            item_hindi:"भूमि",
-                            item_english: "land"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"have"
                             },{
-                            
-                            item_hindi:"भाषा",
-                            item_english: "language"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"haze"
                             },{
-                            
-                            item_hindi:"लैपटॉप",
-                            item_english: "laptop"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"headache"
                             },{
-                            
-                            item_hindi:"लस्सी (1)",
-                            item_english: "lassisign(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"health"
                             },{
-                            
-                            item_hindi:"लस्सी (2)",
-                            item_english: "lassisign(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hear"
                             },{
-                            
-                            item_hindi:"पिछले महीने",
-                            item_english: "lastmonth"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hearing"
                             },{
-                            
-                            item_hindi:"पिछले सप्ताह",
-                            item_english: "lastweek"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hearingaid"
                             },{
-                            
-                            item_hindi:"नेतृत्व",
-                            item_english: "lead"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"heart"
                             },{
-                            
-                            item_hindi:"सुनना (1)",
-                            item_english: "listen(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"heavy"
                             },{
-                            
-                            item_hindi:"सुनना (2)",
-                            item_english: "listen(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"helicopter"
                             },{
-                            
-                            item_hindi:"ऊटी",
-                            item_english: "ooty"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hello"
                             },{
-                            
-                            item_hindi:"गुणवत्ता",
-                            item_english: "quality"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"help"
                             },{
-                            
-                            item_hindi:"मात्रा",
-                            item_english: "quantity"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hero"
                             },{
-                            
-                            item_hindi:"रानी",
-                            item_english: "queen"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hindism"
                             },{
-                            
-                            item_hindi:"सवाल",
-                            item_english: "query"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hit"
                             },{
-                            
-                            item_hindi:"शांत",
-                            item_english: "quiet"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hobby"
                             },{
-                            
-                            item_hindi:"वापसी",
-                            item_english: "return"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"holi"
                             },{
-                            
-                            item_hindi:"उलटा",
-                            item_english: "reverse"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"holiday"
                             },{
-                            
-                            item_hindi:"चावल",
-                            item_english: "rice"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"holiday1"
                             },{
-                            
-                            item_hindi:"धनी",
-                            item_english: "rich"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"hundred"
                             },{
-                            
-                            item_hindi:"सही",
-                            item_english: "right"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"husband"
                             },{
-                            
-                            item_hindi:"सड़क",
-                            item_english: "road"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"i don't know"
                             },{
-                            
-                            item_hindi:"चट्टान",
-                            item_english: "rock"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"i don't understand"
                             },{
-                            
-                            item_hindi:"रूखा",
-                            item_english: "rude"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"i know"
                             },{
-                            
-                            item_hindi:"दौड़ना",
-                            item_english: "run"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"i understand"
                             },{
-                            
-                            item_hindi:"रुपया",
-                            item_english: "rupee"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"idu'l fitr"
                             },{
-                            
-                            item_hindi:"सुरक्षित",
-                            item_english: "safe(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"id-ul-zuha(kolkata)"
                             },{
-                            
-                            item_hindi:"स्कूल की पोशाक",
-                            item_english: "school uniform"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"id-ul-zuha"
                             },{
-                            
-                            item_hindi:"स्वार्थी",
-                            item_english: "selfish"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"independence day"
                             },{
-                            
-                            item_hindi:"वाक्य की बनावट",
-                            item_english: "sentence structure"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"insect"
                             },{
-                            
-                            item_hindi:"शाल",
-                            item_english: "shawl"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Israel"
                             },{
-                            
-                            item_hindi:"फोटो शूट",
-                            item_english: "shoot photo"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"jacket"
                             },{
-                            
-                            item_hindi:"वीडियो शूट",
-                            item_english: "shoot(video)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"jail"
                             },{
-                            
-                            item_hindi:"शावर",
-                            item_english: "Shower"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Jammu and Kashmir"
                             },{
-                            
-                            item_hindi:"शर्मीला",
-                            item_english: "shy(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"janmashtami"
                             },{
-                            
-                            item_hindi:"रेशम",
-                            item_english: "silk"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"jaundice"
                             },{
-                            
-                            item_hindi:"एक साथ",
-                            item_english: "Simultanusly"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"jealous"
                             },{
-                            
-                            item_hindi:"परिस्थिति",
-                            item_english: "situation"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Jharkhand"
                             },{
-                            
-                            item_hindi:"माप",
-                            item_english: "size(3)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"job"
                             },{
-                            
-                            item_hindi:"नींद",
-                            item_english: "sleep"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"join"
                             },{
-                            
-                            item_hindi:"धीमा",
-                            item_english: "slow"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"joke"
                             },{
-                            
-                            item_hindi:"मुस्कान",
-                            item_english: "smile"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Judaism"
                             },{
-                            
-                            item_hindi:"साँप",
-                            item_english: "snake"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"juice"
                             },{
-                            
-                            item_hindi:"बर्फ",
-                            item_english: "snow(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"jump"
                             },{
-                            
-                            item_hindi:"मोज़े",
-                            item_english: "socks"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Kangaroo"
                             },{
-                            
-                            item_hindi:"समाधान",
-                            item_english: "solve"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"karnataka"
                             },{
-                            
-                            item_hindi:"कुछ",
-                            item_english: "some"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"kohima"
                             },{
-                            
-                            item_hindi:"क्षमा (1)",
-                            item_english: "sorry(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"kolkata"
                             },{
-                            
-                            item_hindi:"क्षमा (2)",
-                            item_english: "sorry(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"label"
                             },{
-                            
-                            item_hindi:"विशेष (1)",
-                            item_english: "special(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lack"
                             },{
-                            
-                            item_hindi:"विशेष (2)",
-                            item_english: "special(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ladder"
                             },{
-                            
-                            item_hindi:"चश्मा",
-                            item_english: "spectacles"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lakh"
                             },{
-                            
-                            item_hindi:"मसाले",
-                            item_english: "spices"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lamp"
                             },{
-                            
-                            item_hindi:"मसालेदार",
-                            item_english: "spicy"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"land"
                             },{
-                            
-                            item_hindi:"श्रीनगर",
-                            item_english: "srinagar"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"language"
                             },{
-                            
-                            item_hindi:"सीधे",
-                            item_english: "straight"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"laptop"
                             },{
-                            
-                            item_hindi:"शक्ति",
-                            item_english: "strength"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lassi"
                             },{
-                            
-                            item_hindi:"कठोर",
-                            item_english: "strict"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lastmonth"
                             },{
-                            
-                            item_hindi:"बेवकूफ",
-                            item_english: "stupid"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lastweek"
                             },{
-                            
-                            item_hindi:"अंदाज (3)",
-                            item_english: "style(3)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lead"
                             },{
-                            
-                            item_hindi:"अंदाज (2)",
-                            item_english: "style(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"listen"
                             },{
-                            
-                            item_hindi:"उपशीर्षक",
-                            item_english: "subtitles"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lizard"
                             },{
-                            
-                            item_hindi:"सफलता",
-                            item_english: "success"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"lucknow"
                             },{
-                            
-                            item_hindi:"अचानक",
-                            item_english: "sudden"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"madhya pradesh"
                             },{
-                            
-                            item_hindi:"भुगतना",
-                            item_english: "suffer"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"maharashtra"
                             },{
-                            
-                            item_hindi:"स्वेटर",
-                            item_english: "sweater"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mahashivaratri(indore)"
                             },{
-                            
-                            item_hindi:"मेज़",
-                            item_english: "table"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mahashivaratri(kolkata)"
                             },{
-                            
-                            item_hindi:"लेना",
-                            item_english: "take"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mahashivaratri"
                             },{
-                            
-                            item_hindi:"चाय (1)",
-                            item_english: "tea(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mahatma gandhi's birthday,gandhi jayanti2"
                             },{
-                            
-                            item_hindi:"चाय (2)",
-                            item_english: "tea(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mahatma gandhi's birthday"
                             },{
-                            
-                            item_hindi:"चाय (3)",
-                            item_english: "tea(3)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mahavir jayanti"
                             },{
-                            
-                            item_hindi:"सिखाना",
-                            item_english: "teach"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"manipur"
                             },{
-                            
-                            item_hindi:"चिढ़ाना",
-                            item_english: "tease"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"meghalaya"
                             },{
-                            
-                            item_hindi:"मंदिर",
-                            item_english: "temple"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mizoram"
                             },{
-                            
-                            item_hindi:"धन्यवाद",
-                            item_english: "thankyou(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mother"
                             },{
-                            
-                            item_hindi:"उनके",
-                            item_english: "theirs"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"muharram"
                             },{
-                            
-                            item_hindi:"वहाँ",
-                            item_english: "there"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mumbai"
                             },{
-                            
-                            item_hindi:"वे",
-                            item_english: "they"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"mysuru"
                             },{
-                            
-                            item_hindi:"चोर",
-                            item_english: "thief(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"nagaland"
                             },{
-                            
-                            item_hindi:"पतला",
-                            item_english: "thin"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"nagpur"
                             },{
-                            
-                            item_hindi:"चीज़ें",
-                            item_english: "things"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"neck"
                             },{
-                            
-                            item_hindi:"सोच",
-                            item_english: "think"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"nepal"
                             },{
-                            
-                            item_hindi:"इस",
-                            item_english: "this"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"new delhi"
                             },{
-                            
-                            item_hindi:"तीन दिन बाद",
-                            item_english: "three days after"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"nineteen"
                             },{
-                            
-                            item_hindi:"तीन दिन पहले",
-                            item_english: "three days before"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"north"
                             },{
-                            
-                            item_hindi:"बिजली",
-                            item_english: "thunder"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"notebook"
                             },{
-                            
-                            item_hindi:"टाई",
-                            item_english: "tie"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"number"
                             },{
-                            
-                            item_hindi:"बंधा हुआ",
-                            item_english: "tied up"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"odisha"
                             },{
-                            
-                            item_hindi:"तंग",
-                            item_english: "tight(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"one crore"
                             },{
-                            
-                            item_hindi:"कायर",
-                            item_english: "timid"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"one lakh"
                             },{
-                            
-                            item_hindi:"थका",
-                            item_english: "tired"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"onebillion"
                             },{
-                            
-                            item_hindi:"आज",
-                            item_english: "today"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"onemillion"
                             },{
-                            
-                            item_hindi:"साथ",
-                            item_english: "together"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"oneweek"
                             },{
-                            
-                            item_hindi:"आज रात",
-                            item_english: "tonight"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ooty"
                             },{
-                            
-                            item_hindi:"दांत",
-                            item_english: "tooth"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"oval"
                             },{
-                            
-                            item_hindi:"टूथब्रश",
-                            item_english: "toothbrush"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ox"
                             },{
-                            
-                            item_hindi:"टूथपेस्ट",
-                            item_english: "toothpaste"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"paper"
                             },{
-                            
-                            item_hindi:"टॉप",
-                            item_english: "top"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"parents"
                             },{
-                            
-                            item_hindi:"विषय",
-                            item_english: "topic"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"peacock"
                             },{
-                            
-                            item_hindi:"प्रकाश",
-                            item_english: "torch"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"pen"
                             },{
-                            
-                            item_hindi:"स्पर्श",
-                            item_english: "touch"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"pencil"
                             },{
-                            
-                            item_hindi:"टच स्क्रीन",
-                            item_english: "touchscreen"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"picture"
                             },{
-                            
-                            item_hindi:"तौलिया",
-                            item_english: "towel"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"place"
                             },{
-                            
-                            item_hindi:"ट्रक",
-                            item_english: "truck(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"puducherry"
                             },{
-                            
-                            item_hindi:"सच",
-                            item_english: "true"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"punjab"
                             },{
-                            
-                            item_hindi:"कोशिश, अभ्यास",
-                            item_english: "try,practise"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Python"
                             },{
-                            
-                            item_hindi:"प्रयत्न",
-                            item_english: "try"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"quality"
                             },{
-                            
-                            item_hindi:"मोड़",
-                            item_english: "turn"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"quantity"
                             },{
-                            
-                            item_hindi:"दो दिन पहले",
-                            item_english: "twodaysbefore"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"queen"
                             },{
-                            
-                            item_hindi:"नीचे",
-                            item_english: "under"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"query"
                             },{
-                            
-                            item_hindi:"समझना",
-                            item_english: "understand"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"quiet"
                             },{
-                            
-                            item_hindi:"ऊपर",
-                            item_english: "up"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"raipur"
                             },{
-                            
-                            item_hindi:"मूल्य",
-                            item_english: "value"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Rajasthan"
                             },{
-                            
-                            item_hindi:"परिवर्तन",
-                            item_english: "variation"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ranchi"
                             },{
-                            
-                            item_hindi:"विजय",
-                            item_english: "victory(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"rectangle"
                             },{
-                            
-                            item_hindi:"आवाज़",
-                            item_english: "voice"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"return"
                             },{
-                            
-                            item_hindi:"वोट",
-                            item_english: "vote"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"reverse"
                             },{
-                            
-                            item_hindi:"उठो",
-                            item_english: "wakeup"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"rice"
                             },{
-                            
-                            item_hindi:"ज़ीरक्सा",
-                            item_english: "xerox"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"rich"
                             },{
-                            
-                            item_hindi:"सिलाफ़न",
-                            item_english: "xylophone"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"right"
                             },{
-                            
-                            item_hindi:"युवा",
-                            item_english: "young"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"road"
                             },{
-                            
-                            item_hindi:"ज़िप (1)",
-                            item_english: "zip(1)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"rock"
                             },{
-                            
-                            item_hindi:"ज़िप (2)",
-                            item_english: "zip(2)"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"rude"
                             },{
-                            item_english: "my"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"run"
                             },{
-                            item_english: "name"
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"rupee"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"safe"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"school uniform"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"schoolbag"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"selfish"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sentence structure"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"seventeen"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Shapes"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sharpener"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Shawl"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"shillong"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"shimla"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Shoot photo"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"shoot(video)"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Shower"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"shy"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sikkim"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"silk"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"Simultanusly"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"situation"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sixteen"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sixty"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"size"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sleep"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"slow"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"smile"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"snow"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"socks"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"solve"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"some"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sorry"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"south"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sparrow"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"special"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"spectacles"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"spices"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"spicy"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"spider"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"square"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"srinagar"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"states"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"straight"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"strength"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"strict"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"stupid"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"style"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"subtitles"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"success"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sudden"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"suffer"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sunday"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"sweater"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"table"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"take"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tamilnadu"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tea"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"teach"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tease"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"telugu"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"temple"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"ten"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tenthousand"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thankyou"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"theirs"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"there"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"they"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thief"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thin"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"things"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"think"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"third"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thirteen"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thirty"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thiruvananthpuram"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"this"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thousand"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"three days after"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"three days before"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thrice"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"thunder"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tie"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tied up"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tiffin"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tight1"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"timid"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tired"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"today"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"together"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tonight"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tooth"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"toothbrush"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"toothpaste"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"top"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"topic"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"torch"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"touch"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"touchscreen"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"towel"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tractor"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"train"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"triangle"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"tripura"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"truck"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"true"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"try,practise"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"try"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"turn"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"twelve"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"twenty one"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"twenty"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"twice"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"twin"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"two thousand"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"twodaysbefore"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"under"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"understand"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"up"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"uttarpradesh"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"value"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"variation"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"victory"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"vijay dashmi"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"voice"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"vote"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"wakeup"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"waterbottle"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"west"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"westbengal"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"woodpecker"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"xerox"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"xylophone"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"young"
+                            },{
+                            sign_Name:"",
+                            item_hindi:"",
+                            item_english:"zip"
                             }],
         collectivenouns: [{}],
         

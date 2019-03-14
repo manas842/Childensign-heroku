@@ -58,7 +58,7 @@ $('#prev-btn').hover(function() {
 function Search(){
 document.getElementsByClassName('search__input')[0].onblur=function(){check=1;setTimeout(function(){$("#history").html("");$("#history").attr("style","border: none;"); }, 400);}
 document.getElementsByClassName('search__input')[0].onfocus=function(){$("#history").html("");let historyElememt=Array.from(histor);
-if(check==1){for(let c=0,i=historyElememt.length;i>=0&&c<6;i--,c++){if(historyElememt[i]!=undefined){console.log(historyElememt[i].item_english);$("#history").attr("style","border: solid 0.1vw #4285f4;");let list=historyElem.replace("%data%",historyElememt[i].item_english).replace("%class%","history-list").replace("%id%",historyElememt[i].item_english);
+if(check==1){for(let c=0,i=historyElememt.length;i>=0&&c<6;i--,c++){if(historyElememt[i]!=undefined){console.log(historyElememt[i].sign_Name);$("#history").attr("style","border: solid 0.1vw #4285f4;");let list=historyElem.replace("%data%",historyElememt[i].sign_Name).replace("%class%","history-list").replace("%id%",historyElememt[i].sign_Name);
 $("#history").append(list);}}}console.log(historyElememt);check=2;
 $(".history-list").click(function(){$(".elemName").html("");$("#category").html("");check=1;
 v = $(this.children[0]);v=v[0].id;
@@ -121,13 +121,13 @@ function listClick(lan){
         $('#nameImage').attr("style","opacity:0");
         console.log(a);
         current_screen=a;
-        $("#category").html(v);
+        $("#category").html("Category : "+v);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
             if(lan=="english"){
             var i =  displayWindowElemEnglish.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_english),
-                n = "'".concat(displayElements[a][e].item_english).concat("'");
+                n = "'".concat(displayElements[a][e].sign_Name).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
         }else{
             var i =  displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_hindi),
@@ -148,13 +148,13 @@ function listClick(lan){
         $('#nameImage').attr("style","opacity:0");;
         console.log(v);
         current_screen=a;
-        $("#category").html(v);
+        $("#category").html("Category : "+v);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
             if(lan=="english"){
             var i =  displayWindowElemEnglish.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%id%", displayElements[a][e].item_english).replace("%data%", displayElements[a][e].item_english),
-                n = "'".concat(displayElements[a][e].item_english).concat("'");
+                n = "'".concat(displayElements[a][e].sign_Name).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
         }else{
             var i =  displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_hindi),
@@ -309,9 +309,11 @@ $(".cancel").click(function() {
     cleardisplaywindow(), $(".elemName").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
     $('#nameImage').attr('src','');
     $('#nameImage').attr("style","opacity:0");
-    let backElem = $(toBeBackElement).id;
+    var backElem = $(toBeBackElement).attr("src");
+    console.log(categoryBackElement);
     document.getElementsByClassName('search__input')[0].value = "";
     for (let e = categoryBackElement, i = 0; i < displayElements[e].length; i++) {
+        console.log(displayElements[e].length);
         let n = displayWindowElemEnglish.replace("%imagesrc%", displayElements[e][i].imagesrc).replace("%imagesrc%", displayElements[e][i].imagesrc);
         n = n.replace("%data%", displayElements[e][i].item_english);
         let s, a = "'".concat(displayElements[e][i].item_english).concat("'");
