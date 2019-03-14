@@ -67,6 +67,7 @@ PerformDictionarySearch(v);
 $("#history").html("");
 })}
 PerformDictionarySearch=function(k){
+    $("#category").attr("style","");
     clearInterval(show);
     console.log(k+" is Searched")
         let searchedArr=[];
@@ -108,7 +109,8 @@ function setSiGMLURL(e) {
 var i = window.location.href,
     n = i.substring(0, i.lastIndexOf("/"));
     console.log(e);
-    $(".elemName").html(e);e.toLowerCase();
+    $("#category").attr("style","width:39.5vw;height:2.5vw;font-size:2vw");
+    $(".elemName").html(e);e.toLowerCase();z=$("#category").html();$("#category").html("Category : "+z);
     return console.log("SiGML: " + e), console.log("Location Dir: " + n), e = n + "/SignFiles/" + e + ".sigml", console.log("URL " + e), e
 }
 Search();
@@ -121,7 +123,7 @@ function listClick(lan){
         $('#nameImage').attr("style","opacity:0");
         console.log(a);
         current_screen=a;
-        $("#category").html("Category : "+v);
+        $("#category").html(v);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
@@ -148,7 +150,7 @@ function listClick(lan){
         $('#nameImage').attr("style","opacity:0");;
         console.log(v);
         current_screen=a;
-        $("#category").html("Category : "+v);
+        $("#category").html(v);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
@@ -181,7 +183,7 @@ function startPlayerDictionary(e, i) {
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                if(language=='hindi'){$(".elemName").html(displayElements[elem][sample].item_hindi)}else{$(".elemName").html(displayElements[elem][sample].item_english)}
+                if(language=='hindi'){$(".elemName").html(displayElements[elem][sample].item_hindi);z=$("#category").html();$("#category").html("Category : "+z);}else{$(".elemName").html(displayElements[elem][sample].item_english);z=$("#category").html();$("#category").html("Category : "+z);}
                 toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show();
                 elementClicked = displayElements[elem][sample];
                 histor.add(displayElements[elem][sample]);
@@ -288,6 +290,7 @@ function assignCategory(lang) {
     $('.elemName').html("");
     $('.cancel,#reload-sigml').hide();
     $('.square_btn').click(function() {
+        $("#category").attr("style","");
         current_screen="category";
         clearInterval(show);
         $('.overlay').hide("");
@@ -304,6 +307,7 @@ function assignCategory(lang) {
 }
 assignCategory("english");
 $(".cancel").click(function() {
+    $("#category").attr("style","");
     clearInterval(show)
     document.getElementById('display').scrollLeft = 0;
     cleardisplaywindow(), $(".elemName").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
@@ -356,11 +360,13 @@ $(".cancel").click(function() {
     });
   allClick=function(){
   $('.link').click(function(){
+    $("#category").attr("style","");
     clearInterval(show);
     $(".langmenu").animate({width: "toggle"});
     setTimeout(function(){$(".langmenu").attr("style","display:none")},8000)
   })
   $('.ABOUT').click(function(){
+    $("#category").attr("style","");
     $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;");
     $('.overlay').hide("");
     current_screen="category";
@@ -379,6 +385,7 @@ $(".cancel").click(function() {
         $('.displayWindow').append(projectElem);
       })
       $('#team').click(function(){
+        $("#category").attr("style","");
         $("#category").html("");
         cleardisplaywindow();
         $('.displayWindow').append(TeamElem);
@@ -391,6 +398,7 @@ $(".cancel").click(function() {
     })
   })
   $('.Dictionary').click(function(){
+        $("#category").attr("style","");
         current_screen="Dictionary";
         clearInterval(show);
         $("#category").html("");
