@@ -1,9 +1,9 @@
 $('.displayWindow').attr('style','flex-direction:column;overflow:hidden;');
-var check=1,show,autoscroll,search_value='';
+var check=1,show,autoscroll,search_value='',elementClicked;
 var histor=new Set([]);
 var current_screen="category";$(".cancel").attr("style","display:none");
 clearGloss = function(){document.getElementsByClassName("txtGloss")[0].value = "";}
-var upper=upperDisplayElem.replace("%titlename%",upperContent.English[0].titlename).replace("%id%",upperContent.English[0].id).replace("%lang%",upperContent.English[0].select).replace("%cat%",upperContent.English[0].cat).replace("%dic%",upperContent.English[0].dic).replace("%about%",upperContent.English[0].about).replace("%langname%",upperContent.English[0].lang).replace("%search%",upperContent.English[0].Search);$("#upperContainer").append(upper);
+var upper=upperDisplayElem.replace("%titlename%",upperContent.English[0].titlename).replace("%id1%",upperContent.English[0].id1).replace("%id2%",upperContent.English[0].id2).replace("%lang%",upperContent.English[0].select).replace("%cat%",upperContent.English[0].cat).replace("%dic%",upperContent.English[0].dic).replace("%about%",upperContent.English[0].about).replace("%langname1%",upperContent.English[0].lang1).replace("%langname2%",upperContent.English[0].lang2).replace("%search%",upperContent.English[0].Search);$("#upperContainer").append(upper);/*Manas Luthra*/
 $('.overlay').hide();
 function loadCategories(lang) {
     $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;");
@@ -15,6 +15,9 @@ function loadCategories(lang) {
         }else if(lang=="hindi"){
             formatedMain = formatedMain.replace("%id%", sidebar.elements[i].id).replace("%cdata%",sidebar.elements[i].listtext_hindi);
             var formatedSecond = secondSidebarElem.replace("%listtitle%", sidebar.elements[i].listtext_hindi).replace("%cdata%",sidebar.elements[i].listtext_hindi);
+        }else if(lang=="punjabi"){
+            formatedMain = formatedMain.replace("%id%", sidebar.elements[i].id).replace("%cdata%",sidebar.elements[i].listtext_punjabi);
+            var formatedSecond = secondSidebarElem.replace("%listtitle%", sidebar.elements[i].listtext_punjabi).replace("%cdata%",sidebar.elements[i].listtext_punjabi);
         }
         formatedSecond = formatedSecond.replace("%class%", sidebar.elements[i].class);
         let x = '<div class="animated">' + formatedMain + formatedSecond + '</div>';
@@ -58,7 +61,7 @@ $('#prev-btn').hover(function() {
 function Search(){
 document.getElementsByClassName('search__input')[0].onblur=function(){check=1;setTimeout(function(){$("#history").html("");$("#history").attr("style","border: none;"); }, 400);}
 document.getElementsByClassName('search__input')[0].onfocus=function(){$("#history").html("");let historyElememt=Array.from(histor);
-if(check==1){for(let c=0,i=historyElememt.length;i>=0&&c<6;i--,c++){if(historyElememt[i]!=undefined){console.log(historyElememt[i].sign_Name);$("#history").attr("style","border: solid 0.1vw #4285f4;");let list=historyElem.replace("%data%",historyElememt[i].sign_Name).replace("%class%","history-list").replace("%id%",historyElememt[i].sign_Name);
+if(check==1){for(let c=0,i=historyElememt.length;i>=0&&c<6;i--,c++){if(historyElememt[i]!=undefined){console.log(historyElememt[i].sign_Name);$("#history").attr("style","border: solid 0.1vw #4285f4;");let list=historyElem.replace("%data%",historyElememt[i].sign_Name).replace("%class%","history-list").replace("%id%",historyElememt[i].sign_Name);/*Manas Luthra*/
 $("#history").append(list);}}}console.log(historyElememt);check=2;
 $(".history-list").click(function(){$(".elemName").html("");$("#category").html("");check=1;
 v = $(this.children[0]);v=v[0].id;
@@ -89,11 +92,12 @@ PerformDictionarySearch=function(k){
         if(searchedArr.length!=0){
                cleardisplaywindow();
                $('.elemName').html("");
-               $('#nameImage').attr("style","opacity:0");
+               $('#nameImage').hide();
                $('.cancel,#reload-sigml').hide();
                for(let elem in searchedArr) {
-                    if(language=="english"){var i =  dictionaryWindowElemEnglish.replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%data%", searchedArr[elem].item_english)}
-                    else{var i = dictionaryWindowElemHindi.replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%data%", searchedArr[elem].item_hindi)}
+                    if(language=="english"){var i =  dictionaryWindowElem.replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%data%", searchedArr[elem].item_english)}
+                    else if(language=="hindi"){var i = dictionaryWindowElem.replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%data%", searchedArr[elem].item_hindi)}
+                    else if(language=="punjabi"){var i = dictionaryWindowElem.replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%imagesrc%", searchedArr[elem].imagesrc).replace("%data%", searchedArr[elem].item_punjabi)}
                     let n = "'".concat(searchedArr[elem].item_english).concat("'");
                     i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
                     let x = '<div class="elements Search">' + i + '</div>';
@@ -110,7 +114,7 @@ var i = window.location.href,
     n = i.substring(0, i.lastIndexOf("/"));
     console.log(e);
     $("#category").attr("style","width:39.5vw;height:2.5vw;font-size:2vw");
-    $(".elemName").html(e);e.toLowerCase();z=$("#category").html();$("#category").html("Category : "+z);
+    e.toLowerCase();
     return console.log("SiGML: " + e), console.log("Location Dir: " + n), e = n + "/SignFiles/" + e + ".sigml", console.log("URL " + e), e
 }
 Search();
@@ -120,22 +124,26 @@ function listClick(lan){
         v=$(this.children[0]),v=$(v[0]).attr("name");a = $(this.children[0]), $(".elemName").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $("#reload-sigml").hide(), a = a[0].id, 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
-        $('#nameImage').attr("style","opacity:0");
+        $('#nameImage').hide();
         console.log(a);
         current_screen=a;
         $("#category").html(v);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
-            if(lan=="english"){
+        if(lan=="english"){
             var i =  displayWindowElemEnglish.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_english),
                 n = "'".concat(displayElements[a][e].sign_Name).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
-        }else{
+        }else if(lan=="hindi"){
             var i =  displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_hindi),
                 n = "'".concat(displayElements[a][e].item_english).concat("'");
-            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);}
-
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+        }else if(lan=="punjabi"){
+            var i =  displayWindowElemPunjabi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_punjabi),
+                n = "'".concat(displayElements[a][e].item_english).concat("'");
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+        }
             let x = '<div class="elements">' + i + '</div>';
             $('.displayWindow').append(x);
         }
@@ -147,26 +155,31 @@ function listClick(lan){
         a = $(this.children[0]), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $(".elemName").html(""), $("#reload-sigml").hide(), a = a[0].className, a = a.split(" ")[1], a = a.slice(0, a.length - 8), 
         cleardisplaywindow();
         $('#nameImage').attr('src','');
-        $('#nameImage').attr("style","opacity:0");;
+        $('#nameImage').hide();;
         console.log(v);
         current_screen=a;
         $("#category").html(v);
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
-            if(lan=="english"){
-            var i =  displayWindowElemEnglish.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%id%", displayElements[a][e].item_english).replace("%data%", displayElements[a][e].item_english),
+        if(lan=="english"){
+            var i =  displayWindowElemEnglish.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_english),
                 n = "'".concat(displayElements[a][e].sign_Name).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
-        }else{
+        }else if(lan=="hindi"){
             var i =  displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_hindi),
                 n = "'".concat(displayElements[a][e].item_english).concat("'");
-            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);}
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+        }else if(lan=="punjabi"){
+            var i =  displayWindowElemPunjabi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_punjabi),
+                n = "'".concat(displayElements[a][e].item_english).concat("'");
+            i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
+        }
             let x = '<div class="elements">' + i + '</div>';
             $('.displayWindow').append(x);
         }
         document.getElementById('display').scrollLeft = 0;
-        $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;")
+        $(".displayWindow").attr("style", "flex-directi on:column;overflow:hidden;")
     });
 }
 listClick("english");
@@ -183,7 +196,7 @@ function startPlayerDictionary(e, i) {
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                if(language=='hindi'){$(".elemName").html(displayElements[elem][sample].item_hindi);z=$("#category").html();$("#category").html("Category : "+z);}else{$(".elemName").html(displayElements[elem][sample].item_english);z=$("#category").html();$("#category").html("Category : "+z);}
+                if(language=='hindi'){$(".elemName").html(displayElements[elem][sample].item_hindi);}else{$(".elemName").html(displayElements[elem][sample].item_english);}
                 toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show();
                 elementClicked = displayElements[elem][sample];
                 histor.add(displayElements[elem][sample]);
@@ -201,22 +214,28 @@ function startPlayerEnglish(e, i) {
     $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
-    $('#nameImage').attr("style","opacity:1");
+    z=$("#category").html();$("#category").html("Category : "+z);
+    $('#nameImage').show();
     let clickedSrc = $(i).attr('src');
     console.log(clickedSrc);
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
                 toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
-                $('#nameImage').attr("style","opacity:1");
+                $('#nameImage').show();
                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
                 elementClicked = displayElements[elem][sample];
+                $(".elemName").html(displayElements[elem][sample].item_english);
                 histor.add(displayElements[elem][sample]);
-                console.log(numImages[displayElements[elem][sample].item_english]);
-                for (let a = 0; a < numImages[displayElements[elem][sample].item_english]; a++) {
-                    let t = displayWindowElem.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].item_english + "/s" + (a + 1) + ".png");
+                console.log(numImages[displayElements[elem][sample].sign_Name]);
+                for (let a = 0; a < numImages[displayElements[elem][sample].sign_Name]; a++) {
+                    let t = displayWindowElem.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].sign_Name + "/s" + (a + 1) + ".png");
+                    if(numImages[displayElements[elem][sample].sign_Name]!=1){
                     t = t.replace("%data%", "Step " + (a + 1));
                     t = t.replace("%class%","dimension");
+                    }else{
+                    t = t.replace("%data%", "");
+                    t = t.replace("%class%","dimension\"style=\"height:24vw;width:26vw");}
                     let x = '<div class="screenshots">' + t + '</div>';
                     $('.displayWindow').append(x);
                 }
@@ -228,7 +247,7 @@ function startPlayerEnglish(e, i) {
 
     loopCount = 1;
     show =setInterval(function () {
-         if(loopCount-1 == numImages[elementClicked.item_english]) {
+         if(loopCount-1 == numImages[elementClicked.sign_Name]) {
             clearInterval(this);
          }else {
             $($(".displayWindow").children()[loopCount-1]).attr("style","animation:screenshots 1s;opacity:1;");
@@ -238,31 +257,35 @@ function startPlayerEnglish(e, i) {
     let r = window.location.href;
 return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
 }
-
-function startPlayerHindi(e, i) {
+function startPlayerPunjabi(e, i) {
     $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;");
     document.getElementsByClassName('search__input')[0].value = "";
-    console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY"), cleardisplaywindow();
-    let elementClicked;
+    console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY");
     $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
-    $('#nameImage').attr("style","opacity:1");
+    z=$("#category").html();$("#category").html("ਸ਼੍ਰੇਣੀ : "+z);
+    $('#nameImage').show();
     let clickedSrc = $(i).attr('src');
+    console.log(clickedSrc);
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
             if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
-                $(".elemName").html(displayElements[elem][sample].item_hindi), toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
-                $('#nameImage').attr("style","opacity:1");;
+                toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
+                $('#nameImage').show();
                 $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
                 elementClicked = displayElements[elem][sample];
+                $(".elemName").html(displayElements[elem][sample].item_punjabi);
                 histor.add(displayElements[elem][sample]);
-                console.log(numImages[displayElements[elem][sample].item_english]);
-                $('#elemName').val(displayElements[elem][sample].item_english);
-                for (let a = 0; a < numImages[displayElements[elem][sample].item_english]; a++) {
-                    let t = displayWindowElemHindi.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].item_english + "/s" + (a + 1) + ".png");
+                console.log(numImages[displayElements[elem][sample].sign_Name]);
+                for (let a = 0; a < numImages[displayElements[elem][sample].sign_Name]; a++) {
+                    let t = displayWindowElem.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].sign_Name + "/s" + (a + 1) + ".png");
+                    if(numImages[displayElements[elem][sample].sign_Name]!=1){
                     t = t.replace("%data%", "Step " + (a + 1));
                     t = t.replace("%class%","dimension");
+                    }else{
+                    t = t.replace("%data%", "");
+                    t = t.replace("%class%","dimension\"style=\"height:24vw;width:26vw");}
                     let x = '<div class="screenshots">' + t + '</div>';
                     $('.displayWindow').append(x);
                 }
@@ -270,20 +293,69 @@ function startPlayerHindi(e, i) {
             }
         }
     }
-        document.getElementById('display').scrollLeft = 0;
+    document.getElementById('display').scrollLeft = 0;
 
     loopCount = 1;
-    show = setInterval(function show() {
-         if(loopCount-1 == numImages[elementClicked.item_english]) {
+    show =setInterval(function () {
+         if(loopCount-1 == numImages[elementClicked.sign_Name]) {
             clearInterval(this);
-         }
-         else {
+         }else {
             $($(".displayWindow").children()[loopCount-1]).attr("style","animation:screenshots 1s;opacity:1;");
             loopCount++;
          }
-    },600);
+    },800);
     let r = window.location.href;
-    return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
+return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
+}
+function startPlayerHindi(e, i) {
+    $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;");
+    document.getElementsByClassName('search__input')[0].value = "";
+    console.log(e), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), cleardisplaywindow(), $("#imageWindow").removeClass("flipInY");
+    $("#ProgElem").show();
+    document.getElementById("avat").style.opacity="0.8";
+    clearGloss();
+    z=$("#category").html();$("#category").html("वर्ग : "+z);
+    $('#nameImage').show();
+    let clickedSrc = $(i).attr('src');
+    console.log(clickedSrc);
+    for(let elem in displayElements) {
+        for(let sample in displayElements[elem]) {
+            if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
+                toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show(), $('.cancel').show();
+                $('#nameImage').show();
+                $('#nameImage').attr('src',displayElements[elem][sample].imagesrc);
+                elementClicked = displayElements[elem][sample];
+                $(".elemName").html(displayElements[elem][sample].item_hindi);
+                histor.add(displayElements[elem][sample]);
+                console.log(numImages[displayElements[elem][sample].sign_Name]);
+                for (let a = 0; a < numImages[displayElements[elem][sample].sign_Name]; a++) {
+                    let t = displayWindowElem.replace("%imagesrc%", "./res/screenshots/" + displayElements[elem][sample].sign_Name + "/s" + (a + 1) + ".png");
+                    if(numImages[displayElements[elem][sample].sign_Name]!=1){
+                    t = t.replace("%data%", "Step " + (a + 1));
+                    t = t.replace("%class%","dimension");
+                    }else{
+                    t = t.replace("%data%", "");
+                    t = t.replace("%class%","dimension\"style=\"height:24vw;width:26vw");}
+                    let x = '<div class="screenshots">' + t + '</div>';
+                    $('.displayWindow').append(x);
+                }
+                break;
+            }
+        }
+    }
+    document.getElementById('display').scrollLeft = 0;
+
+    loopCount = 1;
+    show =setInterval(function () {
+         if(loopCount-1 == numImages[elementClicked.sign_Name]) {
+            clearInterval(this);
+         }else {
+            $($(".displayWindow").children()[loopCount-1]).attr("style","animation:screenshots 1s;opacity:1;");
+            loopCount++;
+         }
+    },800);
+    let r = window.location.href;
+return r.substring(0, r.lastIndexOf("/")), e = setSiGMLURL(e), CWASA.playSiGMLURL(e)
 }
 function assignCategory(lang) {
     $('.square_btn').unbind("click");
@@ -298,7 +370,7 @@ function assignCategory(lang) {
         document.getElementById('display').scrollLeft = 0;
         cleardisplaywindow();
         $('.elemName').html("");
-        $('#nameImage').attr("style","opacity:0");
+        $('#nameImage').hide();
         $('.cancel,#reload-sigml').hide();
         document.getElementsByClassName('search__input')[0].value = "";
         loadCategories(lang);
@@ -312,7 +384,7 @@ $(".cancel").click(function() {
     document.getElementById('display').scrollLeft = 0;
     cleardisplaywindow(), $(".elemName").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
     $('#nameImage').attr('src','');
-    $('#nameImage').attr("style","opacity:0");
+    $('#nameImage').hide();
     var backElem = $(toBeBackElement).attr("src");
     console.log(categoryBackElement);
     document.getElementsByClassName('search__input')[0].value = "";
@@ -360,7 +432,6 @@ $(".cancel").click(function() {
     });
   allClick=function(){
   $('.link').click(function(){
-    $("#category").attr("style","");
     clearInterval(show);
     $(".langmenu").animate({width: "toggle"});
     setTimeout(function(){$(".langmenu").attr("style","display:none")},8000)
@@ -373,7 +444,7 @@ $(".cancel").click(function() {
     document.getElementsByClassName('search__input')[0].value = "";
     clearInterval(show);
     $('.elemName').html("");
-    $('#nameImage').attr("style","opacity:0");
+    $('#nameImage').hide();
     $('.cancel,#reload-sigml').hide();
     $("#category").html("");
     cleardisplaywindow();
@@ -405,7 +476,7 @@ $(".cancel").click(function() {
         $(".elemName").html(""), screen.height >= 400 && screen.height <= 749 && $(".second-menu").hide(), $('.cancel,#reload-sigml').hide();
         cleardisplaywindow();
         $('#nameImage').attr('src','');
-        $('#nameImage').attr("style","opacity:0");
+        $('#nameImage').hide();
         amount = '';
         document.getElementsByClassName('search__input')[0].value = "";
         $('.overlay').show();
