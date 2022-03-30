@@ -4,17 +4,18 @@ function playSigml(e) {
 }
 $(".cancel").attr("style","display:none");
 Hindi=function(){
-    allClick();clearInterval(show);
+    allClick();
+    clearInterval(show);
     $('.speedtxt').html(upperContent.Hindi[0].speed);$('.bttnSpeedReset').html(upperContent.Hindi[0].reset);
     var upper=upperDisplayElem.replace("%titlename%",upperContent.Hindi[0].titlename).replace("%id1%",upperContent.Hindi[0].id1).replace("%id2%",upperContent.Hindi[0].id2).replace("%lang%",upperContent.Hindi[0].select).replace("%cat%",upperContent.Hindi[0].cat).replace("%dic%",upperContent.Hindi[0].dic).replace("%about%",upperContent.Hindi[0].about).replace("%langname1%",upperContent.Hindi[0].lang1).replace("%langname2%",upperContent.Hindi[0].lang2).replace("%search%",upperContent.Hindi[0].Search);$("#upperContainer").append(upper);
-    $('#title-name').attr("style","margin:0 0 0 23vw;");$('.title img').attr("style","margin-left:14vw;");Search();$('.overlay').hide();
+    $('#title-name').attr("style","margin:0.7vw 0 0 23vw;");$('.title img').attr("style","margin-left:14vw;");Search();$('.overlay').hide();
     document.getElementsByClassName('search__input')[0].value = "";
     document.getElementById('display').scrollLeft = 0;
     $("#elemName").val("");
     language="hindi";
     assignCategory("hindi");
     $('.overlay').hide();
-    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,.cancel").hide(), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक प्रेस्चोलर सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
+    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,.cancel").hide(), $("#title-name span").html("à¤šà¤¾à¤‡à¤²à¥à¤¡ à¤à¤¨à¤¸à¤¾à¤‡à¤¨: à¤¦à¤¿à¤µà¥à¤¯à¤‚à¤—à¤œà¤¨ à¤•à¥‡ à¤²à¤¿à¤ à¤à¤• à¤ªà¥à¤°à¥‡à¤¸à¥à¤šà¥‹à¤²à¤° à¤¸à¤¹à¤¾à¤¯à¤• à¤¤à¤•à¤¨à¥€à¤•"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
     $('#nameImage').hide();
     if(current_screen=="search"){
@@ -87,7 +88,9 @@ Hindi=function(){
         $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;")
     });}
     $(".cancel").click(function() {
-         clearInterval(show)
+        z = $("#category").html();$("#category").html(z.substring(z.indexOf(':')+1,z.length));
+        $("#category").attr("style","");
+        clearInterval(show)
         document.getElementById('display').scrollLeft = 0;
         $('.cancel').hide();
         screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
@@ -121,14 +124,14 @@ Punjabi=function(){
     allClick();clearInterval(show);
     $('.speedtxt').html(upperContent.Punjabi[0].speed);$('.bttnSpeedReset').html(upperContent.Punjabi[0].reset);
     var upper=upperDisplayElem.replace("%titlename%",upperContent.Punjabi[0].titlename).replace("%id1%",upperContent.Punjabi[0].id1).replace("%id2%",upperContent.Punjabi[0].id2).replace("%lang%",upperContent.Punjabi[0].select).replace("%cat%",upperContent.Punjabi[0].cat).replace("%dic%",upperContent.Punjabi[0].dic).replace("%about%",upperContent.Punjabi[0].about).replace("%langname1%",upperContent.Punjabi[0].lang1).replace("%langname2%",upperContent.Punjabi[0].lang2).replace("%search%",upperContent.Punjabi[0].Search);$("#upperContainer").append(upper);
-    $('#title-name').attr("style","margin:0 0 0 23vw;");$('.title img').attr("style","margin-left:14vw;");Search();$('.overlay').hide();
+    $('#title-name').attr("style","margin:0.7vw 0 0 23vw;");$('.title img').attr("style","margin-left:14vw;");Search();$('.overlay').hide();
     document.getElementsByClassName('search__input')[0].value = "";
     document.getElementById('display').scrollLeft = 0;
     $("#elemName").val("");
     language="punjabi";
     assignCategory("punjabi");
     $('.overlay').hide();
-    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,.cancel").hide(), $("#title-name span").html("चाइल्ड एनसाइन: दिव्यंगजन के लिए एक प्रेस्चोलर सहायक तकनीक"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
+    $("#nameWindow").html(""), $(".displayWindow").html(""), $("#reload-sigml,.cancel").hide(), $("#title-name span").html("à¤šà¤¾à¤‡à¤²à¥à¤¡ à¤à¤¨à¤¸à¤¾à¤‡à¤¨: à¤¦à¤¿à¤µà¥à¤¯à¤‚à¤—à¤œà¤¨ à¤•à¥‡ à¤²à¤¿à¤ à¤à¤• à¤ªà¥à¤°à¥‡à¤¸à¥à¤šà¥‹à¤²à¤° à¤¸à¤¹à¤¾à¤¯à¤• à¤¤à¤•à¤¨à¥€à¤•"), cleardisplaywindow(), $("#reload-sigml").unbind("click");
     $('#nameImage').attr('src','');
     $('#nameImage').hide();
     if(current_screen=="search"){
@@ -200,7 +203,9 @@ Punjabi=function(){
         $(".displayWindow").attr("style", "flex-direction:column;overflow:hidden;")
     });}
     $(".cancel").click(function() {
-         clearInterval(show)
+        z = $("#category").html();$("#category").html(z.substring(z.indexOf(':')+1,z.length));
+        $("#category").attr("style","");
+        clearInterval(show)
         document.getElementById('display').scrollLeft = 0;
         $('.cancel').hide();
         screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");
@@ -253,12 +258,13 @@ English=function(){
         $('#nameImage').attr('src','');
         $('#nameImage').hide();
         console.log(current_screen);
+        $("#category").show();
         $("#category").html(current_screen);
         amount = '';
         console.log("Hindi");
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[current_screen].length; e++) {
-            let i = displayWindowElemHindi.replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%data%", displayElements[current_screen][e].item_english),
+            let i = displayWindowElemEnglish.replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%data%", displayElements[current_screen][e].item_english),
                 n = "'".concat(displayElements[current_screen][e].item_english).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
             let x = '<div class="elements">' + i + '</div>';
@@ -275,7 +281,9 @@ English=function(){
     $('.side-list,.side-list-names,.cancel,#reload-sigml').unbind("click");
     listClick("english");
     $(".cancel").click(function() {
-         clearInterval(show)
+        z = $("#category").html();$("#category").html(z.substring(z.indexOf(':')+1,z.length));
+        $("#category").attr("style","");
+        clearInterval(show)
         document.getElementById('display').scrollLeft = 0;
         $('.cancel').hide();
         screen.height >= 400 && screen.height <= 749 && ($(".second-menu").hide(), $(".second-menu").remove()), cleardisplaywindow(), $("#nameWindow").html(""), $("#reload-sigml").hide(), $(".displayWindowImage").attr("style", "max-height:100px;max-width:100px;");

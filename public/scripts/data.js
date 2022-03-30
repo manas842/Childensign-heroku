@@ -505,15 +505,14 @@ var sidebar = {
                             // ,{
                             // imagesrc:"./res/icons/fruits/.png",
                             // item_punjabi  :"" , 
-                            // item_english:"Mosambi",
-                            // item_hindi:""
+                            //item_english:"Mosambi"
                             // }
                             ,{
                             imagesrc:"./res/icons/fruits/orange.png",
                             item_punjabi  :"ਸੰਤਰਾ" , 
                             item_english:"Orange",
                             item_hindi: "संतरा",
-                            sign_Name: "orange(fruit,color)"
+                            sign_Name: "orange"
                             },{
                             imagesrc:"./res/icons/fruits/papaya.png",
                             item_punjabi  :"ਪਪੀਤਾ" , 
@@ -842,56 +841,8 @@ var sidebar = {
                             item_hindi:"कमर",
                             sign_Name: "hip"
                             }],
-    Basicphrases:[{
-                            imagesrc:"./res/icons/basic/afternoon.png",
-                            item_punjabi  :"" , 
-                            item_english:"Good Afternoon",
-                            item_hindi:"नमस्कार",
-                            sign_Name: ""
-                            },{
-                            imagesrc:"./res/icons/basic/evening.png",
-                            item_punjabi  :"" , 
-                            item_english:"Good Evening",
-                            item_hindi:"सुसंध्या",
-                            sign_Name: ""
-                            },{
-                            imagesrc:"./res/icons/basic/morning.png",
-                            item_punjabi  :"" , 
-                            item_english:"Good Morning",
-                            item_hindi:"सुप्रभात",
-                            sign_Name: ""
-                            },{
-                            imagesrc:"./res/icons/basic/night.png",
-                            item_punjabi  :"" , 
-                            item_english:"good night",
-                            item_hindi:"शुभ रात्रि",
-                            sign_Name: ""
-                            },{
-                            imagesrc:"./res/icons/basic/idontknow.png",
-                            item_punjabi  :"" , 
-                            item_english:"i don't know",
-                            item_hindi:"मुझे नहीं पता",
-                            sign_Name: ""
-                            },{
-                            imagesrc:"./res/icons/basic/idontunderstand.png",
-                            item_punjabi  :"" , 
-                            item_english:"i don't understand",
-                            item_hindi:"मुझे समझ नहीं आया",
-                            sign_Name: ""
-                            },{
-                            imagesrc:"./res/icons/basic/iknow.png",
-                            item_punjabi  :"" , 
-                            item_english:"i know",
-                            item_hindi:"मुझे पता है",
-                            sign_Name: ""
-                        },{
-                            imagesrc:"./res/icons/basic/iunderstand.png",
-                            item_punjabi  :"" , 
-                            item_english:"i understand",
-                            item_hindi:"मै समझता हुँ",
-                            sign_Name: ""                           
-                             }],              
-    alphabets:  [{
+   
+        alphabets:  [{
                             imagesrc:"./res/icons/alpha/A.png",
                             item_punjabi  :"" , 
                             item_english:"",
@@ -973,8 +924,8 @@ var sidebar = {
                             imagesrc:"./res/icons/alpha/N.png",
                             item_punjabi  :"" , 
                             item_english:"",
-                            item_hindi:"n",
-                            sign_Name: ""
+                            item_hindi:"",
+                            sign_Name: "n"
                             },{
                             imagesrc:"./res/icons/alpha/O.png",
                             item_punjabi  :"" , 
@@ -1154,17 +1105,17 @@ var sidebar = {
        Dictionary: [{
                             sign_Name:"3g",
                             item_hindi:"3 जी",
-                            item_punjabi  :"3" , 
+                            item_punjabi  :"3 ਜੀ" , 
                             item_english:"3g"
                             },{
                             sign_Name:"4g",
                             item_hindi:"4 जी",
-                            item_punjabi  :"" , 
+                            item_punjabi  :"4 ਜੀ" , 
                             item_english:"4g"
                             },{
                             sign_Name:"a",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"a",
+                            item_punjabi  :"a" , 
                             item_english:"a"
                             },{
                             sign_Name:"Above",
@@ -1199,7 +1150,7 @@ var sidebar = {
                             },{
                             sign_Name:"accessible",
                             item_hindi:"प्रवेश के योग्य",
-                            item_punjabi  :"" , 
+                            item_punjabi  :"ਪਹੁੰਚਯੋਗ" , 
                             item_english:"accessible"
                             },{
                             sign_Name:"accident",
@@ -1208,12 +1159,12 @@ var sidebar = {
                             item_english:"accident"
                             },{
                             sign_Name:"accompany",
-                            item_hindi:"साथ देना",
+                            item_hindi:"साथ देना 1",
                             item_punjabi  :"ਸਾਥ ਦੇਣਾ 1" , 
                             item_english:"accompany 1"
                             },{
                             sign_Name:"accompany_2",
-                            item_hindi:"साथ देना",
+                            item_hindi:"साथ देना 2",
                             item_punjabi  :"ਸਾਥ ਦੇਣਾ 2" , 
                             item_english:"accompany 2"
                             },{
@@ -1299,7 +1250,7 @@ var sidebar = {
                             },{
                             sign_Name:"africa",
                             item_hindi:"अफ्रीका",
-                            item_punjabi  :"" , 
+                            item_punjabi  :"ਅਫਰੀਕਾ" , 
                             item_english:"africa"
                             },{
                             sign_Name:"after",
@@ -1329,12 +1280,12 @@ var sidebar = {
                             },{
                             sign_Name:"agra2",
                             item_hindi:"आगरा 2",
-                            item_punjabi  :"" , 
+                            item_punjabi  :"ਆਗਰਾ 2" , 
                             item_english:"agra 2"
                             },{
                             sign_Name:"agree",
                             item_hindi:"सहमत होना",
-                            item_punjabi  :"" , 
+                            item_punjabi  :"ਸਹਿਮਤ ਹੋਵੋ" , 
                             item_english:"agree"
                             },{
                             sign_Name:"ahmedabad",
@@ -1693,8 +1644,8 @@ var sidebar = {
                             item_english:"Axe"
                             },{
                             sign_Name:"b",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"b",
+                            item_punjabi  :"b" , 
                             item_english:"b"
                             },{
                             sign_Name:"baby",
@@ -1724,22 +1675,22 @@ var sidebar = {
                             },{
                             sign_Name:"badsign1",
                             item_hindi:"खराब 1",
-                            item_punjabi  :"ਬੁਰਾ" , 
+                            item_punjabi  :"ਬੁਰਾ 1" , 
                             item_english:"bad 1"
                             },{
                             sign_Name:"badsign2",
                             item_hindi:"खराब 2",
-                            item_punjabi  :"ਬੁਰਾ" , 
+                            item_punjabi  :"ਬੁਰਾ 2" , 
                             item_english:"bad 2"
                             },{
                             sign_Name:"badmintonsign1",
                             item_hindi:"बैडमिंटन 1",
-                            item_punjabi  :"ਬੈਡਮਿੰਟਨ" , 
+                            item_punjabi  :"ਬੈਡਮਿੰਟਨ 1" , 
                             item_english:"badminton 1"
                             },{
                             sign_Name:"badmintonsign2",
                             item_hindi:"बैडमिंटन 2",
-                            item_punjabi  :"ਬੈਡਮਿੰਟਨ" , 
+                            item_punjabi  :"ਬੈਡਮਿੰਟਨ 2" , 
                             item_english:"badminton 2"
                             },{
                             sign_Name:"bag",
@@ -1893,8 +1844,8 @@ var sidebar = {
                             item_english:"bull"
                             },{
                             sign_Name:"c",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"c",
+                            item_punjabi  :"c" , 
                             item_english:"c"
                             },{
                             sign_Name:"cabbage",
@@ -2083,8 +2034,8 @@ var sidebar = {
                             item_english:"cylinder"
                             },{
                             sign_Name:"d",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"d",
+                            item_punjabi  :"d" , 
                             item_english:"d"
                             },{
                             sign_Name:"daughter",
@@ -2178,8 +2129,8 @@ var sidebar = {
                             item_english:"duster"
                             },{
                             sign_Name:"e",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"e",
+                            item_punjabi  :"e" , 
                             item_english:"e"
                             },{
                             sign_Name:"Eagle",
@@ -2258,8 +2209,8 @@ var sidebar = {
                             item_english:"eyebrow"
                             },{
                             sign_Name:"f",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"f",
+                            item_punjabi  :"f" , 
                             item_english:"f"
                             },{
                             sign_Name:"face",
@@ -2373,8 +2324,8 @@ var sidebar = {
                             item_english:"funny"
                             },{
                             sign_Name:"g",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"g",
+                            item_punjabi  :"g" , 
                             item_english:"g"
                             },{
                             sign_Name:"game",
@@ -2589,12 +2540,12 @@ var sidebar = {
                             },{
                             sign_Name:"greedy1",
                             item_hindi:"लालची 1",
-                            item_punjabi  :"ਲਾਲਚੀ" , 
+                            item_punjabi  :"ਲਾਲਚੀ 1" , 
                             item_english:"greedy 1"
                             },{
                             sign_Name:"greeedy2",
                             item_hindi:"लालची 2",
-                            item_punjabi  :"ਲਾਲਚੀ" , 
+                            item_punjabi  :"ਲਾਲਚੀ 2" , 
                             item_english:"greedy 2"
                             },{
                             sign_Name:"green",
@@ -2643,8 +2594,8 @@ var sidebar = {
                             item_english:"gurudwara 2"
                             },{
                             sign_Name:"h",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"h",
+                            item_punjabi  :"h" , 
                             item_english:"h"
                             },{
                             sign_Name:"habit",
@@ -2858,8 +2809,8 @@ var sidebar = {
                             item_english:"husband"
                             },{
                             sign_Name:"i",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"i",
+                            item_punjabi  :"i" , 
                             item_english:"i"
                             },{
                             sign_Name:"i don't know",
@@ -2913,8 +2864,8 @@ var sidebar = {
                             item_english:"Israel"
                             },{
                             sign_Name:"j",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"j",
+                            item_punjabi  :"j" , 
                             item_english:"j"
                             },{
                             sign_Name:"jacket",
@@ -3003,8 +2954,8 @@ var sidebar = {
                             item_english:"july"
                             },{
                             sign_Name:"k",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"k",
+                            item_punjabi  :"k" , 
                             item_english:"k"
                             },{
                             sign_Name:"Kangaroo",
@@ -3028,8 +2979,8 @@ var sidebar = {
                             item_english:"kolkata"
                             },{
                             sign_Name:"l",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"l",
+                            item_punjabi  :"l" , 
                             item_english:"l"
                             },{
                             sign_Name:"labelsign1",
@@ -3138,8 +3089,8 @@ var sidebar = {
                             item_english:"lychee"
                             },{
                             sign_Name:"m",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"m",
+                            item_punjabi  :"m" , 
                             item_english:"m"
                             },{
                             sign_Name:"madhyapradesh",
@@ -3194,12 +3145,12 @@ var sidebar = {
                             },{
                             sign_Name:"meghalaya_1",
                             item_hindi:"मेघालय 1",
-                            item_punjabi  :"ਮੇਘਾਲਿਆ" , 
+                            item_punjabi  :"ਮੇਘਾਲਿਆ 1" , 
                             item_english:"meghalaya 1"
                             },{
                             sign_Name:"meghalaya_2",
                             item_hindi:"मेघालय 2",
-                            item_punjabi  :"ਮੇਘਾਲਿਆ" , 
+                            item_punjabi  :"ਮੇਘਾਲਿਆ 2" , 
                             item_english:"meghalaya 2"
                             },{
                             sign_Name:"mizoram_1",
@@ -3239,12 +3190,12 @@ var sidebar = {
                             },{
                             sign_Name:"muharram1",
                             item_hindi:"मुहर्रम 1",
-                            item_punjabi  :"ਮੁਹਾਰਮ" , 
+                            item_punjabi  :"ਮੁਹਾਰਮ 1" , 
                             item_english:"muharram 1"
                             },{
                             sign_Name:"muharram2",
                             item_hindi:"मुहर्रम 2",
-                            item_punjabi  :"ਮੁਹਾਰਮ" , 
+                            item_punjabi  :"ਮੁਹਾਰਮ 2" , 
                             item_english:"muharram 2"
                             },{
                             sign_Name:"mumbai",
@@ -3263,8 +3214,8 @@ var sidebar = {
                             item_english:"mysoru"
                             },{
                             sign_Name:"n",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"n",
+                            item_punjabi  :"n" , 
                             item_english:"n"
                             },{
                             sign_Name:"nagaland",
@@ -3333,8 +3284,8 @@ var sidebar = {
                             item_english:"number"
                             },{
                             sign_Name:"o",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"o",
+                            item_punjabi  :"o" , 
                             item_english:"o"
                             },{
                             sign_Name:"oct",
@@ -3408,8 +3359,8 @@ var sidebar = {
                             item_english:"ox"
                             },{
                             sign_Name:"p",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"p",
+                            item_punjabi  :"p" , 
                             item_english:"p"
                             },{
                             sign_Name:"papaya",
@@ -3474,12 +3425,12 @@ var sidebar = {
                             },{
                             sign_Name:"pink",
                             item_hindi:"गुलाबी 1",
-                            item_punjabi  :"ਗੁਲਾਬੀ" , 
+                            item_punjabi  :"ਗੁਲਾਬੀ 1" , 
                             item_english:"pink 1"
                             },{
                             sign_Name:"pink2",
                             item_hindi:"गुलाबी 2",
-                            item_punjabi  :"ਗੁਲਾਬੀ" , 
+                            item_punjabi  :"ਗੁਲਾਬੀ 2" , 
                             item_english:"pink 2"
                             },{
                             sign_Name:"place",
@@ -3523,8 +3474,8 @@ var sidebar = {
                             item_english:"Python"
                             },{
                             sign_Name:"q",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"q",
+                            item_punjabi  :"q" , 
                             item_english:"q"
                             },{
                             sign_Name:"quality",
@@ -3553,8 +3504,8 @@ var sidebar = {
                             item_english:"quiet"
                             },{
                             sign_Name:"r",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"r",
+                            item_punjabi  :"r" , 
                             item_english:"r"
                             },{
                             sign_Name:"rabbit",
@@ -3653,8 +3604,8 @@ var sidebar = {
                             item_english:"rupee"
                             },{
                             sign_Name:"s",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"s",
+                            item_punjabi  :"s" , 
                             item_english:"s"
                             },{
                             sign_Name:"safe2",
@@ -3958,8 +3909,8 @@ var sidebar = {
                             item_english:"sweater"
                             },{
                             sign_Name:"t",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"t",
+                            item_punjabi  :"t" , 
                             item_english:"t"
                             },{
                             sign_Name:"table",
@@ -4224,12 +4175,12 @@ var sidebar = {
                             },{
                             sign_Name:"tripura",
                             item_hindi:"त्रिपुरा 1",
-                            item_punjabi  :"ਤ੍ਰਿਪੁਰਾ" , 
+                            item_punjabi  :"ਤ੍ਰਿਪੁਰਾ 1" , 
                             item_english:"tripura 1"
                             },{
                             sign_Name:"tripura_2",
                             item_hindi:"त्रिपुरा २",
-                            item_punjabi  :"ਤ੍ਰਿਪੁਰਾ" , 
+                            item_punjabi  :"ਤ੍ਰਿਪੁਰਾ 2" , 
                             item_english:"tripura 2"
                             },{
                             sign_Name:"truck",
@@ -4249,7 +4200,7 @@ var sidebar = {
                             },{
                             sign_Name:"try",
                             item_hindi:"कोशिश 1",
-                            item_punjabi  :"ਕੋਸ਼ਿਸ਼ ਕਰੋ" , 
+                            item_punjabi  :"ਕੋਸ਼ਿਸ਼ ਕਰੋ 1" , 
                             item_english:"try 1"
                             },{
                             sign_Name:"try1",
@@ -4259,12 +4210,12 @@ var sidebar = {
                             },{
                             sign_Name:"tuesday",
                             item_hindi:"मंगलवार 1",
-                            item_punjabi  :"ਮੰਗਲਵਾਰ" , 
+                            item_punjabi  :"ਮੰਗਲਵਾਰ 1" , 
                             item_english:"tuesday 1"
                             },{
                             sign_Name:"tuesday",
                             item_hindi:"मंगलवार 2",
-                            item_punjabi  :"ਮੰਗਲਵਾਰ" , 
+                            item_punjabi  :"ਮੰਗਲਵਾਰ 2" , 
                             item_english:"tuesday 2"
                             },{
                             sign_Name:"turn",
@@ -4313,8 +4264,8 @@ var sidebar = {
                             item_english:"twodaysbefore"
                             },{
                             sign_Name:"u",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"u",
+                            item_punjabi  :"u" , 
                             item_english:"u"
                             },{
                             sign_Name:"under",
@@ -4338,8 +4289,8 @@ var sidebar = {
                             item_english:"uttarpradesh"
                             },{
                             sign_Name:"v",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"v",
+                            item_punjabi  :"v" , 
                             item_english:"v"
                             },{
                             sign_Name:"value",
@@ -4373,8 +4324,8 @@ var sidebar = {
                             item_english:"vote"
                             },{
                             sign_Name:"w",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"w",
+                            item_punjabi  :"w" , 
                             item_english:"w"
                             },{
                             sign_Name:"wakeup",
@@ -4402,6 +4353,11 @@ var sidebar = {
                             item_punjabi  :"ਪੱਛਮ" , 
                             item_english:"west"
                             },{
+                            item_punjabi  :"ਸਫੈਦ" , 
+                            item_english: "white",
+                            item_hindi:"सफेद",
+                            sign_Name: "white"
+                            },{
                             sign_Name:"westbengal",
                             item_hindi:"पश्चिम बंगाल",
                             item_punjabi  :"ਪੱਛਮੀ ਬੰਗਲੇ" , 
@@ -4413,8 +4369,8 @@ var sidebar = {
                             item_english:"woodpecker"
                             },{
                             sign_Name:"x",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"x",
+                            item_punjabi  :"x" , 
                             item_english:"x"
                             },{
                             sign_Name:"xerox",
@@ -4428,8 +4384,8 @@ var sidebar = {
                             item_english:"xylophone"
                             },{
                             sign_Name:"y",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"y",
+                            item_punjabi  :"y" , 
                             item_english:"y"
                             },{
                             sign_Name:"yellow",
@@ -4443,8 +4399,8 @@ var sidebar = {
                             item_english:"young"
                             },{
                             sign_Name:"z",
-                            item_hindi:"",
-                            item_punjabi  :"" , 
+                            item_hindi:"z",
+                            item_punjabi  :"z" , 
                             item_english:"z"
                             },{
                             sign_Name:"zebra",
@@ -4485,19 +4441,10 @@ var sidebar = {
         Technical_Team: [{
             sign_name:"Technical Team",
             imagesrc: "./res/backgrounds/puneet.jpg",
-            item: '<b style="font-size:2vw;">Puneet Bawa</b><br>Team Lead , M.E.(1<sup>st</sup> Year)<br>Chitkara University <br>Punjab , India'
-        }, {
-            imagesrc: "./res/backgrounds/vaibhav.jpg",
-            item: '<b style="font-size:2vw;">Vaibhav</b><br>Developer , B.E.(3<sup>rd</sup> Year)<br>Chitkara University <br>Punjab , India'
-        }, {
-            imagesrc: "./res/backgrounds/deepanshu.jpg",
-            item: '<b style="font-size:2vw;">Deepanshu</b><br>Tester , B.E.(2<sup>nd</sup> Year) <br>Chitkara University<br> Punjab , India'
-        }, {
-            imagesrc: "./res/backgrounds/gourav.jpg",
-            item: '<b style="font-size:2vw;">Gourav</b><br>Sign Generator , B.E.(2<sup>nd</sup> Year) <br>Chitkara University<br> Punjab , India'
+            item: '<b style="font-size:2vw;">Puneet Bawa</b><br>Team Lead , Phd.(1<sup>st</sup> Year)<br>Chitkara University <br>Punjab , India'
         }, {
             imagesrc: "./res/backgrounds/brahmjit.jpg",
-            item: '<b style="font-size:2vw;">Brahmjit Singh</b><br>Sign Generator , B.E.(2<sup>nd</sup> Year) <br>Chitkara University<br> Punjab , India'
+            item: '<b style="font-size:2vw;">Manas Luthra</b><br>Tech and Data Team Lead , B.E.(4<sup>th</sup> Year) <br>Chitkara University<br> Punjab , India'
         }],
         supporters: [{
             sign_name:"Supporters",
@@ -4621,7 +4568,6 @@ var sidebar = {
        onion : 4,
        oora : 2,
        orange : 4,
-       "orange(fruit,color)" : 5,
        p : 1,
        papaya : 5,
        pappaa : 3,
