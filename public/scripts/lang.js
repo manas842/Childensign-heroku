@@ -33,7 +33,7 @@ Hindi=function(){
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[current_screen].length; e++) {
             let i  = displayWindowElemHindi.replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%imagesrc%", displayElements[current_screen][e].imagesrc).replace("%data%", displayElements[current_screen][e].item_hindi),
-                n = "'".concat(displayElements[current_screen][e].item_english).concat("'");
+                n = "'".concat(displayElements[current_screen][e].sign_Name).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
             let x = '<div class="elements">' + i + '</div>';
             $('.displayWindow').append(x);
@@ -60,7 +60,7 @@ Hindi=function(){
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
             let i =  displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_hindi),
-                n = "'".concat(displayElements[a][e].item_english).concat("'");
+                n = "'".concat(displayElements[a][e].sign_Name).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
             let x = '<div class="elements">' + i + '</div>';
             $('.displayWindow').append(x);
@@ -79,7 +79,7 @@ Hindi=function(){
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = 0; e < displayElements[a].length; e++) {
             let i =  displayWindowElemHindi.replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%imagesrc%", displayElements[a][e].imagesrc).replace("%data%", displayElements[a][e].item_hindi),
-                n = "'".concat(displayElements[a][e].item_english).concat("'");
+                n = "'".concat(displayElements[a][e].sign_Name).concat("'");
             i = i.replace("%sigmlurl%", n).replace("%sigmlurl%", n);
             let x = '<div class="elements">' + i + '</div>';
             $('.displayWindow').append(x);
@@ -100,7 +100,7 @@ Hindi=function(){
         document.getElementsByClassName('search__input')[0].value = "";
         for (let e = categoryBackElement, i = 0; i < displayElements[e].length; i++) {
             let n = displayWindowElemHindi.replace("%imagesrc%", displayElements[e][i].imagesrc);
-            n = n.replace("%data%", displayElements[e][i].item_hindi);
+            n = n.replace("%data%", displayElements[e][i].sign_Name);
             let s, a = "'".concat(displayElements[e][i].item_english).concat("'");
             n = n.replace("%sigmlurl%", a), x = '<div class="elements">' + n + '</div>', $(".displayWindow").append(x), -1 != backElem.indexOf(displayElements[e][i].imagesrc) ? (toBeBackElement = n, toBeBackElement = $(toBeBackElement).children()[0], console.log(toBeBackElement), (s = $("img[src$='" + displayElements[e][i].imagesrc + "']")).next().attr("style", "color:#00cec9;"), s.parent().parent().attr("style", "background-color:white"), $("#imageWindow").removeClass("flipInY"), setTimeout(function() {
                 $("#imageWindow").addClass("flipInY"), $(".cancel").attr("style", "display:none")

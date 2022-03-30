@@ -266,6 +266,7 @@ function startPlayerPunjabi(e, i) {
     $("#ProgElem").show();
     document.getElementById("avat").style.opacity="0.8";
     clearGloss();
+    let current_screen_punjabi;
     for(let sample in sidebar.elements){if(current_screen.toLowerCase()==sidebar.elements[sample].listtext_english.toLowerCase()){current_screen_punjabi=sidebar.elements[sample].listtext_punjabi}}$("#category").html("ਸ਼੍ਰੇਣੀ : "+current_screen_punjabi);
     $('#nameImage').show();
     let clickedSrc = $(i).attr('src');
