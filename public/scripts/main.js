@@ -196,7 +196,8 @@ function startPlayerDictionary(e, i) {
     let clickedSrc = $(i).attr('src');
     for(let elem in displayElements) {
         for(let sample in displayElements[elem]) {
-            if(clickedSrc.localeCompare(displayElements[elem][sample].imagesrc)==0) {
+            if(e.localeCompare(displayElements[elem][sample].sign_Name)==0) {
+                console.log(displayElements[elem][sample])
                 if(language=='hindi'){$(".elemName").html(displayElements[elem][sample].item_hindi);}else if(language=='english'){$(".elemName").html(displayElements[elem][sample].item_english);}else if(language=='punjabi'){$(".elemName").html(displayElements[elem][sample].item_punjabi);}
                 toBeBackElement = i, categoryBackElement = elem, sigmlReload = e, $("#reload-sigml").show();
                 elementClicked = displayElements[elem][sample];
